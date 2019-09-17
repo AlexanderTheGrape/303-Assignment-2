@@ -1,0 +1,8 @@
+scchart Pacemaker1 {
+
+    input bool AS, AP, VS, VP
+    
+    initial state init;
+    
+    
+}

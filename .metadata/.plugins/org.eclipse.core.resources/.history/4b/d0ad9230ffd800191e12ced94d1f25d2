@@ -1,0 +1,12 @@
+scchart Pacemaker1 {
+
+	// LRI and URI excluded entirely
+    input bool AS, VS, AVI_expired, AEI_expired, PVARP_expired, VRP_expired;
+    output bool AP, VP, AVI_start, AEI_start, PVARP_start, VRP_start;
+    
+    initial state init
+    	--> waitVS with AS / AVI_start = 1; 
+    state waitVS;
+    
+    
+}

@@ -1,0 +1,10 @@
+scchart Pacemaker1 {
+
+    input bool AS, AP, VS, VP, AVI_expired, AEI_expired, PVARP_expired, VRP_expired;
+    
+    
+    
+    initial state init;
+    
+    
+}
