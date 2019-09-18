@@ -1,0 +1,49 @@
+scchart Pacemaker1 {
+  
+	input signal VSense, LRITO, VRPTO;
+	output signal VPace;
+	
+	initial state top {
+		signal LRI_start, LRI_ex, LRI_stop;
+		signal VRP_start, VRP_stop, VRP_ex;
+		
+		region VRP_timer:
+			
+	}
+	
+	
+
+
+	  
+}
+
+//	// LRI and URI excluded entirely
+//    input bool AS, VS, AVI_expired, AEI_expired, PVARP_expired, VRP_expired;
+//    output bool AP; //VP, AVI_start, AEI_start, PVARP_start, VRP_start;
+//    
+//    region Main:
+//	    initial state init 
+//	    entry /AP = 0;
+//    	--> waitVS with AS / AVI_start = 1; 
+//    	state waitVS
+////	    	-->  wPVARPandVRPith VS; // / AEI_start = 1; PVARP_start = 1; VRP_start = 1;
+////		    	//--> waitVS with !VS;
+//	    state PVARPandVRP{
+//	    	region PVARP:
+//		    	initial state PVARPwait
+//		    		--> PVARPexpireState with PVARP_expired;
+//		    	final state PVARPexpireState;
+//	      
+//	      
+//	      	region VRP:
+//	        	initial state VRPwait
+//	        		--> VRPexpireState with VRP_expired;
+//	        	final state VRPexpireState;
+//	    }
+//    	>-> done;
+//	    final state done;
+//	    
+//	  
+//	  
+//	-->  PVARPandVRP with VS; // / AEI_start = 1; PVARP_start = 1; VRP_start = 1;
+//	//--> waitVS with !VS;
