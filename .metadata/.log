@@ -5976,3 +5976,15 @@ de.cau.cs.kieler.kico.KielerCompilerException: The SCG is NOT ASC-schedulable!
 	at de.cau.cs.kieler.kico.klighd.internal.AsynchronousCompilation.run(AsynchronousCompilation.java:125)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
  (de.cau.cs.kieler.kico)
+
+!ENTRY de.cau.cs.kieler.klighd.incremental 1 0 2019-09-20 17:39:41.573
+!MESSAGE Fallback to simple update. Reason: Empty base model.
+
+!ENTRY de.cau.cs.kieler.klighd.incremental 1 0 2019-09-20 17:44:49.513
+!MESSAGE Fallback to simple update. Reason: Empty base model.
+
+!ENTRY de.cau.cs.kieler.klighd.incremental 1 0 2019-09-20 17:45:59.299
+!MESSAGE Fallback to simple update. Reason: Empty base model.
+
+!ENTRY de.cau.cs.kieler.klighd.incremental 1 0 2019-09-20 17:57:45.041
+!MESSAGE Fallback to simple update. Reason: Empty base model.
