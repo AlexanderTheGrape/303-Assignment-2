@@ -5217,3 +5217,762 @@ de.cau.cs.kieler.kico.KielerCompilerException: The SCG is NOT ASC-schedulable!
 
 !ENTRY de.cau.cs.kieler.klighd.incremental 1 0 2019-09-20 16:56:40.864
 !MESSAGE Fallback to simple update. Reason: Empty base model.
+
+!ENTRY de.cau.cs.kieler.kico 2 2 2019-09-20 17:04:34.412
+!MESSAGE A warning occurred while calling transformation with the ID 'scg.scheduling'.
+
+de.cau.cs.kieler.kico.KielerCompilerException: The SCG is NOT ASC-schedulable!
+	at de.cau.cs.kieler.scg.transformations.schedulers.SimpleGuardScheduler.transform(SimpleGuardScheduler.java:133)
+	at sun.reflect.GeneratedMethodAccessor158.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at de.cau.cs.kieler.kico.internal.Transformation.doTransform(Transformation.java:500)
+	at de.cau.cs.kieler.kico.KielerCompiler.performTransformation(KielerCompiler.java:451)
+	at de.cau.cs.kieler.kico.KielerCompiler.performTransformationTask(KielerCompiler.java:370)
+	at de.cau.cs.kieler.kico.KielerCompiler.compile(KielerCompiler.java:260)
+	at de.cau.cs.kieler.kico.klighd.internal.AsynchronousCompilation.run(AsynchronousCompilation.java:125)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+ (de.cau.cs.kieler.kico)
+
+!ENTRY de.cau.cs.kieler.kico 2 2 2019-09-20 17:05:46.388
+!MESSAGE A warning occurred while calling transformation with the ID 'scg.scheduling'.
+
+de.cau.cs.kieler.kico.KielerCompilerException: The SCG is NOT ASC-schedulable!
+	at de.cau.cs.kieler.scg.transformations.schedulers.SimpleGuardScheduler.transform(SimpleGuardScheduler.java:133)
+	at sun.reflect.GeneratedMethodAccessor158.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at de.cau.cs.kieler.kico.internal.Transformation.doTransform(Transformation.java:500)
+	at de.cau.cs.kieler.kico.KielerCompiler.performTransformation(KielerCompiler.java:451)
+	at de.cau.cs.kieler.kico.KielerCompiler.performTransformationTask(KielerCompiler.java:370)
+	at de.cau.cs.kieler.kico.KielerCompiler.compile(KielerCompiler.java:260)
+	at de.cau.cs.kieler.kico.klighd.internal.AsynchronousCompilation.run(AsynchronousCompilation.java:125)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+ (de.cau.cs.kieler.kico)
+
+!ENTRY de.cau.cs.kieler.kico 2 2 2019-09-20 17:06:11.420
+!MESSAGE A warning occurred while calling transformation with the ID 'scg.scheduling'.
+
+de.cau.cs.kieler.kico.KielerCompilerException: The SCG is NOT ASC-schedulable!
+	at de.cau.cs.kieler.scg.transformations.schedulers.SimpleGuardScheduler.transform(SimpleGuardScheduler.java:133)
+	at sun.reflect.GeneratedMethodAccessor158.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at de.cau.cs.kieler.kico.internal.Transformation.doTransform(Transformation.java:500)
+	at de.cau.cs.kieler.kico.KielerCompiler.performTransformation(KielerCompiler.java:451)
+	at de.cau.cs.kieler.kico.KielerCompiler.performTransformationTask(KielerCompiler.java:370)
+	at de.cau.cs.kieler.kico.KielerCompiler.compile(KielerCompiler.java:260)
+	at de.cau.cs.kieler.kico.klighd.internal.AsynchronousCompilation.run(AsynchronousCompilation.java:125)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+ (de.cau.cs.kieler.kico)
+
+!ENTRY de.cau.cs.kieler.klighd.incremental 1 0 2019-09-20 17:06:11.510
+!MESSAGE Fallback to simple update. Reason: Empty base model.
+
+!ENTRY de.cau.cs.kieler.kico 2 2 2019-09-20 17:07:25.266
+!MESSAGE A warning occurred while calling transformation with the ID 'scg.scheduling'.
+
+de.cau.cs.kieler.kico.KielerCompilerException: The SCG is NOT ASC-schedulable!
+	at de.cau.cs.kieler.scg.transformations.schedulers.SimpleGuardScheduler.transform(SimpleGuardScheduler.java:133)
+	at sun.reflect.GeneratedMethodAccessor158.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at de.cau.cs.kieler.kico.internal.Transformation.doTransform(Transformation.java:500)
+	at de.cau.cs.kieler.kico.KielerCompiler.performTransformation(KielerCompiler.java:451)
+	at de.cau.cs.kieler.kico.KielerCompiler.performTransformationTask(KielerCompiler.java:370)
+	at de.cau.cs.kieler.kico.KielerCompiler.compile(KielerCompiler.java:260)
+	at de.cau.cs.kieler.kico.klighd.internal.AsynchronousCompilation.run(AsynchronousCompilation.java:125)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+ (de.cau.cs.kieler.kico)
+
+!ENTRY de.cau.cs.kieler.kico 2 2 2019-09-20 17:07:26.406
+!MESSAGE A warning occurred while calling transformation with the ID 'scg.scheduling'.
+
+de.cau.cs.kieler.kico.KielerCompilerException: The SCG is NOT ASC-schedulable!
+	at de.cau.cs.kieler.scg.transformations.schedulers.SimpleGuardScheduler.transform(SimpleGuardScheduler.java:133)
+	at sun.reflect.GeneratedMethodAccessor158.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at de.cau.cs.kieler.kico.internal.Transformation.doTransform(Transformation.java:500)
+	at de.cau.cs.kieler.kico.KielerCompiler.performTransformation(KielerCompiler.java:451)
+	at de.cau.cs.kieler.kico.KielerCompiler.performTransformationTask(KielerCompiler.java:370)
+	at de.cau.cs.kieler.kico.KielerCompiler.compile(KielerCompiler.java:260)
+	at de.cau.cs.kieler.kico.klighd.internal.AsynchronousCompilation.run(AsynchronousCompilation.java:125)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+ (de.cau.cs.kieler.kico)
+
+!ENTRY de.cau.cs.kieler.klighd.incremental 1 0 2019-09-20 17:07:27.416
+!MESSAGE Fallback to simple update. Reason: Empty base model.
+
+!ENTRY de.cau.cs.kieler.klighd.incremental 1 0 2019-09-20 17:07:38.397
+!MESSAGE Fallback to simple update. Reason: Empty base model.
+
+!ENTRY de.cau.cs.kieler.klighd.incremental 2 0 2019-09-20 17:07:42.667
+!MESSAGE Fallback to simple update. Reason: Duplicate UID in base model.
+
+!ENTRY de.cau.cs.kieler.klighd.incremental 2 0 2019-09-20 17:07:43.568
+!MESSAGE Fallback to simple update. Reason: Duplicate UID in base model.
+
+!ENTRY de.cau.cs.kieler.klighd.incremental 2 0 2019-09-20 17:07:43.728
+!MESSAGE Fallback to simple update. Reason: Duplicate UID in base model.
+
+!ENTRY de.cau.cs.kieler.klighd.incremental 2 0 2019-09-20 17:07:45.018
+!MESSAGE Fallback to simple update. Reason: Duplicate UID in base model.
+
+!ENTRY de.cau.cs.kieler.klighd.incremental 2 0 2019-09-20 17:07:45.158
+!MESSAGE Fallback to simple update. Reason: Duplicate UID in base model.
+
+!ENTRY de.cau.cs.kieler.klighd.incremental 2 0 2019-09-20 17:07:45.978
+!MESSAGE Fallback to simple update. Reason: Duplicate UID in base model.
+
+!ENTRY de.cau.cs.kieler.klighd.incremental 2 0 2019-09-20 17:07:54.798
+!MESSAGE Fallback to simple update. Reason: Duplicate UID in base model.
+
+!ENTRY de.cau.cs.kieler.klighd.incremental 2 0 2019-09-20 17:07:57.299
+!MESSAGE Fallback to simple update. Reason: Duplicate UID in base model.
+
+!ENTRY de.cau.cs.kieler.klighd.incremental 1 0 2019-09-20 17:08:00.269
+!MESSAGE Fallback to simple update. Reason: Empty base model.
+
+!ENTRY de.cau.cs.kieler.klighd.incremental 1 0 2019-09-20 17:09:37.287
+!MESSAGE Fallback to simple update. Reason: Empty base model.
+
+!ENTRY de.cau.cs.kieler.klighd.incremental 1 0 2019-09-20 17:09:58.909
+!MESSAGE Fallback to simple update. Reason: Empty base model.
+
+!ENTRY de.cau.cs.kieler.klighd.incremental 1 0 2019-09-20 17:10:02.019
+!MESSAGE Fallback to simple update. Reason: Empty base model.
+
+!ENTRY de.cau.cs.kieler.kico 2 2 2019-09-20 17:10:09.300
+!MESSAGE A warning occurred while calling transformation with the ID 'scg.scheduling'.
+
+de.cau.cs.kieler.kico.KielerCompilerException: The SCG is NOT ASC-schedulable!
+	at de.cau.cs.kieler.scg.transformations.schedulers.SimpleGuardScheduler.transform(SimpleGuardScheduler.java:133)
+	at sun.reflect.GeneratedMethodAccessor158.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at de.cau.cs.kieler.kico.internal.Transformation.doTransform(Transformation.java:500)
+	at de.cau.cs.kieler.kico.KielerCompiler.performTransformation(KielerCompiler.java:451)
+	at de.cau.cs.kieler.kico.KielerCompiler.performTransformationTask(KielerCompiler.java:370)
+	at de.cau.cs.kieler.kico.KielerCompiler.compile(KielerCompiler.java:260)
+	at de.cau.cs.kieler.kico.klighd.internal.AsynchronousCompilation.run(AsynchronousCompilation.java:125)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+ (de.cau.cs.kieler.kico)
+
+!ENTRY de.cau.cs.kieler.kico 2 2 2019-09-20 17:10:09.350
+!MESSAGE A warning occurred while calling transformation with the ID 'scg.scheduling'.
+
+de.cau.cs.kieler.kico.KielerCompilerException: The SCG is NOT ASC-schedulable!
+	at de.cau.cs.kieler.scg.transformations.schedulers.SimpleGuardScheduler.transform(SimpleGuardScheduler.java:133)
+	at sun.reflect.GeneratedMethodAccessor158.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at de.cau.cs.kieler.kico.internal.Transformation.doTransform(Transformation.java:500)
+	at de.cau.cs.kieler.kico.KielerCompiler.performTransformation(KielerCompiler.java:451)
+	at de.cau.cs.kieler.kico.KielerCompiler.performTransformationTask(KielerCompiler.java:370)
+	at de.cau.cs.kieler.kico.KielerCompiler.compile(KielerCompiler.java:260)
+	at de.cau.cs.kieler.kico.klighd.internal.AsynchronousCompilation.run(AsynchronousCompilation.java:125)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+ (de.cau.cs.kieler.kico)
+
+!ENTRY de.cau.cs.kieler.kico 2 2 2019-09-20 17:10:19.171
+!MESSAGE A warning occurred while calling transformation with the ID 'scg.scheduling'.
+
+de.cau.cs.kieler.kico.KielerCompilerException: The SCG is NOT ASC-schedulable!
+	at de.cau.cs.kieler.scg.transformations.schedulers.SimpleGuardScheduler.transform(SimpleGuardScheduler.java:133)
+	at sun.reflect.GeneratedMethodAccessor158.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at de.cau.cs.kieler.kico.internal.Transformation.doTransform(Transformation.java:500)
+	at de.cau.cs.kieler.kico.KielerCompiler.performTransformation(KielerCompiler.java:451)
+	at de.cau.cs.kieler.kico.KielerCompiler.performTransformationTask(KielerCompiler.java:370)
+	at de.cau.cs.kieler.kico.KielerCompiler.compile(KielerCompiler.java:260)
+	at de.cau.cs.kieler.kico.klighd.internal.AsynchronousCompilation.run(AsynchronousCompilation.java:125)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+ (de.cau.cs.kieler.kico)
+
+!ENTRY de.cau.cs.kieler.kico 2 2 2019-09-20 17:10:19.221
+!MESSAGE A warning occurred while calling transformation with the ID 'scg.scheduling'.
+
+de.cau.cs.kieler.kico.KielerCompilerException: The SCG is NOT ASC-schedulable!
+	at de.cau.cs.kieler.scg.transformations.schedulers.SimpleGuardScheduler.transform(SimpleGuardScheduler.java:133)
+	at sun.reflect.GeneratedMethodAccessor158.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at de.cau.cs.kieler.kico.internal.Transformation.doTransform(Transformation.java:500)
+	at de.cau.cs.kieler.kico.KielerCompiler.performTransformation(KielerCompiler.java:451)
+	at de.cau.cs.kieler.kico.KielerCompiler.performTransformationTask(KielerCompiler.java:370)
+	at de.cau.cs.kieler.kico.KielerCompiler.compile(KielerCompiler.java:260)
+	at de.cau.cs.kieler.kico.klighd.internal.AsynchronousCompilation.run(AsynchronousCompilation.java:125)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+ (de.cau.cs.kieler.kico)
+
+!ENTRY de.cau.cs.kieler.kico 2 2 2019-09-20 17:10:29.301
+!MESSAGE A warning occurred while calling transformation with the ID 'scg.scheduling'.
+
+de.cau.cs.kieler.kico.KielerCompilerException: The SCG is NOT ASC-schedulable!
+	at de.cau.cs.kieler.scg.transformations.schedulers.SimpleGuardScheduler.transform(SimpleGuardScheduler.java:133)
+	at sun.reflect.GeneratedMethodAccessor158.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at de.cau.cs.kieler.kico.internal.Transformation.doTransform(Transformation.java:500)
+	at de.cau.cs.kieler.kico.KielerCompiler.performTransformation(KielerCompiler.java:451)
+	at de.cau.cs.kieler.kico.KielerCompiler.performTransformationTask(KielerCompiler.java:370)
+	at de.cau.cs.kieler.kico.KielerCompiler.compile(KielerCompiler.java:260)
+	at de.cau.cs.kieler.kico.klighd.internal.AsynchronousCompilation.run(AsynchronousCompilation.java:125)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+ (de.cau.cs.kieler.kico)
+
+!ENTRY de.cau.cs.kieler.kico 2 2 2019-09-20 17:10:29.351
+!MESSAGE A warning occurred while calling transformation with the ID 'scg.scheduling'.
+
+de.cau.cs.kieler.kico.KielerCompilerException: The SCG is NOT ASC-schedulable!
+	at de.cau.cs.kieler.scg.transformations.schedulers.SimpleGuardScheduler.transform(SimpleGuardScheduler.java:133)
+	at sun.reflect.GeneratedMethodAccessor158.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at de.cau.cs.kieler.kico.internal.Transformation.doTransform(Transformation.java:500)
+	at de.cau.cs.kieler.kico.KielerCompiler.performTransformation(KielerCompiler.java:451)
+	at de.cau.cs.kieler.kico.KielerCompiler.performTransformationTask(KielerCompiler.java:370)
+	at de.cau.cs.kieler.kico.KielerCompiler.compile(KielerCompiler.java:260)
+	at de.cau.cs.kieler.kico.klighd.internal.AsynchronousCompilation.run(AsynchronousCompilation.java:125)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+ (de.cau.cs.kieler.kico)
+
+!ENTRY de.cau.cs.kieler.klighd.incremental 1 0 2019-09-20 17:11:47.448
+!MESSAGE Fallback to simple update. Reason: Empty base model.
+
+!ENTRY de.cau.cs.kieler.kico 2 2 2019-09-20 17:12:51.623
+!MESSAGE A warning occurred while calling transformation with the ID 'scg.scheduling'.
+
+de.cau.cs.kieler.kico.KielerCompilerException: The SCG is NOT ASC-schedulable!
+	at de.cau.cs.kieler.scg.transformations.schedulers.SimpleGuardScheduler.transform(SimpleGuardScheduler.java:133)
+	at sun.reflect.GeneratedMethodAccessor158.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at de.cau.cs.kieler.kico.internal.Transformation.doTransform(Transformation.java:500)
+	at de.cau.cs.kieler.kico.KielerCompiler.performTransformation(KielerCompiler.java:451)
+	at de.cau.cs.kieler.kico.KielerCompiler.performTransformationTask(KielerCompiler.java:370)
+	at de.cau.cs.kieler.kico.KielerCompiler.compile(KielerCompiler.java:260)
+	at de.cau.cs.kieler.kico.klighd.internal.AsynchronousCompilation.run(AsynchronousCompilation.java:125)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+ (de.cau.cs.kieler.kico)
+
+!ENTRY de.cau.cs.kieler.kico 2 2 2019-09-20 17:12:56.174
+!MESSAGE A warning occurred while calling transformation with the ID 'scg.scheduling'.
+
+de.cau.cs.kieler.kico.KielerCompilerException: The SCG is NOT ASC-schedulable!
+	at de.cau.cs.kieler.scg.transformations.schedulers.SimpleGuardScheduler.transform(SimpleGuardScheduler.java:133)
+	at sun.reflect.GeneratedMethodAccessor158.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at de.cau.cs.kieler.kico.internal.Transformation.doTransform(Transformation.java:500)
+	at de.cau.cs.kieler.kico.KielerCompiler.performTransformation(KielerCompiler.java:451)
+	at de.cau.cs.kieler.kico.KielerCompiler.performTransformationTask(KielerCompiler.java:370)
+	at de.cau.cs.kieler.kico.KielerCompiler.compile(KielerCompiler.java:260)
+	at de.cau.cs.kieler.kico.klighd.internal.AsynchronousCompilation.run(AsynchronousCompilation.java:125)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+ (de.cau.cs.kieler.kico)
+
+!ENTRY de.cau.cs.kieler.klighd.incremental 1 0 2019-09-20 17:12:56.244
+!MESSAGE Fallback to simple update. Reason: Empty base model.
+
+!ENTRY de.cau.cs.kieler.kico 2 2 2019-09-20 17:14:03.309
+!MESSAGE A warning occurred while calling transformation with the ID 'scg.scheduling'.
+
+de.cau.cs.kieler.kico.KielerCompilerException: The SCG is NOT ASC-schedulable!
+	at de.cau.cs.kieler.scg.transformations.schedulers.SimpleGuardScheduler.transform(SimpleGuardScheduler.java:133)
+	at sun.reflect.GeneratedMethodAccessor158.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at de.cau.cs.kieler.kico.internal.Transformation.doTransform(Transformation.java:500)
+	at de.cau.cs.kieler.kico.KielerCompiler.performTransformation(KielerCompiler.java:451)
+	at de.cau.cs.kieler.kico.KielerCompiler.performTransformationTask(KielerCompiler.java:370)
+	at de.cau.cs.kieler.kico.KielerCompiler.compile(KielerCompiler.java:260)
+	at de.cau.cs.kieler.kico.klighd.internal.AsynchronousCompilation.run(AsynchronousCompilation.java:125)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+ (de.cau.cs.kieler.kico)
+
+!ENTRY de.cau.cs.kieler.kico 2 2 2019-09-20 17:14:03.359
+!MESSAGE A warning occurred while calling transformation with the ID 'scg.scheduling'.
+
+de.cau.cs.kieler.kico.KielerCompilerException: The SCG is NOT ASC-schedulable!
+	at de.cau.cs.kieler.scg.transformations.schedulers.SimpleGuardScheduler.transform(SimpleGuardScheduler.java:133)
+	at sun.reflect.GeneratedMethodAccessor158.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at de.cau.cs.kieler.kico.internal.Transformation.doTransform(Transformation.java:500)
+	at de.cau.cs.kieler.kico.KielerCompiler.performTransformation(KielerCompiler.java:451)
+	at de.cau.cs.kieler.kico.KielerCompiler.performTransformationTask(KielerCompiler.java:370)
+	at de.cau.cs.kieler.kico.KielerCompiler.compile(KielerCompiler.java:260)
+	at de.cau.cs.kieler.kico.klighd.internal.AsynchronousCompilation.run(AsynchronousCompilation.java:125)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+ (de.cau.cs.kieler.kico)
+
+!ENTRY de.cau.cs.kieler.kico 2 2 2019-09-20 17:14:47.473
+!MESSAGE A warning occurred while calling transformation with the ID 'scg.scheduling'.
+
+de.cau.cs.kieler.kico.KielerCompilerException: The SCG is NOT ASC-schedulable!
+	at de.cau.cs.kieler.scg.transformations.schedulers.SimpleGuardScheduler.transform(SimpleGuardScheduler.java:133)
+	at sun.reflect.GeneratedMethodAccessor158.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at de.cau.cs.kieler.kico.internal.Transformation.doTransform(Transformation.java:500)
+	at de.cau.cs.kieler.kico.KielerCompiler.performTransformation(KielerCompiler.java:451)
+	at de.cau.cs.kieler.kico.KielerCompiler.performTransformationTask(KielerCompiler.java:370)
+	at de.cau.cs.kieler.kico.KielerCompiler.compile(KielerCompiler.java:260)
+	at de.cau.cs.kieler.kico.klighd.internal.AsynchronousCompilation.run(AsynchronousCompilation.java:125)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+ (de.cau.cs.kieler.kico)
+
+!ENTRY de.cau.cs.kieler.kico 2 2 2019-09-20 17:14:47.513
+!MESSAGE A warning occurred while calling transformation with the ID 'scg.scheduling'.
+
+de.cau.cs.kieler.kico.KielerCompilerException: The SCG is NOT ASC-schedulable!
+	at de.cau.cs.kieler.scg.transformations.schedulers.SimpleGuardScheduler.transform(SimpleGuardScheduler.java:133)
+	at sun.reflect.GeneratedMethodAccessor158.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at de.cau.cs.kieler.kico.internal.Transformation.doTransform(Transformation.java:500)
+	at de.cau.cs.kieler.kico.KielerCompiler.performTransformation(KielerCompiler.java:451)
+	at de.cau.cs.kieler.kico.KielerCompiler.performTransformationTask(KielerCompiler.java:370)
+	at de.cau.cs.kieler.kico.KielerCompiler.compile(KielerCompiler.java:260)
+	at de.cau.cs.kieler.kico.klighd.internal.AsynchronousCompilation.run(AsynchronousCompilation.java:125)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+ (de.cau.cs.kieler.kico)
+
+!ENTRY de.cau.cs.kieler.kico 2 2 2019-09-20 17:14:57.644
+!MESSAGE A warning occurred while calling transformation with the ID 'scg.scheduling'.
+
+de.cau.cs.kieler.kico.KielerCompilerException: The SCG is NOT ASC-schedulable!
+	at de.cau.cs.kieler.scg.transformations.schedulers.SimpleGuardScheduler.transform(SimpleGuardScheduler.java:133)
+	at sun.reflect.GeneratedMethodAccessor158.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at de.cau.cs.kieler.kico.internal.Transformation.doTransform(Transformation.java:500)
+	at de.cau.cs.kieler.kico.KielerCompiler.performTransformation(KielerCompiler.java:451)
+	at de.cau.cs.kieler.kico.KielerCompiler.performTransformationTask(KielerCompiler.java:370)
+	at de.cau.cs.kieler.kico.KielerCompiler.compile(KielerCompiler.java:260)
+	at de.cau.cs.kieler.kico.klighd.internal.AsynchronousCompilation.run(AsynchronousCompilation.java:125)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+ (de.cau.cs.kieler.kico)
+
+!ENTRY de.cau.cs.kieler.kico 2 2 2019-09-20 17:14:57.684
+!MESSAGE A warning occurred while calling transformation with the ID 'scg.scheduling'.
+
+de.cau.cs.kieler.kico.KielerCompilerException: The SCG is NOT ASC-schedulable!
+	at de.cau.cs.kieler.scg.transformations.schedulers.SimpleGuardScheduler.transform(SimpleGuardScheduler.java:133)
+	at sun.reflect.GeneratedMethodAccessor158.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at de.cau.cs.kieler.kico.internal.Transformation.doTransform(Transformation.java:500)
+	at de.cau.cs.kieler.kico.KielerCompiler.performTransformation(KielerCompiler.java:451)
+	at de.cau.cs.kieler.kico.KielerCompiler.performTransformationTask(KielerCompiler.java:370)
+	at de.cau.cs.kieler.kico.KielerCompiler.compile(KielerCompiler.java:260)
+	at de.cau.cs.kieler.kico.klighd.internal.AsynchronousCompilation.run(AsynchronousCompilation.java:125)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+ (de.cau.cs.kieler.kico)
+
+!ENTRY de.cau.cs.kieler.kico 2 2 2019-09-20 17:16:03.569
+!MESSAGE A warning occurred while calling transformation with the ID 'scg.scheduling'.
+
+de.cau.cs.kieler.kico.KielerCompilerException: The SCG is NOT ASC-schedulable!
+	at de.cau.cs.kieler.scg.transformations.schedulers.SimpleGuardScheduler.transform(SimpleGuardScheduler.java:133)
+	at sun.reflect.GeneratedMethodAccessor158.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at de.cau.cs.kieler.kico.internal.Transformation.doTransform(Transformation.java:500)
+	at de.cau.cs.kieler.kico.KielerCompiler.performTransformation(KielerCompiler.java:451)
+	at de.cau.cs.kieler.kico.KielerCompiler.performTransformationTask(KielerCompiler.java:370)
+	at de.cau.cs.kieler.kico.KielerCompiler.compile(KielerCompiler.java:260)
+	at de.cau.cs.kieler.kico.klighd.internal.AsynchronousCompilation.run(AsynchronousCompilation.java:125)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+ (de.cau.cs.kieler.kico)
+
+!ENTRY de.cau.cs.kieler.kico 2 2 2019-09-20 17:16:03.609
+!MESSAGE A warning occurred while calling transformation with the ID 'scg.scheduling'.
+
+de.cau.cs.kieler.kico.KielerCompilerException: The SCG is NOT ASC-schedulable!
+	at de.cau.cs.kieler.scg.transformations.schedulers.SimpleGuardScheduler.transform(SimpleGuardScheduler.java:133)
+	at sun.reflect.GeneratedMethodAccessor158.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at de.cau.cs.kieler.kico.internal.Transformation.doTransform(Transformation.java:500)
+	at de.cau.cs.kieler.kico.KielerCompiler.performTransformation(KielerCompiler.java:451)
+	at de.cau.cs.kieler.kico.KielerCompiler.performTransformationTask(KielerCompiler.java:370)
+	at de.cau.cs.kieler.kico.KielerCompiler.compile(KielerCompiler.java:260)
+	at de.cau.cs.kieler.kico.klighd.internal.AsynchronousCompilation.run(AsynchronousCompilation.java:125)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+ (de.cau.cs.kieler.kico)
+
+!ENTRY de.cau.cs.kieler.kico 2 2 2019-09-20 17:16:26.731
+!MESSAGE A warning occurred while calling transformation with the ID 'scg.scheduling'.
+
+de.cau.cs.kieler.kico.KielerCompilerException: The SCG is NOT ASC-schedulable!
+	at de.cau.cs.kieler.scg.transformations.schedulers.SimpleGuardScheduler.transform(SimpleGuardScheduler.java:133)
+	at sun.reflect.GeneratedMethodAccessor158.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at de.cau.cs.kieler.kico.internal.Transformation.doTransform(Transformation.java:500)
+	at de.cau.cs.kieler.kico.KielerCompiler.performTransformation(KielerCompiler.java:451)
+	at de.cau.cs.kieler.kico.KielerCompiler.performTransformationTask(KielerCompiler.java:370)
+	at de.cau.cs.kieler.kico.KielerCompiler.compile(KielerCompiler.java:260)
+	at de.cau.cs.kieler.kico.klighd.internal.AsynchronousCompilation.run(AsynchronousCompilation.java:125)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+ (de.cau.cs.kieler.kico)
+
+!ENTRY de.cau.cs.kieler.kico 2 2 2019-09-20 17:16:26.781
+!MESSAGE A warning occurred while calling transformation with the ID 'scg.scheduling'.
+
+de.cau.cs.kieler.kico.KielerCompilerException: The SCG is NOT ASC-schedulable!
+	at de.cau.cs.kieler.scg.transformations.schedulers.SimpleGuardScheduler.transform(SimpleGuardScheduler.java:133)
+	at sun.reflect.GeneratedMethodAccessor158.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at de.cau.cs.kieler.kico.internal.Transformation.doTransform(Transformation.java:500)
+	at de.cau.cs.kieler.kico.KielerCompiler.performTransformation(KielerCompiler.java:451)
+	at de.cau.cs.kieler.kico.KielerCompiler.performTransformationTask(KielerCompiler.java:370)
+	at de.cau.cs.kieler.kico.KielerCompiler.compile(KielerCompiler.java:260)
+	at de.cau.cs.kieler.kico.klighd.internal.AsynchronousCompilation.run(AsynchronousCompilation.java:125)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+ (de.cau.cs.kieler.kico)
+
+!ENTRY de.cau.cs.kieler.kico 2 2 2019-09-20 17:16:34.472
+!MESSAGE A warning occurred while calling transformation with the ID 'scg.scheduling'.
+
+de.cau.cs.kieler.kico.KielerCompilerException: The SCG is NOT ASC-schedulable!
+	at de.cau.cs.kieler.scg.transformations.schedulers.SimpleGuardScheduler.transform(SimpleGuardScheduler.java:133)
+	at sun.reflect.GeneratedMethodAccessor158.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at de.cau.cs.kieler.kico.internal.Transformation.doTransform(Transformation.java:500)
+	at de.cau.cs.kieler.kico.KielerCompiler.performTransformation(KielerCompiler.java:451)
+	at de.cau.cs.kieler.kico.KielerCompiler.performTransformationTask(KielerCompiler.java:370)
+	at de.cau.cs.kieler.kico.KielerCompiler.compile(KielerCompiler.java:260)
+	at de.cau.cs.kieler.kico.klighd.internal.AsynchronousCompilation.run(AsynchronousCompilation.java:125)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+ (de.cau.cs.kieler.kico)
+
+!ENTRY de.cau.cs.kieler.kico 2 2 2019-09-20 17:16:34.512
+!MESSAGE A warning occurred while calling transformation with the ID 'scg.scheduling'.
+
+de.cau.cs.kieler.kico.KielerCompilerException: The SCG is NOT ASC-schedulable!
+	at de.cau.cs.kieler.scg.transformations.schedulers.SimpleGuardScheduler.transform(SimpleGuardScheduler.java:133)
+	at sun.reflect.GeneratedMethodAccessor158.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at de.cau.cs.kieler.kico.internal.Transformation.doTransform(Transformation.java:500)
+	at de.cau.cs.kieler.kico.KielerCompiler.performTransformation(KielerCompiler.java:451)
+	at de.cau.cs.kieler.kico.KielerCompiler.performTransformationTask(KielerCompiler.java:370)
+	at de.cau.cs.kieler.kico.KielerCompiler.compile(KielerCompiler.java:260)
+	at de.cau.cs.kieler.kico.klighd.internal.AsynchronousCompilation.run(AsynchronousCompilation.java:125)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+ (de.cau.cs.kieler.kico)
+
+!ENTRY de.cau.cs.kieler.kico 2 2 2019-09-20 17:17:06.215
+!MESSAGE A warning occurred while calling transformation with the ID 'scg.scheduling'.
+
+de.cau.cs.kieler.kico.KielerCompilerException: The SCG is NOT ASC-schedulable!
+	at de.cau.cs.kieler.scg.transformations.schedulers.SimpleGuardScheduler.transform(SimpleGuardScheduler.java:133)
+	at sun.reflect.GeneratedMethodAccessor158.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at de.cau.cs.kieler.kico.internal.Transformation.doTransform(Transformation.java:500)
+	at de.cau.cs.kieler.kico.KielerCompiler.performTransformation(KielerCompiler.java:451)
+	at de.cau.cs.kieler.kico.KielerCompiler.performTransformationTask(KielerCompiler.java:370)
+	at de.cau.cs.kieler.kico.KielerCompiler.compile(KielerCompiler.java:260)
+	at de.cau.cs.kieler.kico.klighd.internal.AsynchronousCompilation.run(AsynchronousCompilation.java:125)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+ (de.cau.cs.kieler.kico)
+
+!ENTRY de.cau.cs.kieler.kico 2 2 2019-09-20 17:17:06.265
+!MESSAGE A warning occurred while calling transformation with the ID 'scg.scheduling'.
+
+de.cau.cs.kieler.kico.KielerCompilerException: The SCG is NOT ASC-schedulable!
+	at de.cau.cs.kieler.scg.transformations.schedulers.SimpleGuardScheduler.transform(SimpleGuardScheduler.java:133)
+	at sun.reflect.GeneratedMethodAccessor158.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at de.cau.cs.kieler.kico.internal.Transformation.doTransform(Transformation.java:500)
+	at de.cau.cs.kieler.kico.KielerCompiler.performTransformation(KielerCompiler.java:451)
+	at de.cau.cs.kieler.kico.KielerCompiler.performTransformationTask(KielerCompiler.java:370)
+	at de.cau.cs.kieler.kico.KielerCompiler.compile(KielerCompiler.java:260)
+	at de.cau.cs.kieler.kico.klighd.internal.AsynchronousCompilation.run(AsynchronousCompilation.java:125)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+ (de.cau.cs.kieler.kico)
+
+!ENTRY de.cau.cs.kieler.kico 4 4 2019-09-20 17:17:37.517
+!MESSAGE An error occurred while calling transformation with the ID 'sccharts.scg'.
+
+de.cau.cs.kieler.kico.KielerCompilerException
+	at sun.reflect.GeneratedMethodAccessor148.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at de.cau.cs.kieler.kico.internal.Transformation.doTransform(Transformation.java:500)
+	at de.cau.cs.kieler.kico.KielerCompiler.performTransformation(KielerCompiler.java:451)
+	at de.cau.cs.kieler.kico.KielerCompiler.performTransformationTask(KielerCompiler.java:370)
+	at de.cau.cs.kieler.kico.KielerCompiler.compile(KielerCompiler.java:260)
+	at de.cau.cs.kieler.kico.klighd.internal.AsynchronousCompilation.run(AsynchronousCompilation.java:125)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: java.lang.ArrayIndexOutOfBoundsException: 0
+	at de.cau.cs.kieler.sccharts.scg.SCGTransformation.transformSCGConnectNodes(SCGTransformation.java:997)
+	at de.cau.cs.kieler.sccharts.scg.SCGTransformation.transformSCGConnectNodes(SCGTransformation.java:1106)
+	at de.cau.cs.kieler.sccharts.scg.SCGTransformation.transform(SCGTransformation.java:368)
+	... 9 more
+ (de.cau.cs.kieler.kico)
+!STACK 0
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at de.cau.cs.kieler.sccharts.scg.SCGTransformation.transformSCGConnectNodes(SCGTransformation.java:997)
+	at de.cau.cs.kieler.sccharts.scg.SCGTransformation.transformSCGConnectNodes(SCGTransformation.java:1106)
+	at de.cau.cs.kieler.sccharts.scg.SCGTransformation.transform(SCGTransformation.java:368)
+	at sun.reflect.GeneratedMethodAccessor148.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at de.cau.cs.kieler.kico.internal.Transformation.doTransform(Transformation.java:500)
+	at de.cau.cs.kieler.kico.KielerCompiler.performTransformation(KielerCompiler.java:451)
+	at de.cau.cs.kieler.kico.KielerCompiler.performTransformationTask(KielerCompiler.java:370)
+	at de.cau.cs.kieler.kico.KielerCompiler.compile(KielerCompiler.java:260)
+	at de.cau.cs.kieler.kico.klighd.internal.AsynchronousCompilation.run(AsynchronousCompilation.java:125)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY de.cau.cs.kieler.kico 4 4 2019-09-20 17:17:37.537
+!MESSAGE An error occurred while calling transformation with the ID 'sccharts.scg'.
+
+de.cau.cs.kieler.kico.KielerCompilerException
+	at sun.reflect.GeneratedMethodAccessor148.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at de.cau.cs.kieler.kico.internal.Transformation.doTransform(Transformation.java:500)
+	at de.cau.cs.kieler.kico.KielerCompiler.performTransformation(KielerCompiler.java:451)
+	at de.cau.cs.kieler.kico.KielerCompiler.performTransformationTask(KielerCompiler.java:370)
+	at de.cau.cs.kieler.kico.KielerCompiler.compile(KielerCompiler.java:260)
+	at de.cau.cs.kieler.kico.klighd.internal.AsynchronousCompilation.run(AsynchronousCompilation.java:125)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: java.lang.ArrayIndexOutOfBoundsException: 0
+	at de.cau.cs.kieler.sccharts.scg.SCGTransformation.transformSCGConnectNodes(SCGTransformation.java:997)
+	at de.cau.cs.kieler.sccharts.scg.SCGTransformation.transformSCGConnectNodes(SCGTransformation.java:1106)
+	at de.cau.cs.kieler.sccharts.scg.SCGTransformation.transform(SCGTransformation.java:368)
+	... 9 more
+ (de.cau.cs.kieler.kico)
+!STACK 0
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at de.cau.cs.kieler.sccharts.scg.SCGTransformation.transformSCGConnectNodes(SCGTransformation.java:997)
+	at de.cau.cs.kieler.sccharts.scg.SCGTransformation.transformSCGConnectNodes(SCGTransformation.java:1106)
+	at de.cau.cs.kieler.sccharts.scg.SCGTransformation.transform(SCGTransformation.java:368)
+	at sun.reflect.GeneratedMethodAccessor148.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at de.cau.cs.kieler.kico.internal.Transformation.doTransform(Transformation.java:500)
+	at de.cau.cs.kieler.kico.KielerCompiler.performTransformation(KielerCompiler.java:451)
+	at de.cau.cs.kieler.kico.KielerCompiler.performTransformationTask(KielerCompiler.java:370)
+	at de.cau.cs.kieler.kico.KielerCompiler.compile(KielerCompiler.java:260)
+	at de.cau.cs.kieler.kico.klighd.internal.AsynchronousCompilation.run(AsynchronousCompilation.java:125)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY de.cau.cs.kieler.klighd.incremental 1 0 2019-09-20 17:17:37.587
+!MESSAGE Fallback to simple update. Reason: Empty base model.
+
+!ENTRY de.cau.cs.kieler.klighd.incremental 1 0 2019-09-20 17:17:39.968
+!MESSAGE Fallback to simple update. Reason: Empty base model.
+
+!ENTRY de.cau.cs.kieler.kico 4 4 2019-09-20 17:17:43.598
+!MESSAGE An error occurred while calling transformation with the ID 'sccharts.scg'.
+
+de.cau.cs.kieler.kico.KielerCompilerException
+	at sun.reflect.GeneratedMethodAccessor148.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at de.cau.cs.kieler.kico.internal.Transformation.doTransform(Transformation.java:500)
+	at de.cau.cs.kieler.kico.KielerCompiler.performTransformation(KielerCompiler.java:451)
+	at de.cau.cs.kieler.kico.KielerCompiler.performTransformationTask(KielerCompiler.java:370)
+	at de.cau.cs.kieler.kico.KielerCompiler.compile(KielerCompiler.java:260)
+	at de.cau.cs.kieler.kico.klighd.internal.AsynchronousCompilation.run(AsynchronousCompilation.java:125)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: java.lang.ArrayIndexOutOfBoundsException: 0
+	at de.cau.cs.kieler.sccharts.scg.SCGTransformation.transformSCGConnectNodes(SCGTransformation.java:997)
+	at de.cau.cs.kieler.sccharts.scg.SCGTransformation.transformSCGConnectNodes(SCGTransformation.java:1106)
+	at de.cau.cs.kieler.sccharts.scg.SCGTransformation.transform(SCGTransformation.java:368)
+	... 9 more
+ (de.cau.cs.kieler.kico)
+!STACK 0
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at de.cau.cs.kieler.sccharts.scg.SCGTransformation.transformSCGConnectNodes(SCGTransformation.java:997)
+	at de.cau.cs.kieler.sccharts.scg.SCGTransformation.transformSCGConnectNodes(SCGTransformation.java:1106)
+	at de.cau.cs.kieler.sccharts.scg.SCGTransformation.transform(SCGTransformation.java:368)
+	at sun.reflect.GeneratedMethodAccessor148.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at de.cau.cs.kieler.kico.internal.Transformation.doTransform(Transformation.java:500)
+	at de.cau.cs.kieler.kico.KielerCompiler.performTransformation(KielerCompiler.java:451)
+	at de.cau.cs.kieler.kico.KielerCompiler.performTransformationTask(KielerCompiler.java:370)
+	at de.cau.cs.kieler.kico.KielerCompiler.compile(KielerCompiler.java:260)
+	at de.cau.cs.kieler.kico.klighd.internal.AsynchronousCompilation.run(AsynchronousCompilation.java:125)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY de.cau.cs.kieler.kico 4 4 2019-09-20 17:17:43.608
+!MESSAGE An error occurred while calling transformation with the ID 'sccharts.scg'.
+
+de.cau.cs.kieler.kico.KielerCompilerException
+	at sun.reflect.GeneratedMethodAccessor148.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at de.cau.cs.kieler.kico.internal.Transformation.doTransform(Transformation.java:500)
+	at de.cau.cs.kieler.kico.KielerCompiler.performTransformation(KielerCompiler.java:451)
+	at de.cau.cs.kieler.kico.KielerCompiler.performTransformationTask(KielerCompiler.java:370)
+	at de.cau.cs.kieler.kico.KielerCompiler.compile(KielerCompiler.java:260)
+	at de.cau.cs.kieler.kico.klighd.internal.AsynchronousCompilation.run(AsynchronousCompilation.java:125)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: java.lang.ArrayIndexOutOfBoundsException: 0
+	at de.cau.cs.kieler.sccharts.scg.SCGTransformation.transformSCGConnectNodes(SCGTransformation.java:997)
+	at de.cau.cs.kieler.sccharts.scg.SCGTransformation.transformSCGConnectNodes(SCGTransformation.java:1106)
+	at de.cau.cs.kieler.sccharts.scg.SCGTransformation.transform(SCGTransformation.java:368)
+	... 9 more
+ (de.cau.cs.kieler.kico)
+!STACK 0
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at de.cau.cs.kieler.sccharts.scg.SCGTransformation.transformSCGConnectNodes(SCGTransformation.java:997)
+	at de.cau.cs.kieler.sccharts.scg.SCGTransformation.transformSCGConnectNodes(SCGTransformation.java:1106)
+	at de.cau.cs.kieler.sccharts.scg.SCGTransformation.transform(SCGTransformation.java:368)
+	at sun.reflect.GeneratedMethodAccessor148.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at de.cau.cs.kieler.kico.internal.Transformation.doTransform(Transformation.java:500)
+	at de.cau.cs.kieler.kico.KielerCompiler.performTransformation(KielerCompiler.java:451)
+	at de.cau.cs.kieler.kico.KielerCompiler.performTransformationTask(KielerCompiler.java:370)
+	at de.cau.cs.kieler.kico.KielerCompiler.compile(KielerCompiler.java:260)
+	at de.cau.cs.kieler.kico.klighd.internal.AsynchronousCompilation.run(AsynchronousCompilation.java:125)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY de.cau.cs.kieler.klighd.incremental 1 0 2019-09-20 17:17:43.678
+!MESSAGE Fallback to simple update. Reason: Empty base model.
+
+!ENTRY de.cau.cs.kieler.kico 2 2 2019-09-20 17:17:45.728
+!MESSAGE A warning occurred while calling transformation with the ID 'scg.scheduling'.
+
+de.cau.cs.kieler.kico.KielerCompilerException: The SCG is NOT ASC-schedulable!
+	at de.cau.cs.kieler.scg.transformations.schedulers.SimpleGuardScheduler.transform(SimpleGuardScheduler.java:133)
+	at sun.reflect.GeneratedMethodAccessor158.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at de.cau.cs.kieler.kico.internal.Transformation.doTransform(Transformation.java:500)
+	at de.cau.cs.kieler.kico.KielerCompiler.performTransformation(KielerCompiler.java:451)
+	at de.cau.cs.kieler.kico.KielerCompiler.performTransformationTask(KielerCompiler.java:370)
+	at de.cau.cs.kieler.kico.KielerCompiler.compile(KielerCompiler.java:260)
+	at de.cau.cs.kieler.kico.klighd.internal.AsynchronousCompilation.run(AsynchronousCompilation.java:125)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+ (de.cau.cs.kieler.kico)
+
+!ENTRY de.cau.cs.kieler.kico 2 2 2019-09-20 17:17:45.778
+!MESSAGE A warning occurred while calling transformation with the ID 'scg.scheduling'.
+
+de.cau.cs.kieler.kico.KielerCompilerException: The SCG is NOT ASC-schedulable!
+	at de.cau.cs.kieler.scg.transformations.schedulers.SimpleGuardScheduler.transform(SimpleGuardScheduler.java:133)
+	at sun.reflect.GeneratedMethodAccessor158.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at de.cau.cs.kieler.kico.internal.Transformation.doTransform(Transformation.java:500)
+	at de.cau.cs.kieler.kico.KielerCompiler.performTransformation(KielerCompiler.java:451)
+	at de.cau.cs.kieler.kico.KielerCompiler.performTransformationTask(KielerCompiler.java:370)
+	at de.cau.cs.kieler.kico.KielerCompiler.compile(KielerCompiler.java:260)
+	at de.cau.cs.kieler.kico.klighd.internal.AsynchronousCompilation.run(AsynchronousCompilation.java:125)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+ (de.cau.cs.kieler.kico)
+
+!ENTRY de.cau.cs.kieler.klighd.incremental 1 0 2019-09-20 17:17:45.838
+!MESSAGE Fallback to simple update. Reason: Empty base model.
+
+!ENTRY de.cau.cs.kieler.kico 2 2 2019-09-20 17:17:50.018
+!MESSAGE A warning occurred while calling transformation with the ID 'scg.scheduling'.
+
+de.cau.cs.kieler.kico.KielerCompilerException: The SCG is NOT ASC-schedulable!
+	at de.cau.cs.kieler.scg.transformations.schedulers.SimpleGuardScheduler.transform(SimpleGuardScheduler.java:133)
+	at sun.reflect.GeneratedMethodAccessor158.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at de.cau.cs.kieler.kico.internal.Transformation.doTransform(Transformation.java:500)
+	at de.cau.cs.kieler.kico.KielerCompiler.performTransformation(KielerCompiler.java:451)
+	at de.cau.cs.kieler.kico.KielerCompiler.performTransformationTask(KielerCompiler.java:370)
+	at de.cau.cs.kieler.kico.KielerCompiler.compile(KielerCompiler.java:260)
+	at de.cau.cs.kieler.kico.klighd.internal.AsynchronousCompilation.run(AsynchronousCompilation.java:125)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+ (de.cau.cs.kieler.kico)
+
+!ENTRY de.cau.cs.kieler.kico 2 2 2019-09-20 17:17:50.078
+!MESSAGE A warning occurred while calling transformation with the ID 'scg.scheduling'.
+
+de.cau.cs.kieler.kico.KielerCompilerException: The SCG is NOT ASC-schedulable!
+	at de.cau.cs.kieler.scg.transformations.schedulers.SimpleGuardScheduler.transform(SimpleGuardScheduler.java:133)
+	at sun.reflect.GeneratedMethodAccessor158.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at de.cau.cs.kieler.kico.internal.Transformation.doTransform(Transformation.java:500)
+	at de.cau.cs.kieler.kico.KielerCompiler.performTransformation(KielerCompiler.java:451)
+	at de.cau.cs.kieler.kico.KielerCompiler.performTransformationTask(KielerCompiler.java:370)
+	at de.cau.cs.kieler.kico.KielerCompiler.compile(KielerCompiler.java:260)
+	at de.cau.cs.kieler.kico.klighd.internal.AsynchronousCompilation.run(AsynchronousCompilation.java:125)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+ (de.cau.cs.kieler.kico)
+
+!ENTRY de.cau.cs.kieler.kico 2 2 2019-09-20 17:17:54.559
+!MESSAGE A warning occurred while calling transformation with the ID 'scg.scheduling'.
+
+de.cau.cs.kieler.kico.KielerCompilerException: The SCG is NOT ASC-schedulable!
+	at de.cau.cs.kieler.scg.transformations.schedulers.SimpleGuardScheduler.transform(SimpleGuardScheduler.java:133)
+	at sun.reflect.GeneratedMethodAccessor158.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at de.cau.cs.kieler.kico.internal.Transformation.doTransform(Transformation.java:500)
+	at de.cau.cs.kieler.kico.KielerCompiler.performTransformation(KielerCompiler.java:451)
+	at de.cau.cs.kieler.kico.KielerCompiler.performTransformationTask(KielerCompiler.java:370)
+	at de.cau.cs.kieler.kico.KielerCompiler.compile(KielerCompiler.java:260)
+	at de.cau.cs.kieler.kico.klighd.internal.AsynchronousCompilation.run(AsynchronousCompilation.java:125)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+ (de.cau.cs.kieler.kico)
+
+!ENTRY de.cau.cs.kieler.kico 2 2 2019-09-20 17:17:54.599
+!MESSAGE A warning occurred while calling transformation with the ID 'scg.scheduling'.
+
+de.cau.cs.kieler.kico.KielerCompilerException: The SCG is NOT ASC-schedulable!
+	at de.cau.cs.kieler.scg.transformations.schedulers.SimpleGuardScheduler.transform(SimpleGuardScheduler.java:133)
+	at sun.reflect.GeneratedMethodAccessor158.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at de.cau.cs.kieler.kico.internal.Transformation.doTransform(Transformation.java:500)
+	at de.cau.cs.kieler.kico.KielerCompiler.performTransformation(KielerCompiler.java:451)
+	at de.cau.cs.kieler.kico.KielerCompiler.performTransformationTask(KielerCompiler.java:370)
+	at de.cau.cs.kieler.kico.KielerCompiler.compile(KielerCompiler.java:260)
+	at de.cau.cs.kieler.kico.klighd.internal.AsynchronousCompilation.run(AsynchronousCompilation.java:125)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+ (de.cau.cs.kieler.kico)
+
+!ENTRY de.cau.cs.kieler.kico 2 2 2019-09-20 17:18:10.160
+!MESSAGE A warning occurred while calling transformation with the ID 'scg.scheduling'.
+
+de.cau.cs.kieler.kico.KielerCompilerException: The SCG is NOT ASC-schedulable!
+	at de.cau.cs.kieler.scg.transformations.schedulers.SimpleGuardScheduler.transform(SimpleGuardScheduler.java:133)
+	at sun.reflect.GeneratedMethodAccessor158.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at de.cau.cs.kieler.kico.internal.Transformation.doTransform(Transformation.java:500)
+	at de.cau.cs.kieler.kico.KielerCompiler.performTransformation(KielerCompiler.java:451)
+	at de.cau.cs.kieler.kico.KielerCompiler.performTransformationTask(KielerCompiler.java:370)
+	at de.cau.cs.kieler.kico.KielerCompiler.compile(KielerCompiler.java:260)
+	at de.cau.cs.kieler.kico.klighd.internal.AsynchronousCompilation.run(AsynchronousCompilation.java:125)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+ (de.cau.cs.kieler.kico)
+
+!ENTRY de.cau.cs.kieler.kico 2 2 2019-09-20 17:18:10.200
+!MESSAGE A warning occurred while calling transformation with the ID 'scg.scheduling'.
+
+de.cau.cs.kieler.kico.KielerCompilerException: The SCG is NOT ASC-schedulable!
+	at de.cau.cs.kieler.scg.transformations.schedulers.SimpleGuardScheduler.transform(SimpleGuardScheduler.java:133)
+	at sun.reflect.GeneratedMethodAccessor158.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at de.cau.cs.kieler.kico.internal.Transformation.doTransform(Transformation.java:500)
+	at de.cau.cs.kieler.kico.KielerCompiler.performTransformation(KielerCompiler.java:451)
+	at de.cau.cs.kieler.kico.KielerCompiler.performTransformationTask(KielerCompiler.java:370)
+	at de.cau.cs.kieler.kico.KielerCompiler.compile(KielerCompiler.java:260)
+	at de.cau.cs.kieler.kico.klighd.internal.AsynchronousCompilation.run(AsynchronousCompilation.java:125)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+ (de.cau.cs.kieler.kico)

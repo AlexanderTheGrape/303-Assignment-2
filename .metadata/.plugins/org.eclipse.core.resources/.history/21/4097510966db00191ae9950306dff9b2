@@ -50,8 +50,8 @@ scchart Pacemaker1 {
 								--> idle with AVITO / AVI_ex;
 			
 		region AVI:
-			initial state idle				--> connectorState2 with FilteredASense
-											--> connectorState2 with APace;
+			initial state idle				--> connectorState2 with pre(FilteredASense)
+											--> connectorState2 with pre(APace);
 			connector state connectorState2 --> waitURI with / AVI_start;
 			state waitURI					--> idle with pre(FilteredVSense) / AVI_stop
 											--> waitVSense with URI_ex;
