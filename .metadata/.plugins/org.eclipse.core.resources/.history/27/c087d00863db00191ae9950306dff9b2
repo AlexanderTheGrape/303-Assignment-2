@@ -85,7 +85,7 @@ scchart Pacemaker1 {
 			
 		region URI:
 			initial state idle	--> waitOnTimer with AVI_stop;
-			state waitOnTimer	--> idle with URI_ex;
+			state waitOnTimer	--> idle with URI_exp;
 	};
 	
 	

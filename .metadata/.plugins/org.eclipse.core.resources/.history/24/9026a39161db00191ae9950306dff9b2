@@ -74,18 +74,14 @@ scchart Pacemaker1 {
 			state timer 	   	--> idle with AEI_stop
 								--> idle with AEITO / AEI_ex;
 		
-		region AEI:
-			initial state idle 	--> waitOnTimer with AVI_stop;
-			state waitOnTimer	--> idle with FilteredASense
-								--> idle with AEI_ex / APace;  
+//		region AEI:
+//			initial state idle --> waitAEI with 
 							
 		region URI_timer:
 			initial state idle 	--> timer with AVI_stop;
 			state timer 		--> idle with URITO / URI_ex;
 			
-		region URI:
-			initial state idle	--> waitOnTimer with AVI_stop;
-			state waitOnTimer	--> idle with URI_ex;
+//		region URI:
 	};
 	
 	

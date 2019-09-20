@@ -10,26 +10,22 @@ scchart Pacemaker1 {
 		signal PVARP_start, PVARP_stop, PVARP_ex;
 		signal AEI_start, AEI_stop, AEI_ex;
 		signal URI_start, URI_stop, URI_ex;
-		signal FilteredASense, FilteredVSense;
+		signal FilteredASense;
 		
 		region VRP_timer:
-			initial state idle 	--> timer with AVI_stop;
+			initial state idle 	--> timer with VRP_start;
 			state timer 		--> idle with VRPTO/VRP_ex;
 								
 		region VRP:
-			initial state idle 				--> waitVRP with AVI_stop / VRP_start
-											--> idle with ASense / FilteredVSense;
-			state waitVRP					--> idle with VRP_ex;
-		
-//			initial state idle 				--> connectorState1 with VSense
-//											--> connectorState1 with VPace;
-//			connector state connectorState1 --> waitVRP 		with / VRP_start;
-//			state waitVRP					--> idle			with VRP_ex
-//											--> connectorState2 with VSense;
-//			connector state connectorState2 --> waitVRP;
+			initial state idle 				--> connectorState1 with VSense
+											--> connectorState1 with VPace;
+			connector state connectorState1 --> waitVRP 		with / VRP_start;
+			state waitVRP					--> idle			with VRP_ex
+											--> connectorState2 with VSense;
+			connector state connectorState2 --> waitVRP;
 			
 		region LRI_timer:
-			initial state idle	--> timer with AVI_stop;
+			initial state idle	--> timer with LRI_start;
 			state timer			--> idle with LRI_stop
 								--> idle with LRITO / LRI_ex;
 			
@@ -57,7 +53,7 @@ scchart Pacemaker1 {
 											--> waitVSense with URI_ex;
 			state waitVSense				--> connectorState1 with VSense
 											--> connectorState1 with VPace
-											--> connectorState1 with AVI_ex / VPace;
+											--> idle with AVI_ex / VPace;
 			connector state connectorState1 --> idle with / AVI_stop;
 											
 		region PVARP_timer:
@@ -65,27 +61,26 @@ scchart Pacemaker1 {
 			state timer 		--> idle with PVARPTO / PVARP_ex;
 			
 		region PVARP:
-			initial state idle 				--> waitPVARP with AVI_stop / PVARP_start
+			initial state idle 				--> connectorState1 with AVI_stop
+											--> connectorState1 with AVI_ex
 											--> idle with ASense / FilteredASense;
-			state waitPVARP					--> idle with PVARP_ex;
+			connector state connectorState1 --> waitPVARP with / PVARP_start;
+			state waitPVARP					--> idle with PVARP_ex
+			
+		
 		
 		region AEI_timer:
-			initial state idle	--> timer with AVI_stop;
+			initial state idle	--> timer with AEI_start;
 			state timer 	   	--> idle with AEI_stop
 								--> idle with AEITO / AEI_ex;
 		
-		region AEI:
-			initial state idle 	--> waitOnTimer with AVI_stop;
-			state waitOnTimer	--> idle with FilteredASense
-								--> idle with AEI_ex / APace;  
+//		region AEI:
 							
 		region URI_timer:
-			initial state idle 	--> timer with AVI_stop;
+			initial state idle 	--> timer with URI_start;
 			state timer 		--> idle with URITO / URI_ex;
 			
-		region URI:
-			initial state idle	--> waitOnTimer with AVI_stop;
-			state waitOnTimer	--> idle with URI_ex;
+//		region URI:
 	};
 	
 	
