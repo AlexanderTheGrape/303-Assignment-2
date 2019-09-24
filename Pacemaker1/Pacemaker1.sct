@@ -78,7 +78,9 @@ scchart Pacemaker1 {
 		
 		region AEI_timer:
 			initial state idle	--> timer with AVI_stop
-								--> timer with AEI_start;
+								--> timer with FilteredVSense
+								--> timer with VPace;
+								//--> timer with AEI_start;
 			state timer 	   	--> idle with AEI_stop
 								--> idle with AEITO / AEI_ex;
 		

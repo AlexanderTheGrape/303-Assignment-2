@@ -278,7 +278,7 @@ int main()
 		tick();
 		pollButtons();
 		heartLEDs();
-//		printf("LRI_start: %d", LRI_start);
+		printf("LRI_start: %d", LRI_start);
 	}
 
 //	void* Timercontext = 0;

@@ -146,13 +146,13 @@ void pollButtons()
 		ASense = 0;
 	} else {
 		ASense = 1;
-//		printf("--- ASense! ---\n");
+		printf("--- ASense! ---\n");
 	}
 	if (maskedButton1 > 0){
 		VSense = 0;
 	} else {
 		VSense = 1;
-//		printf("--- VSense! ---\n");
+		printf("--- VSense! ---\n");
 	}
 
 //	printf("button0 is: %d \n", maskedButton0);
@@ -278,7 +278,6 @@ int main()
 		tick();
 		pollButtons();
 		heartLEDs();
-//		printf("LRI_start: %d", LRI_start);
 	}
 
 //	void* Timercontext = 0;
