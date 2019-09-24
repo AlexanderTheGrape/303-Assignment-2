@@ -1,55 +1,4 @@
-<<<<<<< HEAD
-15:01:31 **** Incremental Build of configuration Nios II for project fresh_beets ****
-=======
-11:39:44 **** Incremental Build of configuration Nios II for project fresh_beets ****
->>>>>>> f28317081308ffb0dd803890f285de463ab7f5eb
-make all 
-Info: Building ../fresh_beets_bsp/
-C:/intelFPGA/16.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../fresh_beets_bsp/
-[BSP build complete]
-[fresh_beets build complete]
-<<<<<<< HEAD
-15:01:36 **** Build of configuration Nios II for project fresh_beets ****
-=======
-11:39:57 **** Build of configuration Nios II for project fresh_beets ****
->>>>>>> f28317081308ffb0dd803890f285de463ab7f5eb
-make all 
-Info: Building ../fresh_beets_bsp/
-C:/intelFPGA/16.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../fresh_beets_bsp/
-[BSP build complete]
-[fresh_beets build complete]
-<<<<<<< HEAD
-15:01:37 **** Incremental Build of configuration Nios II for project fresh_beets ****
-=======
-11:39:59 **** Incremental Build of configuration Nios II for project fresh_beets ****
->>>>>>> f28317081308ffb0dd803890f285de463ab7f5eb
-make all 
-Info: Building ../fresh_beets_bsp/
-C:/intelFPGA/16.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../fresh_beets_bsp/
-[BSP build complete]
-[fresh_beets build complete]
-<<<<<<< HEAD
-15:02:51 **** Incremental Build of configuration Nios II for project fresh_beets ****
-=======
-12:26:49 **** Incremental Build of configuration Nios II for project fresh_beets ****
->>>>>>> f28317081308ffb0dd803890f285de463ab7f5eb
-make all 
-Info: Building ../fresh_beets_bsp/
-C:/intelFPGA/16.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../fresh_beets_bsp/
-[BSP build complete]
-Info: Compiling hello_world.c to obj/default/hello_world.o
-nios2-elf-gcc -xc -MP -MMD -c -I../fresh_beets_bsp//HAL/inc -I../fresh_beets_bsp/ -I../fresh_beets_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world.o hello_world.c
-<<<<<<< HEAD
-=======
-hello_world.c: In function 'startTimers':
-hello_world.c:140:1: error: expected expression before '}' token
- }
- ^
-make: *** [obj/default/hello_world.o] Error 1
-12:26:51 **** Incremental Build of configuration Nios II for project fresh_beets_bsp ****
-make all 
-[BSP build complete]
-12:36:36 **** Incremental Build of configuration Nios II for project fresh_beets ****
+18:55:03 **** Incremental Build of configuration Nios II for project fresh_beets ****
 make all 
 Info: Building ../fresh_beets_bsp/
 C:/intelFPGA/16.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../fresh_beets_bsp/
@@ -58,7 +7,6 @@ Info: Compiling hello_world.c to obj/default/hello_world.o
 nios2-elf-gcc -xc -MP -MMD -c -I../fresh_beets_bsp//HAL/inc -I../fresh_beets_bsp/ -I../fresh_beets_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world.o hello_world.c
 Info: Compiling pacemaker.c to obj/default/pacemaker.o
 nios2-elf-gcc -xc -MP -MMD -c -I../fresh_beets_bsp//HAL/inc -I../fresh_beets_bsp/ -I../fresh_beets_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/pacemaker.o pacemaker.c
->>>>>>> f28317081308ffb0dd803890f285de463ab7f5eb
 Info: Linking fresh_beets.elf
 nios2-elf-g++  -T'../fresh_beets_bsp//linker.x' -msys-crt0='../fresh_beets_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../fresh_beets_bsp/   -Wl,-Map=fresh_beets.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o fresh_beets.elf obj/default/hello_world.o obj/default/pacemaker.o -lm -msys-lib=m
 nios2-elf-insert fresh_beets.elf --thread_model hal --cpu_name cpu --qsys true --simulation_enabled false --id 308784078 --sidp 0x0 --timestamp 1502336826 --stderr_dev jtag_uart --stdin_dev jtag_uart --stdout_dev jtag_uart --sopc_system_name nios2_system --quartus_project_dir "D:/303-Assignment-2/Lab___export/Prebuilt_Nios" --sopcinfo D:/303-Assignment-2/Lab___export/Prebuilt_Nios/software/fresh_beets_bsp/../../nios2_system.sopcinfo
@@ -67,48 +15,7 @@ Info:                   8098 KBytes free for stack + heap.
 Info: Creating fresh_beets.objdump
 nios2-elf-objdump --disassemble --syms --all-header --source fresh_beets.elf >fresh_beets.objdump
 [fresh_beets build complete]
-<<<<<<< HEAD
-15:05:32 **** Incremental Build of configuration Nios II for project fresh_beets ****
-=======
-12:36:41 **** Incremental Build of configuration Nios II for project fresh_beets_bsp ****
-make all 
-Command canceled
-12:37:28 **** Incremental Build of configuration Nios II for project fresh_beets ****
->>>>>>> f28317081308ffb0dd803890f285de463ab7f5eb
-make all 
-Info: Building ../fresh_beets_bsp/
-C:/intelFPGA/16.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../fresh_beets_bsp/
-[BSP build complete]
-Info: Compiling hello_world.c to obj/default/hello_world.o
-nios2-elf-gcc -xc -MP -MMD -c -I../fresh_beets_bsp//HAL/inc -I../fresh_beets_bsp/ -I../fresh_beets_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world.o hello_world.c
-Info: Linking fresh_beets.elf
-nios2-elf-g++  -T'../fresh_beets_bsp//linker.x' -msys-crt0='../fresh_beets_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../fresh_beets_bsp/   -Wl,-Map=fresh_beets.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o fresh_beets.elf obj/default/hello_world.o obj/default/pacemaker.o -lm -msys-lib=m
-nios2-elf-insert fresh_beets.elf --thread_model hal --cpu_name cpu --qsys true --simulation_enabled false --id 308784078 --sidp 0x0 --timestamp 1502336826 --stderr_dev jtag_uart --stdin_dev jtag_uart --stdout_dev jtag_uart --sopc_system_name nios2_system --quartus_project_dir "D:/303-Assignment-2/Lab___export/Prebuilt_Nios" --sopcinfo D:/303-Assignment-2/Lab___export/Prebuilt_Nios/software/fresh_beets_bsp/../../nios2_system.sopcinfo
-Info: (fresh_beets.elf) 86 KBytes program size (code + initialized data).
-Info:                   8098 KBytes free for stack + heap.
-Info: Creating fresh_beets.objdump
-nios2-elf-objdump --disassemble --syms --all-header --source fresh_beets.elf >fresh_beets.objdump
-[fresh_beets build complete]
-<<<<<<< HEAD
-15:07:00 **** Incremental Build of configuration Nios II for project fresh_beets ****
-=======
-12:37:31 **** Build of configuration Nios II for project fresh_beets_bsp ****
-make all 
-[BSP build complete]
-12:37:40 **** Build of configuration Nios II for project fresh_beets ****
-make all 
-Info: Building ../fresh_beets_bsp/
-C:/intelFPGA/16.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../fresh_beets_bsp/
-[BSP build complete]
-[fresh_beets build complete]
-12:37:42 **** Incremental Build of configuration Nios II for project fresh_beets ****
-make all 
-Info: Building ../fresh_beets_bsp/
-C:/intelFPGA/16.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../fresh_beets_bsp/
-[BSP build complete]
-[fresh_beets build complete]
-12:39:17 **** Incremental Build of configuration Nios II for project fresh_beets ****
->>>>>>> f28317081308ffb0dd803890f285de463ab7f5eb
+18:57:32 **** Incremental Build of configuration Nios II for project fresh_beets ****
 make all 
 Info: Building ../fresh_beets_bsp/
 C:/intelFPGA/16.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../fresh_beets_bsp/
@@ -123,39 +30,16 @@ Info:                   8098 KBytes free for stack + heap.
 Info: Creating fresh_beets.objdump
 nios2-elf-objdump --disassemble --syms --all-header --source fresh_beets.elf >fresh_beets.objdump
 [fresh_beets build complete]
-<<<<<<< HEAD
-15:07:38 **** Incremental Build of configuration Nios II for project fresh_beets ****
-=======
-12:39:21 **** Incremental Build of configuration Nios II for project fresh_beets_bsp ****
+18:57:35 **** Incremental Build of configuration Nios II for project fresh_beets_bsp ****
 make all 
 [BSP build complete]
-12:39:27 **** Build of configuration Nios II for project fresh_beets ****
-make all 
-Info: Building ../fresh_beets_bsp/
-C:/intelFPGA/16.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../fresh_beets_bsp/
-[BSP build complete]
-[fresh_beets build complete]
-12:39:29 **** Incremental Build of configuration Nios II for project fresh_beets ****
-make all 
-Info: Building ../fresh_beets_bsp/
-C:/intelFPGA/16.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../fresh_beets_bsp/
-[BSP build complete]
-[fresh_beets build complete]
-12:40:27 **** Incremental Build of configuration Nios II for project fresh_beets ****
->>>>>>> f28317081308ffb0dd803890f285de463ab7f5eb
+19:01:15 **** Incremental Build of configuration Nios II for project fresh_beets ****
 make all 
 Info: Building ../fresh_beets_bsp/
 C:/intelFPGA/16.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../fresh_beets_bsp/
 [BSP build complete]
 Info: Compiling hello_world.c to obj/default/hello_world.o
 nios2-elf-gcc -xc -MP -MMD -c -I../fresh_beets_bsp//HAL/inc -I../fresh_beets_bsp/ -I../fresh_beets_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world.o hello_world.c
-<<<<<<< HEAD
-=======
-hello_world.c: In function 'heartLEDs':
-hello_world.c:134:23: warning: initialization makes integer from pointer without a cast [-Wint-conversion]
-  unsigned int allON = "00000000";
-                       ^
->>>>>>> f28317081308ffb0dd803890f285de463ab7f5eb
 Info: Linking fresh_beets.elf
 nios2-elf-g++  -T'../fresh_beets_bsp//linker.x' -msys-crt0='../fresh_beets_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../fresh_beets_bsp/   -Wl,-Map=fresh_beets.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o fresh_beets.elf obj/default/hello_world.o obj/default/pacemaker.o -lm -msys-lib=m
 nios2-elf-insert fresh_beets.elf --thread_model hal --cpu_name cpu --qsys true --simulation_enabled false --id 308784078 --sidp 0x0 --timestamp 1502336826 --stderr_dev jtag_uart --stdin_dev jtag_uart --stdout_dev jtag_uart --sopc_system_name nios2_system --quartus_project_dir "D:/303-Assignment-2/Lab___export/Prebuilt_Nios" --sopcinfo D:/303-Assignment-2/Lab___export/Prebuilt_Nios/software/fresh_beets_bsp/../../nios2_system.sopcinfo
@@ -164,74 +48,46 @@ Info:                   8098 KBytes free for stack + heap.
 Info: Creating fresh_beets.objdump
 nios2-elf-objdump --disassemble --syms --all-header --source fresh_beets.elf >fresh_beets.objdump
 [fresh_beets build complete]
-<<<<<<< HEAD
-15:10:47 **** Incremental Build of configuration Nios II for project fresh_beets ****
-=======
-12:40:31 **** Incremental Build of configuration Nios II for project fresh_beets_bsp ****
+19:01:19 **** Incremental Build of configuration Nios II for project fresh_beets_bsp ****
 make all 
 [BSP build complete]
-12:40:36 **** Build of configuration Nios II for project fresh_beets ****
->>>>>>> f28317081308ffb0dd803890f285de463ab7f5eb
-make all 
-Info: Building ../fresh_beets_bsp/
-C:/intelFPGA/16.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../fresh_beets_bsp/
-[BSP build complete]
-<<<<<<< HEAD
-Info: Compiling hello_world.c to obj/default/hello_world.o
-nios2-elf-gcc -xc -MP -MMD -c -I../fresh_beets_bsp//HAL/inc -I../fresh_beets_bsp/ -I../fresh_beets_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world.o hello_world.c
-=======
-[fresh_beets build complete]
-12:40:38 **** Incremental Build of configuration Nios II for project fresh_beets ****
-make all 
-Info: Building ../fresh_beets_bsp/
-C:/intelFPGA/16.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../fresh_beets_bsp/
-[BSP build complete]
-[fresh_beets build complete]
-12:45:46 **** Incremental Build of configuration Nios II for project fresh_beets ****
+19:10:40 **** Build of configuration Nios II for project fresh_beets ****
 make all 
 Info: Building ../fresh_beets_bsp/
 C:/intelFPGA/16.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../fresh_beets_bsp/
 [BSP build complete]
 Info: Compiling hello_world.c to obj/default/hello_world.o
 nios2-elf-gcc -xc -MP -MMD -c -I../fresh_beets_bsp//HAL/inc -I../fresh_beets_bsp/ -I../fresh_beets_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world.o hello_world.c
-hello_world.c: In function 'heartLEDs':
-hello_world.c:134:23: warning: initialization makes integer from pointer without a cast [-Wint-conversion]
-  unsigned int allON = "00001111";
-                       ^
-In file included from ../fresh_beets_bsp//drivers/inc/altera_avalon_pio_regs.h:34:0,
-                 from hello_world.c:19:
-hello_world.c:137:30: error: 'LED_GREEN_BASE' undeclared (first use in this function)
-  IOWR_ALTERA_AVALON_PIO_DATA(LED_GREEN_BASE, LEDbits);
-                              ^
-../fresh_beets_bsp//HAL/inc/io.h:70:23: note: in definition of macro '__IO_CALC_ADDRESS_NATIVE'
-   ((void *)(((alt_u8*)BASE) + ((REGNUM) * (SYSTEM_BUS_WIDTH/8))))
-                       ^
-../fresh_beets_bsp//drivers/inc/altera_avalon_pio_regs.h:38:55: note: in expansion of macro 'IOWR'
- #define IOWR_ALTERA_AVALON_PIO_DATA(base, data)       IOWR(base, 0, data)
-                                                       ^
-hello_world.c:137:2: note: in expansion of macro 'IOWR_ALTERA_AVALON_PIO_DATA'
-  IOWR_ALTERA_AVALON_PIO_DATA(LED_GREEN_BASE, LEDbits);
-  ^
-hello_world.c:137:30: note: each undeclared identifier is reported only once for each function it appears in
-  IOWR_ALTERA_AVALON_PIO_DATA(LED_GREEN_BASE, LEDbits);
-                              ^
-../fresh_beets_bsp//HAL/inc/io.h:70:23: note: in definition of macro '__IO_CALC_ADDRESS_NATIVE'
-   ((void *)(((alt_u8*)BASE) + ((REGNUM) * (SYSTEM_BUS_WIDTH/8))))
-                       ^
-../fresh_beets_bsp//drivers/inc/altera_avalon_pio_regs.h:38:55: note: in expansion of macro 'IOWR'
- #define IOWR_ALTERA_AVALON_PIO_DATA(base, data)       IOWR(base, 0, data)
-                                                       ^
-hello_world.c:137:2: note: in expansion of macro 'IOWR_ALTERA_AVALON_PIO_DATA'
-  IOWR_ALTERA_AVALON_PIO_DATA(LED_GREEN_BASE, LEDbits);
-  ^
-make: *** [obj/default/hello_world.o] Error 1
-12:45:48 **** Incremental Build of configuration Nios II for project fresh_beets_bsp ****
+Info: Linking fresh_beets.elf
+nios2-elf-g++  -T'../fresh_beets_bsp//linker.x' -msys-crt0='../fresh_beets_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../fresh_beets_bsp/   -Wl,-Map=fresh_beets.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o fresh_beets.elf obj/default/hello_world.o obj/default/pacemaker.o -lm -msys-lib=m
+nios2-elf-insert fresh_beets.elf --thread_model hal --cpu_name cpu --qsys true --simulation_enabled false --id 308784078 --sidp 0x0 --timestamp 1502336826 --stderr_dev jtag_uart --stdin_dev jtag_uart --stdout_dev jtag_uart --sopc_system_name nios2_system --quartus_project_dir "D:/303-Assignment-2/Lab___export/Prebuilt_Nios" --sopcinfo D:/303-Assignment-2/Lab___export/Prebuilt_Nios/software/fresh_beets_bsp/../../nios2_system.sopcinfo
+Info: (fresh_beets.elf) 86 KBytes program size (code + initialized data).
+Info:                   8098 KBytes free for stack + heap.
+Info: Creating fresh_beets.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source fresh_beets.elf >fresh_beets.objdump
+[fresh_beets build complete]
+19:10:44 **** Build of configuration Nios II for project fresh_beets_bsp ****
 make all 
 [BSP build complete]
-12:45:52 **** Incremental Build of configuration Nios II for project fresh_beets ****
+19:13:35 **** Build of configuration Nios II for project fresh_beets ****
 make all 
 Info: Building ../fresh_beets_bsp/
 C:/intelFPGA/16.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../fresh_beets_bsp/
+[BSP build complete]
+[fresh_beets build complete]
+19:13:36 **** Build of configuration Nios II for project fresh_beets_bsp ****
+make all 
+[BSP build complete]
+19:15:19 **** Clean-only build of configuration Nios II for project heart_beets_bsp ****
+make clean 
+[BSP clean complete]
+19:15:22 **** Clean-only build of configuration Nios II for project heart_beets ****
+make clean 
+[heart_beets clean complete]
+19:17:53 **** Build of configuration Nios II for project heart_beets ****
+make all 
+Info: Building ../heart_beets_bsp/
+C:/intelFPGA/16.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../heart_beets_bsp/
 Compiling alt_alarm_start.c...
 nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_alarm_start.o HAL/src/alt_alarm_start.c
 Compiling alt_busy_sleep.c...
@@ -246,14 +102,34 @@ Compiling alt_dcache_flush_no_writeback.c...
 nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_dcache_flush_no_writeback.o HAL/src/alt_dcache_flush_no_writeback.c
 Compiling alt_dev.c...
 nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_dev.o HAL/src/alt_dev.c
+Compiling alt_dev_llist_insert.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_dev_llist_insert.o HAL/src/alt_dev_llist_insert.c
 Compiling alt_dma_rxchan_open.c...
 nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_dma_rxchan_open.o HAL/src/alt_dma_rxchan_open.c
 Compiling alt_dma_txchan_open.c...
 nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_dma_txchan_open.o HAL/src/alt_dma_txchan_open.c
+Compiling alt_do_ctors.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_do_ctors.o HAL/src/alt_do_ctors.c
+Compiling alt_do_dtors.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_do_dtors.o HAL/src/alt_do_dtors.c
+Compiling alt_ecc_fatal_entry.S...
+nios2-elf-gcc -MP -MMD -c   -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global    -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED  -Wa,-gdwarf2  -o obj/HAL/src/alt_ecc_fatal_entry.o HAL/src/alt_ecc_fatal_entry.S
 Compiling alt_ecc_fatal_exception.c...
 nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_ecc_fatal_exception.o HAL/src/alt_ecc_fatal_exception.c
+Compiling alt_env_lock.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_env_lock.o HAL/src/alt_env_lock.c
+Compiling alt_environ.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_environ.o HAL/src/alt_environ.c
+Compiling alt_errno.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_errno.o HAL/src/alt_errno.c
 Compiling alt_exception_entry.S...
 nios2-elf-gcc -MP -MMD -c   -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global    -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED  -Wa,-gdwarf2  -o obj/HAL/src/alt_exception_entry.o HAL/src/alt_exception_entry.S
+Compiling alt_exception_muldiv.S...
+nios2-elf-gcc -MP -MMD -c   -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global    -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED  -Wa,-gdwarf2  -o obj/HAL/src/alt_exception_muldiv.o HAL/src/alt_exception_muldiv.S
+Compiling alt_exception_trap.S...
+nios2-elf-gcc -MP -MMD -c   -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global    -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED  -Wa,-gdwarf2  -o obj/HAL/src/alt_exception_trap.o HAL/src/alt_exception_trap.S
+Compiling alt_execve.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_execve.o HAL/src/alt_execve.c
 Compiling alt_exit.c...
 nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_exit.o HAL/src/alt_exit.c
 Compiling alt_fcntl.c...
@@ -268,12 +144,20 @@ Compiling alt_find_file.c...
 nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_find_file.o HAL/src/alt_find_file.c
 Compiling alt_flash_dev.c...
 nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_flash_dev.o HAL/src/alt_flash_dev.c
+Compiling alt_fork.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_fork.o HAL/src/alt_fork.c
 Compiling alt_fs_reg.c...
 nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_fs_reg.o HAL/src/alt_fs_reg.c
 Compiling alt_fstat.c...
 nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_fstat.o HAL/src/alt_fstat.c
 Compiling alt_get_fd.c...
 nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_get_fd.o HAL/src/alt_get_fd.c
+Compiling alt_getchar.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_getchar.o HAL/src/alt_getchar.c
+Compiling alt_getpid.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_getpid.o HAL/src/alt_getpid.c
+Compiling alt_gettod.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_gettod.o HAL/src/alt_gettod.c
 Compiling alt_gmon.c...
 nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_gmon.o HAL/src/alt_gmon.c
 Compiling alt_icache_flush.c...
@@ -302,12 +186,34 @@ Compiling alt_irq_vars.c...
 nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_irq_vars.o HAL/src/alt_irq_vars.c
 Compiling alt_isatty.c...
 nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_isatty.o HAL/src/alt_isatty.c
+Compiling alt_kill.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_kill.o HAL/src/alt_kill.c
+Compiling alt_link.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_link.o HAL/src/alt_link.c
+Compiling alt_load.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_load.o HAL/src/alt_load.c
+Compiling alt_log_macro.S...
+nios2-elf-gcc -MP -MMD -c   -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global    -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED  -Wa,-gdwarf2  -o obj/HAL/src/alt_log_macro.o HAL/src/alt_log_macro.S
+Compiling alt_log_printf.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_log_printf.o HAL/src/alt_log_printf.c
 Compiling alt_lseek.c...
 nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_lseek.o HAL/src/alt_lseek.c
 Compiling alt_main.c...
 nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_main.o HAL/src/alt_main.c
+Compiling alt_malloc_lock.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_malloc_lock.o HAL/src/alt_malloc_lock.c
+Compiling alt_mcount.S...
+nios2-elf-gcc -MP -MMD -c   -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global    -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED  -Wa,-gdwarf2  -o obj/HAL/src/alt_mcount.o HAL/src/alt_mcount.S
 Compiling alt_open.c...
 nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_open.o HAL/src/alt_open.c
+Compiling alt_printf.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_printf.o HAL/src/alt_printf.c
+Compiling alt_putchar.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_putchar.o HAL/src/alt_putchar.c
+Compiling alt_putcharbuf.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_putcharbuf.o HAL/src/alt_putcharbuf.c
+Compiling alt_putstr.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_putstr.o HAL/src/alt_putstr.c
 Compiling alt_read.c...
 nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_read.o HAL/src/alt_read.c
 Compiling alt_release_fd.c...
@@ -316,349 +222,30 @@ Compiling alt_remap_cached.c...
 nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_remap_cached.o HAL/src/alt_remap_cached.c
 Compiling alt_remap_uncached.c...
 nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_remap_uncached.o HAL/src/alt_remap_uncached.c
+Compiling alt_rename.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_rename.o HAL/src/alt_rename.c
 Compiling alt_sbrk.c...
 nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_sbrk.o HAL/src/alt_sbrk.c
+Compiling alt_settod.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_settod.o HAL/src/alt_settod.c
 Compiling alt_software_exception.S...
 nios2-elf-gcc -MP -MMD -c   -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global    -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED  -Wa,-gdwarf2  -o obj/HAL/src/alt_software_exception.o HAL/src/alt_software_exception.S
+Compiling alt_stat.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_stat.o HAL/src/alt_stat.c
 Compiling alt_tick.c...
 nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_tick.o HAL/src/alt_tick.c
+Compiling alt_times.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_times.o HAL/src/alt_times.c
 Compiling alt_uncached_free.c...
 nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_uncached_free.o HAL/src/alt_uncached_free.c
 Compiling alt_uncached_malloc.c...
 nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_uncached_malloc.o HAL/src/alt_uncached_malloc.c
-Compiling alt_write.c...
-nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_write.o HAL/src/alt_write.c
-Compiling altera_nios2_gen2_irq.c...
-nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/altera_nios2_gen2_irq.o HAL/src/altera_nios2_gen2_irq.c
-Compiling crt0.S...
-nios2-elf-gcc -MP -MMD -c   -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global    -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED  -Wa,-gdwarf2  -o obj/HAL/src/crt0.o HAL/src/crt0.S
-Compiling alt_sys_init.c...
-nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global   -o obj/alt_sys_init.o alt_sys_init.c
-In file included from alt_sys_init.c:65:0:
-alt_sys_init.c: In function 'alt_sys_init':
-alt_sys_init.c:101:32: error: 'TIMER1_BASE' undeclared (first use in this function)
-     ALTERA_AVALON_TIMER_INIT ( TIMER1, timer1);
-                                ^
-./drivers/inc/altera_avalon_timer.h:149:7: note: in definition of macro 'ALTERA_AVALON_TIMER_INIT'
-   if (name##_BASE == ALT_SYS_CLK_BASE)                                        \
-       ^
-alt_sys_init.c:101:32: note: each undeclared identifier is reported only once for each function it appears in
-     ALTERA_AVALON_TIMER_INIT ( TIMER1, timer1);
-                                ^
-./drivers/inc/altera_avalon_timer.h:149:7: note: in definition of macro 'ALTERA_AVALON_TIMER_INIT'
-   if (name##_BASE == ALT_SYS_CLK_BASE)                                        \
-       ^
-alt_sys_init.c:101:32: error: 'TIMER1_IRQ' undeclared (first use in this function)
-     ALTERA_AVALON_TIMER_INIT ( TIMER1, timer1);
-                                ^
-./drivers/inc/altera_avalon_timer.h:151:9: note: in definition of macro 'ALTERA_AVALON_TIMER_INIT'
-     if (name##_IRQ == ALT_IRQ_NOT_CONNECTED)                                  \
-         ^
-alt_sys_init.c:101:32: error: 'TIMER1_IRQ_INTERRUPT_CONTROLLER_ID' undeclared (first use in this function)
-     ALTERA_AVALON_TIMER_INIT ( TIMER1, timer1);
-                                ^
-./drivers/inc/altera_avalon_timer.h:161:32: note: in definition of macro 'ALTERA_AVALON_TIMER_INIT'
-                                name##_IRQ_INTERRUPT_CONTROLLER_ID,            \
-                                ^
-alt_sys_init.c:101:32: error: 'TIMER1_PERIOD_UNITS' undeclared (first use in this function)
-     ALTERA_AVALON_TIMER_INIT ( TIMER1, timer1);
-                                ^
-./drivers/inc/altera_avalon_timer.h:98:11: note: in definition of macro 'ALTERA_AVALON_TIMER_FREQ'
-   strcmp (units, "us") ?                              \
-           ^
-alt_sys_init.c:101:5: note: in expansion of macro 'ALTERA_AVALON_TIMER_INIT'
-     ALTERA_AVALON_TIMER_INIT ( TIMER1, timer1);
-     ^
-alt_sys_init.c:101:32: error: 'TIMER1_FREQ' undeclared (first use in this function)
-     ALTERA_AVALON_TIMER_INIT ( TIMER1, timer1);
-                                ^
-./drivers/inc/altera_avalon_timer.h:163:32: note: in expansion of macro 'ALTERA_AVALON_TIMER_FREQ'
-                                ALTERA_AVALON_TIMER_FREQ(name##_FREQ,          \
-                                ^
-alt_sys_init.c:101:5: note: in expansion of macro 'ALTERA_AVALON_TIMER_INIT'
-     ALTERA_AVALON_TIMER_INIT ( TIMER1, timer1);
-     ^
-alt_sys_init.c:101:32: error: 'TIMER1_PERIOD' undeclared (first use in this function)
-     ALTERA_AVALON_TIMER_INIT ( TIMER1, timer1);
-                                ^
-./drivers/inc/altera_avalon_timer.h:163:32: note: in expansion of macro 'ALTERA_AVALON_TIMER_FREQ'
-                                ALTERA_AVALON_TIMER_FREQ(name##_FREQ,          \
-                                ^
-alt_sys_init.c:101:5: note: in expansion of macro 'ALTERA_AVALON_TIMER_INIT'
-     ALTERA_AVALON_TIMER_INIT ( TIMER1, timer1);
-     ^
-alt_sys_init.c:101:32: error: 'TIMER1_SNAPSHOT' undeclared (first use in this function)
-     ALTERA_AVALON_TIMER_INIT ( TIMER1, timer1);
-                                ^
-./drivers/inc/altera_avalon_timer.h:170:9: note: in definition of macro 'ALTERA_AVALON_TIMER_INIT'
-     if (name##_SNAPSHOT)                                                      \
-         ^
-alt_sys_init.c:102:32: error: 'TIMER2_BASE' undeclared (first use in this function)
-     ALTERA_AVALON_TIMER_INIT ( TIMER2, timer2);
-                                ^
-./drivers/inc/altera_avalon_timer.h:149:7: note: in definition of macro 'ALTERA_AVALON_TIMER_INIT'
-   if (name##_BASE == ALT_SYS_CLK_BASE)                                        \
-       ^
-alt_sys_init.c:102:32: error: 'TIMER2_IRQ' undeclared (first use in this function)
-     ALTERA_AVALON_TIMER_INIT ( TIMER2, timer2);
-                                ^
-./drivers/inc/altera_avalon_timer.h:151:9: note: in definition of macro 'ALTERA_AVALON_TIMER_INIT'
-     if (name##_IRQ == ALT_IRQ_NOT_CONNECTED)                                  \
-         ^
-alt_sys_init.c:102:32: error: 'TIMER2_IRQ_INTERRUPT_CONTROLLER_ID' undeclared (first use in this function)
-     ALTERA_AVALON_TIMER_INIT ( TIMER2, timer2);
-                                ^
-./drivers/inc/altera_avalon_timer.h:161:32: note: in definition of macro 'ALTERA_AVALON_TIMER_INIT'
-                                name##_IRQ_INTERRUPT_CONTROLLER_ID,            \
-                                ^
-alt_sys_init.c:102:32: error: 'TIMER2_PERIOD_UNITS' undeclared (first use in this function)
-     ALTERA_AVALON_TIMER_INIT ( TIMER2, timer2);
-                                ^
-./drivers/inc/altera_avalon_timer.h:98:11: note: in definition of macro 'ALTERA_AVALON_TIMER_FREQ'
-   strcmp (units, "us") ?                              \
-           ^
-alt_sys_init.c:102:5: note: in expansion of macro 'ALTERA_AVALON_TIMER_INIT'
-     ALTERA_AVALON_TIMER_INIT ( TIMER2, timer2);
-     ^
-alt_sys_init.c:102:32: error: 'TIMER2_FREQ' undeclared (first use in this function)
-     ALTERA_AVALON_TIMER_INIT ( TIMER2, timer2);
-                                ^
-./drivers/inc/altera_avalon_timer.h:101:11: note: in definition of macro 'ALTERA_AVALON_TIMER_FREQ'
-         ((freq + (period - 1))/period)                \
-           ^
-alt_sys_init.c:102:5: note: in expansion of macro 'ALTERA_AVALON_TIMER_INIT'
-     ALTERA_AVALON_TIMER_INIT ( TIMER2, timer2);
-     ^
-alt_sys_init.c:102:32: error: 'TIMER2_PERIOD' undeclared (first use in this function)
-     ALTERA_AVALON_TIMER_INIT ( TIMER2, timer2);
-                                ^
-./drivers/inc/altera_avalon_timer.h:101:19: note: in definition of macro 'ALTERA_AVALON_TIMER_FREQ'
-         ((freq + (period - 1))/period)                \
-                   ^
-alt_sys_init.c:102:5: note: in expansion of macro 'ALTERA_AVALON_TIMER_INIT'
-     ALTERA_AVALON_TIMER_INIT ( TIMER2, timer2);
-     ^
-alt_sys_init.c:102:32: error: 'TIMER2_SNAPSHOT' undeclared (first use in this function)
-     ALTERA_AVALON_TIMER_INIT ( TIMER2, timer2);
-                                ^
-./drivers/inc/altera_avalon_timer.h:170:9: note: in definition of macro 'ALTERA_AVALON_TIMER_INIT'
-     if (name##_SNAPSHOT)                                                      \
-         ^
-make[1]: *** [obj/alt_sys_init.o] Error 1
-make: *** [../fresh_beets_bsp/-recurs-make-lib] Error 2
-12:46:02 **** Incremental Build of configuration Nios II for project fresh_beets_bsp ****
-make all 
-Compiling alt_sys_init.c...
-nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global   -o obj/alt_sys_init.o alt_sys_init.c
-In file included from alt_sys_init.c:65:0:
-alt_sys_init.c: In function 'alt_sys_init':
-alt_sys_init.c:101:32: error: 'TIMER1_BASE' undeclared (first use in this function)
-     ALTERA_AVALON_TIMER_INIT ( TIMER1, timer1);
-                                ^
-./drivers/inc/altera_avalon_timer.h:149:7: note: in definition of macro 'ALTERA_AVALON_TIMER_INIT'
-   if (name##_BASE == ALT_SYS_CLK_BASE)                                        \
-       ^
-alt_sys_init.c:101:32: note: each undeclared identifier is reported only once for each function it appears in
-     ALTERA_AVALON_TIMER_INIT ( TIMER1, timer1);
-                                ^
-./drivers/inc/altera_avalon_timer.h:149:7: note: in definition of macro 'ALTERA_AVALON_TIMER_INIT'
-   if (name##_BASE == ALT_SYS_CLK_BASE)                                        \
-       ^
-alt_sys_init.c:101:32: error: 'TIMER1_IRQ' undeclared (first use in this function)
-     ALTERA_AVALON_TIMER_INIT ( TIMER1, timer1);
-                                ^
-./drivers/inc/altera_avalon_timer.h:151:9: note: in definition of macro 'ALTERA_AVALON_TIMER_INIT'
-     if (name##_IRQ == ALT_IRQ_NOT_CONNECTED)                                  \
-         ^
-alt_sys_init.c:101:32: error: 'TIMER1_IRQ_INTERRUPT_CONTROLLER_ID' undeclared (first use in this function)
-     ALTERA_AVALON_TIMER_INIT ( TIMER1, timer1);
-                                ^
-./drivers/inc/altera_avalon_timer.h:161:32: note: in definition of macro 'ALTERA_AVALON_TIMER_INIT'
-                                name##_IRQ_INTERRUPT_CONTROLLER_ID,            \
-                                ^
-alt_sys_init.c:101:32: error: 'TIMER1_PERIOD_UNITS' undeclared (first use in this function)
-     ALTERA_AVALON_TIMER_INIT ( TIMER1, timer1);
-                                ^
-./drivers/inc/altera_avalon_timer.h:98:11: note: in definition of macro 'ALTERA_AVALON_TIMER_FREQ'
-   strcmp (units, "us") ?                              \
-           ^
-alt_sys_init.c:101:5: note: in expansion of macro 'ALTERA_AVALON_TIMER_INIT'
-     ALTERA_AVALON_TIMER_INIT ( TIMER1, timer1);
-     ^
-alt_sys_init.c:101:32: error: 'TIMER1_FREQ' undeclared (first use in this function)
-     ALTERA_AVALON_TIMER_INIT ( TIMER1, timer1);
-                                ^
-./drivers/inc/altera_avalon_timer.h:163:32: note: in expansion of macro 'ALTERA_AVALON_TIMER_FREQ'
-                                ALTERA_AVALON_TIMER_FREQ(name##_FREQ,          \
-                                ^
-alt_sys_init.c:101:5: note: in expansion of macro 'ALTERA_AVALON_TIMER_INIT'
-     ALTERA_AVALON_TIMER_INIT ( TIMER1, timer1);
-     ^
-alt_sys_init.c:101:32: error: 'TIMER1_PERIOD' undeclared (first use in this function)
-     ALTERA_AVALON_TIMER_INIT ( TIMER1, timer1);
-                                ^
-./drivers/inc/altera_avalon_timer.h:163:32: note: in expansion of macro 'ALTERA_AVALON_TIMER_FREQ'
-                                ALTERA_AVALON_TIMER_FREQ(name##_FREQ,          \
-                                ^
-alt_sys_init.c:101:5: note: in expansion of macro 'ALTERA_AVALON_TIMER_INIT'
-     ALTERA_AVALON_TIMER_INIT ( TIMER1, timer1);
-     ^
-alt_sys_init.c:101:32: error: 'TIMER1_SNAPSHOT' undeclared (first use in this function)
-     ALTERA_AVALON_TIMER_INIT ( TIMER1, timer1);
-                                ^
-./drivers/inc/altera_avalon_timer.h:170:9: note: in definition of macro 'ALTERA_AVALON_TIMER_INIT'
-     if (name##_SNAPSHOT)                                                      \
-         ^
-alt_sys_init.c:102:32: error: 'TIMER2_BASE' undeclared (first use in this function)
-     ALTERA_AVALON_TIMER_INIT ( TIMER2, timer2);
-                                ^
-./drivers/inc/altera_avalon_timer.h:149:7: note: in definition of macro 'ALTERA_AVALON_TIMER_INIT'
-   if (name##_BASE == ALT_SYS_CLK_BASE)                                        \
-       ^
-alt_sys_init.c:102:32: error: 'TIMER2_IRQ' undeclared (first use in this function)
-     ALTERA_AVALON_TIMER_INIT ( TIMER2, timer2);
-                                ^
-./drivers/inc/altera_avalon_timer.h:151:9: note: in definition of macro 'ALTERA_AVALON_TIMER_INIT'
-     if (name##_IRQ == ALT_IRQ_NOT_CONNECTED)                                  \
-         ^
-alt_sys_init.c:102:32: error: 'TIMER2_IRQ_INTERRUPT_CONTROLLER_ID' undeclared (first use in this function)
-     ALTERA_AVALON_TIMER_INIT ( TIMER2, timer2);
-                                ^
-./drivers/inc/altera_avalon_timer.h:161:32: note: in definition of macro 'ALTERA_AVALON_TIMER_INIT'
-                                name##_IRQ_INTERRUPT_CONTROLLER_ID,            \
-                                ^
-alt_sys_init.c:102:32: error: 'TIMER2_PERIOD_UNITS' undeclared (first use in this function)
-     ALTERA_AVALON_TIMER_INIT ( TIMER2, timer2);
-                                ^
-./drivers/inc/altera_avalon_timer.h:98:11: note: in definition of macro 'ALTERA_AVALON_TIMER_FREQ'
-   strcmp (units, "us") ?                              \
-           ^
-alt_sys_init.c:102:5: note: in expansion of macro 'ALTERA_AVALON_TIMER_INIT'
-     ALTERA_AVALON_TIMER_INIT ( TIMER2, timer2);
-     ^
-alt_sys_init.c:102:32: error: 'TIMER2_FREQ' undeclared (first use in this function)
-     ALTERA_AVALON_TIMER_INIT ( TIMER2, timer2);
-                                ^
-./drivers/inc/altera_avalon_timer.h:101:11: note: in definition of macro 'ALTERA_AVALON_TIMER_FREQ'
-         ((freq + (period - 1))/period)                \
-           ^
-alt_sys_init.c:102:5: note: in expansion of macro 'ALTERA_AVALON_TIMER_INIT'
-     ALTERA_AVALON_TIMER_INIT ( TIMER2, timer2);
-     ^
-alt_sys_init.c:102:32: error: 'TIMER2_PERIOD' undeclared (first use in this function)
-     ALTERA_AVALON_TIMER_INIT ( TIMER2, timer2);
-                                ^
-./drivers/inc/altera_avalon_timer.h:101:19: note: in definition of macro 'ALTERA_AVALON_TIMER_FREQ'
-         ((freq + (period - 1))/period)                \
-                   ^
-alt_sys_init.c:102:5: note: in expansion of macro 'ALTERA_AVALON_TIMER_INIT'
-     ALTERA_AVALON_TIMER_INIT ( TIMER2, timer2);
-     ^
-alt_sys_init.c:102:32: error: 'TIMER2_SNAPSHOT' undeclared (first use in this function)
-     ALTERA_AVALON_TIMER_INIT ( TIMER2, timer2);
-                                ^
-./drivers/inc/altera_avalon_timer.h:170:9: note: in definition of macro 'ALTERA_AVALON_TIMER_INIT'
-     if (name##_SNAPSHOT)                                                      \
-         ^
-make: *** [obj/alt_sys_init.o] Error 1
-13:23:51 **** Incremental Build of configuration Nios II for project fresh_beets ****
-make all 
-Info: Building ../fresh_beets_bsp/
-C:/intelFPGA/16.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../fresh_beets_bsp/
-Compiling alt_alarm_start.c...
-nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_alarm_start.o HAL/src/alt_alarm_start.c
-Compiling alt_busy_sleep.c...
-nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_busy_sleep.o HAL/src/alt_busy_sleep.c
-Compiling alt_close.c...
-nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_close.o HAL/src/alt_close.c
-Compiling alt_dcache_flush.c...
-nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_dcache_flush.o HAL/src/alt_dcache_flush.c
-Compiling alt_dcache_flush_all.c...
-nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_dcache_flush_all.o HAL/src/alt_dcache_flush_all.c
-Compiling alt_dcache_flush_no_writeback.c...
-nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_dcache_flush_no_writeback.o HAL/src/alt_dcache_flush_no_writeback.c
-Compiling alt_dev.c...
-nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_dev.o HAL/src/alt_dev.c
-Compiling alt_dma_rxchan_open.c...
-nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_dma_rxchan_open.o HAL/src/alt_dma_rxchan_open.c
-Compiling alt_dma_txchan_open.c...
-nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_dma_txchan_open.o HAL/src/alt_dma_txchan_open.c
-Compiling alt_ecc_fatal_exception.c...
-nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_ecc_fatal_exception.o HAL/src/alt_ecc_fatal_exception.c
-Compiling alt_exception_entry.S...
-nios2-elf-gcc -MP -MMD -c   -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global    -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED  -Wa,-gdwarf2  -o obj/HAL/src/alt_exception_entry.o HAL/src/alt_exception_entry.S
-Compiling alt_exit.c...
-nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_exit.o HAL/src/alt_exit.c
-Compiling alt_fcntl.c...
-nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_fcntl.o HAL/src/alt_fcntl.c
-Compiling alt_fd_lock.c...
-nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_fd_lock.o HAL/src/alt_fd_lock.c
-Compiling alt_fd_unlock.c...
-nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_fd_unlock.o HAL/src/alt_fd_unlock.c
-Compiling alt_find_dev.c...
-nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_find_dev.o HAL/src/alt_find_dev.c
-Compiling alt_find_file.c...
-nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_find_file.o HAL/src/alt_find_file.c
-Compiling alt_flash_dev.c...
-nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_flash_dev.o HAL/src/alt_flash_dev.c
-Compiling alt_fs_reg.c...
-nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_fs_reg.o HAL/src/alt_fs_reg.c
-Compiling alt_fstat.c...
-nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_fstat.o HAL/src/alt_fstat.c
-Compiling alt_get_fd.c...
-nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_get_fd.o HAL/src/alt_get_fd.c
-Compiling alt_gmon.c...
-nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_gmon.o HAL/src/alt_gmon.c
-Compiling alt_icache_flush.c...
-nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_icache_flush.o HAL/src/alt_icache_flush.c
-Compiling alt_icache_flush_all.c...
-nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_icache_flush_all.o HAL/src/alt_icache_flush_all.c
-Compiling alt_iic.c...
-nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_iic.o HAL/src/alt_iic.c
-Compiling alt_iic_isr_register.c...
-nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_iic_isr_register.o HAL/src/alt_iic_isr_register.c
-Compiling alt_instruction_exception_entry.c...
-nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_instruction_exception_entry.o HAL/src/alt_instruction_exception_entry.c
-Compiling alt_instruction_exception_register.c...
-nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_instruction_exception_register.o HAL/src/alt_instruction_exception_register.c
-Compiling alt_io_redirect.c...
-nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_io_redirect.o HAL/src/alt_io_redirect.c
-Compiling alt_ioctl.c...
-nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_ioctl.o HAL/src/alt_ioctl.c
-Compiling alt_irq_entry.S...
-nios2-elf-gcc -MP -MMD -c   -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global    -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED  -Wa,-gdwarf2  -o obj/HAL/src/alt_irq_entry.o HAL/src/alt_irq_entry.S
-Compiling alt_irq_handler.c...
-nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_irq_handler.o HAL/src/alt_irq_handler.c
-Compiling alt_irq_register.c...
-nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_irq_register.o HAL/src/alt_irq_register.c
-Compiling alt_irq_vars.c...
-nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_irq_vars.o HAL/src/alt_irq_vars.c
-Compiling alt_isatty.c...
-nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_isatty.o HAL/src/alt_isatty.c
-Compiling alt_lseek.c...
-nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_lseek.o HAL/src/alt_lseek.c
-Compiling alt_main.c...
-nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_main.o HAL/src/alt_main.c
-Compiling alt_open.c...
-nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_open.o HAL/src/alt_open.c
-Compiling alt_read.c...
-nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_read.o HAL/src/alt_read.c
-Compiling alt_release_fd.c...
-nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_release_fd.o HAL/src/alt_release_fd.c
-Compiling alt_remap_cached.c...
-nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_remap_cached.o HAL/src/alt_remap_cached.c
-Compiling alt_remap_uncached.c...
-nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_remap_uncached.o HAL/src/alt_remap_uncached.c
-Compiling alt_sbrk.c...
-nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_sbrk.o HAL/src/alt_sbrk.c
-Compiling alt_software_exception.S...
-nios2-elf-gcc -MP -MMD -c   -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global    -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED  -Wa,-gdwarf2  -o obj/HAL/src/alt_software_exception.o HAL/src/alt_software_exception.S
-Compiling alt_tick.c...
-nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_tick.o HAL/src/alt_tick.c
-Compiling alt_uncached_free.c...
-nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_uncached_free.o HAL/src/alt_uncached_free.c
-Compiling alt_uncached_malloc.c...
-nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_uncached_malloc.o HAL/src/alt_uncached_malloc.c
+Compiling alt_unlink.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_unlink.o HAL/src/alt_unlink.c
+Compiling alt_usleep.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_usleep.o HAL/src/alt_usleep.c
+Compiling alt_wait.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_wait.o HAL/src/alt_wait.c
 Compiling alt_write.c...
 nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_write.o HAL/src/alt_write.c
 Compiling altera_nios2_gen2_irq.c...
@@ -704,362 +291,281 @@ rm -f -f libhal_bsp.a
 nios2-elf-ar -src libhal_bsp.a obj/HAL/src/alt_alarm_start.o obj/HAL/src/alt_busy_sleep.o obj/HAL/src/alt_close.o obj/HAL/src/alt_dcache_flush.o obj/HAL/src/alt_dcache_flush_all.o obj/HAL/src/alt_dcache_flush_no_writeback.o obj/HAL/src/alt_dev.o obj/HAL/src/alt_dev_llist_insert.o obj/HAL/src/alt_dma_rxchan_open.o obj/HAL/src/alt_dma_txchan_open.o obj/HAL/src/alt_do_ctors.o obj/HAL/src/alt_do_dtors.o obj/HAL/src/alt_ecc_fatal_entry.o obj/HAL/src/alt_ecc_fatal_exception.o obj/HAL/src/alt_env_lock.o obj/HAL/src/alt_environ.o obj/HAL/src/alt_errno.o obj/HAL/src/alt_exception_entry.o obj/HAL/src/alt_exception_muldiv.o obj/HAL/src/alt_exception_trap.o obj/HAL/src/alt_execve.o obj/HAL/src/alt_exit.o obj/HAL/src/alt_fcntl.o obj/HAL/src/alt_fd_lock.o obj/HAL/src/alt_fd_unlock.o obj/HAL/src/alt_find_dev.o obj/HAL/src/alt_find_file.o obj/HAL/src/alt_flash_dev.o obj/HAL/src/alt_fork.o obj/HAL/src/alt_fs_reg.o obj/HAL/src/alt_fstat.o obj/HAL/src/alt_get_fd.o obj/HAL/src/alt_getchar.o obj/HAL/src/alt_getpid.o obj/HAL/src/alt_gettod.o obj/HAL/src/alt_gmon.o obj/HAL/src/alt_icache_flush.o obj/HAL/src/alt_icache_flush_all.o obj/HAL/src/alt_iic.o obj/HAL/src/alt_iic_isr_register.o obj/HAL/src/alt_instruction_exception_entry.o obj/HAL/src/alt_instruction_exception_register.o obj/HAL/src/alt_io_redirect.o obj/HAL/src/alt_ioctl.o obj/HAL/src/alt_irq_entry.o obj/HAL/src/alt_irq_handler.o obj/HAL/src/alt_irq_register.o obj/HAL/src/alt_irq_vars.o obj/HAL/src/alt_isatty.o obj/HAL/src/alt_kill.o obj/HAL/src/alt_link.o obj/HAL/src/alt_load.o obj/HAL/src/alt_log_macro.o obj/HAL/src/alt_log_printf.o obj/HAL/src/alt_lseek.o obj/HAL/src/alt_main.o obj/HAL/src/alt_malloc_lock.o obj/HAL/src/alt_mcount.o obj/HAL/src/alt_open.o obj/HAL/src/alt_printf.o obj/HAL/src/alt_putchar.o obj/HAL/src/alt_putcharbuf.o obj/HAL/src/alt_putstr.o obj/HAL/src/alt_read.o obj/HAL/src/alt_release_fd.o obj/HAL/src/alt_remap_cached.o obj/HAL/src/alt_remap_uncached.o obj/HAL/src/alt_rename.o obj/HAL/src/alt_sbrk.o obj/HAL/src/alt_settod.o obj/HAL/src/alt_software_exception.o obj/HAL/src/alt_stat.o obj/HAL/src/alt_tick.o obj/HAL/src/alt_times.o obj/HAL/src/alt_uncached_free.o obj/HAL/src/alt_uncached_malloc.o obj/HAL/src/alt_unlink.o obj/HAL/src/alt_usleep.o obj/HAL/src/alt_wait.o obj/HAL/src/alt_write.o obj/HAL/src/altera_nios2_gen2_irq.o obj/HAL/src/crt0.o obj/alt_sys_init.o obj/drivers/src/altera_avalon_jtag_uart_fd.o obj/drivers/src/altera_avalon_jtag_uart_init.o obj/drivers/src/altera_avalon_jtag_uart_ioctl.o obj/drivers/src/altera_avalon_jtag_uart_read.o obj/drivers/src/altera_avalon_jtag_uart_write.o obj/drivers/src/altera_avalon_lcd_16207.o obj/drivers/src/altera_avalon_lcd_16207_fd.o obj/drivers/src/altera_avalon_sysid_qsys.o obj/drivers/src/altera_avalon_timer_sc.o obj/drivers/src/altera_avalon_timer_ts.o obj/drivers/src/altera_avalon_timer_vars.o obj/drivers/src/altera_avalon_uart_fd.o obj/drivers/src/altera_avalon_uart_init.o obj/drivers/src/altera_avalon_uart_ioctl.o obj/drivers/src/altera_avalon_uart_read.o obj/drivers/src/altera_avalon_uart_write.o
 [BSP build complete]
 Info: Compiling hello_world.c to obj/default/hello_world.o
-nios2-elf-gcc -xc -MP -MMD -c -I../fresh_beets_bsp//HAL/inc -I../fresh_beets_bsp/ -I../fresh_beets_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world.o hello_world.c
-hello_world.c: In function 'heartLEDs':
-hello_world.c:134:23: warning: initialization makes integer from pointer without a cast [-Wint-conversion]
-  unsigned int allON = "00001111";
+nios2-elf-gcc -xc -MP -MMD -c -I../heart_beets_bsp//HAL/inc -I../heart_beets_bsp/ -I../heart_beets_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world.o hello_world.c
+Info: Compiling pacemaker.c to obj/default/pacemaker.o
+nios2-elf-gcc -xc -MP -MMD -c -I../heart_beets_bsp//HAL/inc -I../heart_beets_bsp/ -I../heart_beets_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/pacemaker.o pacemaker.c
+Info: Linking heart_beets.elf
+nios2-elf-g++  -T'../heart_beets_bsp//linker.x' -msys-crt0='../heart_beets_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../heart_beets_bsp/   -Wl,-Map=heart_beets.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o heart_beets.elf obj/default/hello_world.o obj/default/pacemaker.o -lm -msys-lib=m
+nios2-elf-insert heart_beets.elf --thread_model hal --cpu_name cpu --qsys true --simulation_enabled false --id 308784078 --sidp 0x0 --timestamp 1502336826 --stderr_dev jtag_uart --stdin_dev jtag_uart --stdout_dev jtag_uart --sopc_system_name nios2_system --quartus_project_dir "D:/303-Assignment-2/Lab___export/Prebuilt_Nios" --sopcinfo D:/303-Assignment-2/Lab___export/Prebuilt_Nios/software/heart_beets_bsp/../../nios2_system.sopcinfo
+Info: (heart_beets.elf) 86 KBytes program size (code + initialized data).
+Info:                   8098 KBytes free for stack + heap.
+Info: Creating heart_beets.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source heart_beets.elf >heart_beets.objdump
+[heart_beets build complete]
+19:18:19 **** Build of configuration Nios II for project heart_beets_bsp ****
+make all 
+[BSP build complete]
+19:20:58 **** Build of configuration Nios II for project heart_beets ****
+make all 
+Info: Building ../heart_beets_bsp/
+C:/intelFPGA/16.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../heart_beets_bsp/
+[BSP build complete]
+[heart_beets build complete]
+19:21:01 **** Incremental Build of configuration Nios II for project heart_beets ****
+make all 
+Info: Building ../heart_beets_bsp/
+C:/intelFPGA/16.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../heart_beets_bsp/
+[BSP build complete]
+[heart_beets build complete]
+19:45:35 **** Incremental Build of configuration Nios II for project heart_beets ****
+make all 
+Info: Building ../heart_beets_bsp/
+C:/intelFPGA/16.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../heart_beets_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../heart_beets_bsp//HAL/inc -I../heart_beets_bsp/ -I../heart_beets_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world.o hello_world.c
+hello_world.c: In function 'startTimers':
+hello_world.c:191:23: error: 'AVI_ex' undeclared (first use in this function)
+  if (AVI_stop == 1 || AVI_ex)
                        ^
-hello_world.c:134:15: warning: unused variable 'allON' [-Wunused-variable]
-  unsigned int allON = "00001111";
-               ^
->>>>>>> f28317081308ffb0dd803890f285de463ab7f5eb
-Info: Linking fresh_beets.elf
-nios2-elf-g++  -T'../fresh_beets_bsp//linker.x' -msys-crt0='../fresh_beets_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../fresh_beets_bsp/   -Wl,-Map=fresh_beets.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o fresh_beets.elf obj/default/hello_world.o obj/default/pacemaker.o -lm -msys-lib=m
-nios2-elf-insert fresh_beets.elf --thread_model hal --cpu_name cpu --qsys true --simulation_enabled false --id 308784078 --sidp 0x0 --timestamp 1502336826 --stderr_dev jtag_uart --stdin_dev jtag_uart --stdout_dev jtag_uart --sopc_system_name nios2_system --quartus_project_dir "D:/303-Assignment-2/Lab___export/Prebuilt_Nios" --sopcinfo D:/303-Assignment-2/Lab___export/Prebuilt_Nios/software/fresh_beets_bsp/../../nios2_system.sopcinfo
-Info: (fresh_beets.elf) 86 KBytes program size (code + initialized data).
-Info:                   8098 KBytes free for stack + heap.
-Info: Creating fresh_beets.objdump
-nios2-elf-objdump --disassemble --syms --all-header --source fresh_beets.elf >fresh_beets.objdump
-[fresh_beets build complete]
-<<<<<<< HEAD
-15:12:29 **** Incremental Build of configuration Nios II for project fresh_beets ****
-=======
-13:24:07 **** Incremental Build of configuration Nios II for project fresh_beets_bsp ****
+hello_world.c:191:23: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [obj/default/hello_world.o] Error 1
+19:45:37 **** Incremental Build of configuration Nios II for project heart_beets_bsp ****
 make all 
 [BSP build complete]
-13:24:53 **** Incremental Build of configuration Nios II for project fresh_beets ****
->>>>>>> f28317081308ffb0dd803890f285de463ab7f5eb
+19:45:57 **** Incremental Build of configuration Nios II for project heart_beets ****
 make all 
-Info: Building ../fresh_beets_bsp/
-C:/intelFPGA/16.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../fresh_beets_bsp/
+Info: Building ../heart_beets_bsp/
+C:/intelFPGA/16.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../heart_beets_bsp/
 [BSP build complete]
 Info: Compiling hello_world.c to obj/default/hello_world.o
-nios2-elf-gcc -xc -MP -MMD -c -I../fresh_beets_bsp//HAL/inc -I../fresh_beets_bsp/ -I../fresh_beets_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world.o hello_world.c
-<<<<<<< HEAD
-=======
-hello_world.c: In function 'heartLEDs':
-hello_world.c:134:23: warning: initialization makes integer from pointer without a cast [-Wint-conversion]
-  unsigned int allON = "00001111";
+nios2-elf-gcc -xc -MP -MMD -c -I../heart_beets_bsp//HAL/inc -I../heart_beets_bsp/ -I../heart_beets_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world.o hello_world.c
+hello_world.c: In function 'startTimers':
+hello_world.c:191:23: error: 'AVI_ex' undeclared (first use in this function)
+  if (AVI_stop == 1 || AVI_ex == 1)
                        ^
->>>>>>> f28317081308ffb0dd803890f285de463ab7f5eb
-Info: Linking fresh_beets.elf
-nios2-elf-g++  -T'../fresh_beets_bsp//linker.x' -msys-crt0='../fresh_beets_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../fresh_beets_bsp/   -Wl,-Map=fresh_beets.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o fresh_beets.elf obj/default/hello_world.o obj/default/pacemaker.o -lm -msys-lib=m
-nios2-elf-insert fresh_beets.elf --thread_model hal --cpu_name cpu --qsys true --simulation_enabled false --id 308784078 --sidp 0x0 --timestamp 1502336826 --stderr_dev jtag_uart --stdin_dev jtag_uart --stdout_dev jtag_uart --sopc_system_name nios2_system --quartus_project_dir "D:/303-Assignment-2/Lab___export/Prebuilt_Nios" --sopcinfo D:/303-Assignment-2/Lab___export/Prebuilt_Nios/software/fresh_beets_bsp/../../nios2_system.sopcinfo
-Info: (fresh_beets.elf) 86 KBytes program size (code + initialized data).
-Info:                   8098 KBytes free for stack + heap.
-Info: Creating fresh_beets.objdump
-nios2-elf-objdump --disassemble --syms --all-header --source fresh_beets.elf >fresh_beets.objdump
-[fresh_beets build complete]
-<<<<<<< HEAD
-15:12:50 **** Incremental Build of configuration Nios II for project fresh_beets ****
-=======
-13:24:57 **** Incremental Build of configuration Nios II for project fresh_beets_bsp ****
+hello_world.c:191:23: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [obj/default/hello_world.o] Error 1
+19:45:58 **** Incremental Build of configuration Nios II for project heart_beets_bsp ****
 make all 
 [BSP build complete]
-13:25:16 **** Build of configuration Nios II for project fresh_beets ****
+19:46:11 **** Incremental Build of configuration Nios II for project heart_beets ****
 make all 
-Info: Building ../fresh_beets_bsp/
-C:/intelFPGA/16.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../fresh_beets_bsp/
-[BSP build complete]
-[fresh_beets build complete]
-13:25:18 **** Incremental Build of configuration Nios II for project fresh_beets ****
-make all 
-Info: Building ../fresh_beets_bsp/
-C:/intelFPGA/16.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../fresh_beets_bsp/
-[BSP build complete]
-[fresh_beets build complete]
-13:26:43 **** Incremental Build of configuration Nios II for project fresh_beets ****
-make all 
-Info: Building ../fresh_beets_bsp/
-C:/intelFPGA/16.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../fresh_beets_bsp/
+Info: Building ../heart_beets_bsp/
+C:/intelFPGA/16.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../heart_beets_bsp/
 [BSP build complete]
 Info: Compiling hello_world.c to obj/default/hello_world.o
-nios2-elf-gcc -xc -MP -MMD -c -I../fresh_beets_bsp//HAL/inc -I../fresh_beets_bsp/ -I../fresh_beets_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world.o hello_world.c
-Info: Linking fresh_beets.elf
-nios2-elf-g++  -T'../fresh_beets_bsp//linker.x' -msys-crt0='../fresh_beets_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../fresh_beets_bsp/   -Wl,-Map=fresh_beets.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o fresh_beets.elf obj/default/hello_world.o obj/default/pacemaker.o -lm -msys-lib=m
-nios2-elf-insert fresh_beets.elf --thread_model hal --cpu_name cpu --qsys true --simulation_enabled false --id 308784078 --sidp 0x0 --timestamp 1502336826 --stderr_dev jtag_uart --stdin_dev jtag_uart --stdout_dev jtag_uart --sopc_system_name nios2_system --quartus_project_dir "D:/303-Assignment-2/Lab___export/Prebuilt_Nios" --sopcinfo D:/303-Assignment-2/Lab___export/Prebuilt_Nios/software/fresh_beets_bsp/../../nios2_system.sopcinfo
-Info: (fresh_beets.elf) 86 KBytes program size (code + initialized data).
-Info:                   8098 KBytes free for stack + heap.
-Info: Creating fresh_beets.objdump
-nios2-elf-objdump --disassemble --syms --all-header --source fresh_beets.elf >fresh_beets.objdump
-[fresh_beets build complete]
-13:26:47 **** Incremental Build of configuration Nios II for project fresh_beets_bsp ****
+nios2-elf-gcc -xc -MP -MMD -c -I../heart_beets_bsp//HAL/inc -I../heart_beets_bsp/ -I../heart_beets_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world.o hello_world.c
+hello_world.c: In function 'startTimers':
+hello_world.c:191:26: error: 'AVI_ex' undeclared (first use in this function)
+  if ((AVI_stop == 1) || (AVI_ex == 1))
+                          ^
+hello_world.c:191:26: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [obj/default/hello_world.o] Error 1
+19:46:13 **** Incremental Build of configuration Nios II for project heart_beets_bsp ****
 make all 
 [BSP build complete]
-13:26:51 **** Build of configuration Nios II for project fresh_beets ****
+19:46:44 **** Incremental Build of configuration Nios II for project heart_beets ****
 make all 
-Info: Building ../fresh_beets_bsp/
-C:/intelFPGA/16.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../fresh_beets_bsp/
-[BSP build complete]
-[fresh_beets build complete]
-13:26:53 **** Incremental Build of configuration Nios II for project fresh_beets ****
->>>>>>> f28317081308ffb0dd803890f285de463ab7f5eb
-make all 
-Info: Building ../fresh_beets_bsp/
-C:/intelFPGA/16.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../fresh_beets_bsp/
-[BSP build complete]
-[fresh_beets build complete]
-<<<<<<< HEAD
-15:13:05 **** Incremental Build of configuration Nios II for project fresh_beets ****
-=======
-13:27:50 **** Incremental Build of configuration Nios II for project fresh_beets ****
-make all 
-Info: Building ../fresh_beets_bsp/
-C:/intelFPGA/16.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../fresh_beets_bsp/
+Info: Building ../heart_beets_bsp/
+C:/intelFPGA/16.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../heart_beets_bsp/
 [BSP build complete]
 Info: Compiling hello_world.c to obj/default/hello_world.o
-nios2-elf-gcc -xc -MP -MMD -c -I../fresh_beets_bsp//HAL/inc -I../fresh_beets_bsp/ -I../fresh_beets_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world.o hello_world.c
-hello_world.c: In function 'heartLEDs':
-hello_world.c:134:15: warning: unused variable 'allON' [-Wunused-variable]
-  unsigned int allON = 0b00001111;
-               ^
-Info: Linking fresh_beets.elf
-nios2-elf-g++  -T'../fresh_beets_bsp//linker.x' -msys-crt0='../fresh_beets_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../fresh_beets_bsp/   -Wl,-Map=fresh_beets.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o fresh_beets.elf obj/default/hello_world.o obj/default/pacemaker.o -lm -msys-lib=m
-nios2-elf-insert fresh_beets.elf --thread_model hal --cpu_name cpu --qsys true --simulation_enabled false --id 308784078 --sidp 0x0 --timestamp 1502336826 --stderr_dev jtag_uart --stdin_dev jtag_uart --stdout_dev jtag_uart --sopc_system_name nios2_system --quartus_project_dir "D:/303-Assignment-2/Lab___export/Prebuilt_Nios" --sopcinfo D:/303-Assignment-2/Lab___export/Prebuilt_Nios/software/fresh_beets_bsp/../../nios2_system.sopcinfo
-Info: (fresh_beets.elf) 86 KBytes program size (code + initialized data).
+nios2-elf-gcc -xc -MP -MMD -c -I../heart_beets_bsp//HAL/inc -I../heart_beets_bsp/ -I../heart_beets_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world.o hello_world.c
+Info: Linking heart_beets.elf
+nios2-elf-g++  -T'../heart_beets_bsp//linker.x' -msys-crt0='../heart_beets_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../heart_beets_bsp/   -Wl,-Map=heart_beets.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o heart_beets.elf obj/default/hello_world.o obj/default/pacemaker.o -lm -msys-lib=m
+nios2-elf-insert heart_beets.elf --thread_model hal --cpu_name cpu --qsys true --simulation_enabled false --id 308784078 --sidp 0x0 --timestamp 1502336826 --stderr_dev jtag_uart --stdin_dev jtag_uart --stdout_dev jtag_uart --sopc_system_name nios2_system --quartus_project_dir "D:/303-Assignment-2/Lab___export/Prebuilt_Nios" --sopcinfo D:/303-Assignment-2/Lab___export/Prebuilt_Nios/software/heart_beets_bsp/../../nios2_system.sopcinfo
+Info: (heart_beets.elf) 86 KBytes program size (code + initialized data).
 Info:                   8098 KBytes free for stack + heap.
-Info: Creating fresh_beets.objdump
-nios2-elf-objdump --disassemble --syms --all-header --source fresh_beets.elf >fresh_beets.objdump
-[fresh_beets build complete]
-13:30:05 **** Incremental Build of configuration Nios II for project fresh_beets ****
->>>>>>> f28317081308ffb0dd803890f285de463ab7f5eb
-make all 
-Info: Building ../fresh_beets_bsp/
-C:/intelFPGA/16.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../fresh_beets_bsp/
-[BSP build complete]
-<<<<<<< HEAD
-[fresh_beets build complete]
-15:13:07 **** Incremental Build of configuration Nios II for project fresh_beets ****
-=======
-Info: Compiling hello_world.c to obj/default/hello_world.o
-nios2-elf-gcc -xc -MP -MMD -c -I../fresh_beets_bsp//HAL/inc -I../fresh_beets_bsp/ -I../fresh_beets_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world.o hello_world.c
-Info: Linking fresh_beets.elf
-nios2-elf-g++  -T'../fresh_beets_bsp//linker.x' -msys-crt0='../fresh_beets_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../fresh_beets_bsp/   -Wl,-Map=fresh_beets.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o fresh_beets.elf obj/default/hello_world.o obj/default/pacemaker.o -lm -msys-lib=m
-nios2-elf-insert fresh_beets.elf --thread_model hal --cpu_name cpu --qsys true --simulation_enabled false --id 308784078 --sidp 0x0 --timestamp 1502336826 --stderr_dev jtag_uart --stdin_dev jtag_uart --stdout_dev jtag_uart --sopc_system_name nios2_system --quartus_project_dir "D:/303-Assignment-2/Lab___export/Prebuilt_Nios" --sopcinfo D:/303-Assignment-2/Lab___export/Prebuilt_Nios/software/fresh_beets_bsp/../../nios2_system.sopcinfo
-Info: (fresh_beets.elf) 86 KBytes program size (code + initialized data).
-Info:                   8098 KBytes free for stack + heap.
-Info: Creating fresh_beets.objdump
-nios2-elf-objdump --disassemble --syms --all-header --source fresh_beets.elf >fresh_beets.objdump
-[fresh_beets build complete]
-13:30:09 **** Incremental Build of configuration Nios II for project fresh_beets_bsp ****
+Info: Creating heart_beets.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source heart_beets.elf >heart_beets.objdump
+[heart_beets build complete]
+19:46:48 **** Incremental Build of configuration Nios II for project heart_beets_bsp ****
 make all 
 [BSP build complete]
-13:30:16 **** Incremental Build of configuration Nios II for project fresh_beets ****
->>>>>>> f28317081308ffb0dd803890f285de463ab7f5eb
+19:46:56 **** Build of configuration Nios II for project heart_beets ****
 make all 
-Info: Building ../fresh_beets_bsp/
-C:/intelFPGA/16.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../fresh_beets_bsp/
+Info: Building ../heart_beets_bsp/
+C:/intelFPGA/16.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../heart_beets_bsp/
 [BSP build complete]
-[fresh_beets build complete]
-<<<<<<< HEAD
-15:14:13 **** Incremental Build of configuration Nios II for project fresh_beets ****
-=======
-13:34:40 **** Incremental Build of configuration Nios II for project fresh_beets ****
->>>>>>> f28317081308ffb0dd803890f285de463ab7f5eb
+[heart_beets build complete]
+19:46:57 **** Incremental Build of configuration Nios II for project heart_beets ****
 make all 
-Info: Building ../fresh_beets_bsp/
-C:/intelFPGA/16.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../fresh_beets_bsp/
+Info: Building ../heart_beets_bsp/
+C:/intelFPGA/16.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../heart_beets_bsp/
+[BSP build complete]
+[heart_beets build complete]
+20:01:44 **** Build of configuration Nios II for project heart_beets ****
+make all 
+Info: Building ../heart_beets_bsp/
+C:/intelFPGA/16.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../heart_beets_bsp/
 [BSP build complete]
 Info: Compiling hello_world.c to obj/default/hello_world.o
-nios2-elf-gcc -xc -MP -MMD -c -I../fresh_beets_bsp//HAL/inc -I../fresh_beets_bsp/ -I../fresh_beets_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world.o hello_world.c
-Info: Linking fresh_beets.elf
-nios2-elf-g++  -T'../fresh_beets_bsp//linker.x' -msys-crt0='../fresh_beets_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../fresh_beets_bsp/   -Wl,-Map=fresh_beets.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o fresh_beets.elf obj/default/hello_world.o obj/default/pacemaker.o -lm -msys-lib=m
-nios2-elf-insert fresh_beets.elf --thread_model hal --cpu_name cpu --qsys true --simulation_enabled false --id 308784078 --sidp 0x0 --timestamp 1502336826 --stderr_dev jtag_uart --stdin_dev jtag_uart --stdout_dev jtag_uart --sopc_system_name nios2_system --quartus_project_dir "D:/303-Assignment-2/Lab___export/Prebuilt_Nios" --sopcinfo D:/303-Assignment-2/Lab___export/Prebuilt_Nios/software/fresh_beets_bsp/../../nios2_system.sopcinfo
-Info: (fresh_beets.elf) 86 KBytes program size (code + initialized data).
+nios2-elf-gcc -xc -MP -MMD -c -I../heart_beets_bsp//HAL/inc -I../heart_beets_bsp/ -I../heart_beets_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world.o hello_world.c
+Info: Compiling pacemaker.c to obj/default/pacemaker.o
+nios2-elf-gcc -xc -MP -MMD -c -I../heart_beets_bsp//HAL/inc -I../heart_beets_bsp/ -I../heart_beets_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/pacemaker.o pacemaker.c
+Info: Linking heart_beets.elf
+nios2-elf-g++  -T'../heart_beets_bsp//linker.x' -msys-crt0='../heart_beets_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../heart_beets_bsp/   -Wl,-Map=heart_beets.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o heart_beets.elf obj/default/hello_world.o obj/default/pacemaker.o -lm -msys-lib=m
+nios2-elf-insert heart_beets.elf --thread_model hal --cpu_name cpu --qsys true --simulation_enabled false --id 308784078 --sidp 0x0 --timestamp 1502336826 --stderr_dev jtag_uart --stdin_dev jtag_uart --stdout_dev jtag_uart --sopc_system_name nios2_system --quartus_project_dir "D:/303-Assignment-2/Lab___export/Prebuilt_Nios" --sopcinfo D:/303-Assignment-2/Lab___export/Prebuilt_Nios/software/heart_beets_bsp/../../nios2_system.sopcinfo
+Info: (heart_beets.elf) 86 KBytes program size (code + initialized data).
 Info:                   8098 KBytes free for stack + heap.
-Info: Creating fresh_beets.objdump
-nios2-elf-objdump --disassemble --syms --all-header --source fresh_beets.elf >fresh_beets.objdump
-[fresh_beets build complete]
-<<<<<<< HEAD
-15:14:35 **** Incremental Build of configuration Nios II for project fresh_beets ****
-=======
-13:36:52 **** Incremental Build of configuration Nios II for project fresh_beets ****
->>>>>>> f28317081308ffb0dd803890f285de463ab7f5eb
+Info: Creating heart_beets.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source heart_beets.elf >heart_beets.objdump
+[heart_beets build complete]
+20:01:48 **** Incremental Build of configuration Nios II for project heart_beets ****
 make all 
-Info: Building ../fresh_beets_bsp/
-C:/intelFPGA/16.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../fresh_beets_bsp/
+Info: Building ../heart_beets_bsp/
+C:/intelFPGA/16.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../heart_beets_bsp/
 [BSP build complete]
-[fresh_beets build complete]
-<<<<<<< HEAD
-15:26:39 **** Incremental Build of configuration Nios II for project fresh_beets ****
-=======
-13:38:18 **** Incremental Build of configuration Nios II for project fresh_beets ****
->>>>>>> f28317081308ffb0dd803890f285de463ab7f5eb
+[heart_beets build complete]
+20:02:35 **** Incremental Build of configuration Nios II for project heart_beets ****
 make all 
-Info: Building ../fresh_beets_bsp/
-C:/intelFPGA/16.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../fresh_beets_bsp/
+Info: Building ../heart_beets_bsp/
+C:/intelFPGA/16.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../heart_beets_bsp/
 [BSP build complete]
 Info: Compiling hello_world.c to obj/default/hello_world.o
-nios2-elf-gcc -xc -MP -MMD -c -I../fresh_beets_bsp//HAL/inc -I../fresh_beets_bsp/ -I../fresh_beets_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world.o hello_world.c
-Info: Linking fresh_beets.elf
-nios2-elf-g++  -T'../fresh_beets_bsp//linker.x' -msys-crt0='../fresh_beets_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../fresh_beets_bsp/   -Wl,-Map=fresh_beets.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o fresh_beets.elf obj/default/hello_world.o obj/default/pacemaker.o -lm -msys-lib=m
-nios2-elf-insert fresh_beets.elf --thread_model hal --cpu_name cpu --qsys true --simulation_enabled false --id 308784078 --sidp 0x0 --timestamp 1502336826 --stderr_dev jtag_uart --stdin_dev jtag_uart --stdout_dev jtag_uart --sopc_system_name nios2_system --quartus_project_dir "D:/303-Assignment-2/Lab___export/Prebuilt_Nios" --sopcinfo D:/303-Assignment-2/Lab___export/Prebuilt_Nios/software/fresh_beets_bsp/../../nios2_system.sopcinfo
-Info: (fresh_beets.elf) 86 KBytes program size (code + initialized data).
-Info:                   8098 KBytes free for stack + heap.
-Info: Creating fresh_beets.objdump
-nios2-elf-objdump --disassemble --syms --all-header --source fresh_beets.elf >fresh_beets.objdump
-[fresh_beets build complete]
-<<<<<<< HEAD
-15:26:45 **** Incremental Build of configuration Nios II for project fresh_beets ****
-=======
-13:39:29 **** Incremental Build of configuration Nios II for project fresh_beets ****
->>>>>>> f28317081308ffb0dd803890f285de463ab7f5eb
+nios2-elf-gcc -xc -MP -MMD -c -I../heart_beets_bsp//HAL/inc -I../heart_beets_bsp/ -I../heart_beets_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world.o hello_world.c
+Info: Linking heart_beets.elf
+nios2-elf-g++  -T'../heart_beets_bsp//linker.x' -msys-crt0='../heart_beets_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../heart_beets_bsp/   -Wl,-Map=heart_beets.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o heart_beets.elf obj/default/hello_world.o obj/default/pacemaker.o -lm -msys-lib=m
+nios2-elf-insert heart_beets.elf --thread_model hal --cpu_name cpu --qsys true --simulation_enabled false --id 308784078 --sidp 0x0 --timestamp 1502336826 --stderr_dev jtag_uart --stdin_dev jtag_uart --stdout_dev jtag_uart --sopc_system_name nios2_system --quartus_project_dir "D:/303-Assignment-2/Lab___export/Prebuilt_Nios" --sopcinfo D:/303-Assignment-2/Lab___export/Prebuilt_Nios/software/heart_beets_bsp/../../nios2_system.sopcinfo
+Info: (heart_beets.elf) 47 KBytes program size (code + initialized data).
+Info:                   8137 KBytes free for stack + heap.
+Info: Creating heart_beets.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source heart_beets.elf >heart_beets.objdump
+[heart_beets build complete]
+20:02:56 **** Incremental Build of configuration Nios II for project heart_beets ****
 make all 
-Info: Building ../fresh_beets_bsp/
-C:/intelFPGA/16.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../fresh_beets_bsp/
+Info: Building ../heart_beets_bsp/
+C:/intelFPGA/16.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../heart_beets_bsp/
 [BSP build complete]
-<<<<<<< HEAD
-[fresh_beets build complete]
-15:30:39 **** Incremental Build of configuration Nios II for project fresh_beets ****
-=======
-Info: Compiling hello_world.c to obj/default/hello_world.o
-nios2-elf-gcc -xc -MP -MMD -c -I../fresh_beets_bsp//HAL/inc -I../fresh_beets_bsp/ -I../fresh_beets_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world.o hello_world.c
-Info: Linking fresh_beets.elf
-nios2-elf-g++  -T'../fresh_beets_bsp//linker.x' -msys-crt0='../fresh_beets_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../fresh_beets_bsp/   -Wl,-Map=fresh_beets.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o fresh_beets.elf obj/default/hello_world.o obj/default/pacemaker.o -lm -msys-lib=m
-nios2-elf-insert fresh_beets.elf --thread_model hal --cpu_name cpu --qsys true --simulation_enabled false --id 308784078 --sidp 0x0 --timestamp 1502336826 --stderr_dev jtag_uart --stdin_dev jtag_uart --stdout_dev jtag_uart --sopc_system_name nios2_system --quartus_project_dir "D:/303-Assignment-2/Lab___export/Prebuilt_Nios" --sopcinfo D:/303-Assignment-2/Lab___export/Prebuilt_Nios/software/fresh_beets_bsp/../../nios2_system.sopcinfo
-Info: (fresh_beets.elf) 86 KBytes program size (code + initialized data).
-Info:                   8098 KBytes free for stack + heap.
-Info: Creating fresh_beets.objdump
-nios2-elf-objdump --disassemble --syms --all-header --source fresh_beets.elf >fresh_beets.objdump
-[fresh_beets build complete]
-13:46:05 **** Incremental Build of configuration Nios II for project fresh_beets ****
->>>>>>> f28317081308ffb0dd803890f285de463ab7f5eb
+[heart_beets build complete]
+20:26:59 **** Incremental Build of configuration Nios II for project heart_beets ****
 make all 
-Info: Building ../fresh_beets_bsp/
-C:/intelFPGA/16.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../fresh_beets_bsp/
-[BSP build complete]
-<<<<<<< HEAD
-[fresh_beets build complete]
-15:31:21 **** Incremental Build of configuration Nios II for project fresh_beets ****
-=======
-Info: Compiling hello_world.c to obj/default/hello_world.o
-nios2-elf-gcc -xc -MP -MMD -c -I../fresh_beets_bsp//HAL/inc -I../fresh_beets_bsp/ -I../fresh_beets_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world.o hello_world.c
-Info: Linking fresh_beets.elf
-nios2-elf-g++  -T'../fresh_beets_bsp//linker.x' -msys-crt0='../fresh_beets_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../fresh_beets_bsp/   -Wl,-Map=fresh_beets.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o fresh_beets.elf obj/default/hello_world.o obj/default/pacemaker.o -lm -msys-lib=m
-nios2-elf-insert fresh_beets.elf --thread_model hal --cpu_name cpu --qsys true --simulation_enabled false --id 308784078 --sidp 0x0 --timestamp 1502336826 --stderr_dev jtag_uart --stdin_dev jtag_uart --stdout_dev jtag_uart --sopc_system_name nios2_system --quartus_project_dir "D:/303-Assignment-2/Lab___export/Prebuilt_Nios" --sopcinfo D:/303-Assignment-2/Lab___export/Prebuilt_Nios/software/fresh_beets_bsp/../../nios2_system.sopcinfo
-Info: (fresh_beets.elf) 86 KBytes program size (code + initialized data).
-Info:                   8098 KBytes free for stack + heap.
-Info: Creating fresh_beets.objdump
-nios2-elf-objdump --disassemble --syms --all-header --source fresh_beets.elf >fresh_beets.objdump
-[fresh_beets build complete]
-13:46:49 **** Incremental Build of configuration Nios II for project fresh_beets ****
->>>>>>> f28317081308ffb0dd803890f285de463ab7f5eb
-make all 
-Info: Building ../fresh_beets_bsp/
-C:/intelFPGA/16.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../fresh_beets_bsp/
+Info: Building ../heart_beets_bsp/
+C:/intelFPGA/16.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../heart_beets_bsp/
 [BSP build complete]
 Info: Compiling hello_world.c to obj/default/hello_world.o
-nios2-elf-gcc -xc -MP -MMD -c -I../fresh_beets_bsp//HAL/inc -I../fresh_beets_bsp/ -I../fresh_beets_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world.o hello_world.c
-Info: Linking fresh_beets.elf
-nios2-elf-g++  -T'../fresh_beets_bsp//linker.x' -msys-crt0='../fresh_beets_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../fresh_beets_bsp/   -Wl,-Map=fresh_beets.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o fresh_beets.elf obj/default/hello_world.o obj/default/pacemaker.o -lm -msys-lib=m
-nios2-elf-insert fresh_beets.elf --thread_model hal --cpu_name cpu --qsys true --simulation_enabled false --id 308784078 --sidp 0x0 --timestamp 1502336826 --stderr_dev jtag_uart --stdin_dev jtag_uart --stdout_dev jtag_uart --sopc_system_name nios2_system --quartus_project_dir "D:/303-Assignment-2/Lab___export/Prebuilt_Nios" --sopcinfo D:/303-Assignment-2/Lab___export/Prebuilt_Nios/software/fresh_beets_bsp/../../nios2_system.sopcinfo
-Info: (fresh_beets.elf) 86 KBytes program size (code + initialized data).
-Info:                   8098 KBytes free for stack + heap.
-Info: Creating fresh_beets.objdump
-nios2-elf-objdump --disassemble --syms --all-header --source fresh_beets.elf >fresh_beets.objdump
-[fresh_beets build complete]
-<<<<<<< HEAD
-15:34:08 **** Incremental Build of configuration Nios II for project fresh_beets ****
-=======
-13:47:24 **** Incremental Build of configuration Nios II for project fresh_beets ****
->>>>>>> f28317081308ffb0dd803890f285de463ab7f5eb
+nios2-elf-gcc -xc -MP -MMD -c -I../heart_beets_bsp//HAL/inc -I../heart_beets_bsp/ -I../heart_beets_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world.o hello_world.c
+Info: Linking heart_beets.elf
+nios2-elf-g++  -T'../heart_beets_bsp//linker.x' -msys-crt0='../heart_beets_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../heart_beets_bsp/   -Wl,-Map=heart_beets.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o heart_beets.elf obj/default/hello_world.o obj/default/pacemaker.o -lm -msys-lib=m
+nios2-elf-insert heart_beets.elf --thread_model hal --cpu_name cpu --qsys true --simulation_enabled false --id 308784078 --sidp 0x0 --timestamp 1502336826 --stderr_dev jtag_uart --stdin_dev jtag_uart --stdout_dev jtag_uart --sopc_system_name nios2_system --quartus_project_dir "D:/303-Assignment-2/Lab___export/Prebuilt_Nios" --sopcinfo D:/303-Assignment-2/Lab___export/Prebuilt_Nios/software/heart_beets_bsp/../../nios2_system.sopcinfo
+Info: (heart_beets.elf) 47 KBytes program size (code + initialized data).
+Info:                   8137 KBytes free for stack + heap.
+Info: Creating heart_beets.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source heart_beets.elf >heart_beets.objdump
+[heart_beets build complete]
+20:32:57 **** Incremental Build of configuration Nios II for project heart_beets ****
 make all 
-Info: Building ../fresh_beets_bsp/
-C:/intelFPGA/16.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../fresh_beets_bsp/
+Info: Building ../heart_beets_bsp/
+C:/intelFPGA/16.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../heart_beets_bsp/
 [BSP build complete]
 Info: Compiling hello_world.c to obj/default/hello_world.o
-nios2-elf-gcc -xc -MP -MMD -c -I../fresh_beets_bsp//HAL/inc -I../fresh_beets_bsp/ -I../fresh_beets_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world.o hello_world.c
-Info: Linking fresh_beets.elf
-nios2-elf-g++  -T'../fresh_beets_bsp//linker.x' -msys-crt0='../fresh_beets_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../fresh_beets_bsp/   -Wl,-Map=fresh_beets.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o fresh_beets.elf obj/default/hello_world.o obj/default/pacemaker.o -lm -msys-lib=m
-nios2-elf-insert fresh_beets.elf --thread_model hal --cpu_name cpu --qsys true --simulation_enabled false --id 308784078 --sidp 0x0 --timestamp 1502336826 --stderr_dev jtag_uart --stdin_dev jtag_uart --stdout_dev jtag_uart --sopc_system_name nios2_system --quartus_project_dir "D:/303-Assignment-2/Lab___export/Prebuilt_Nios" --sopcinfo D:/303-Assignment-2/Lab___export/Prebuilt_Nios/software/fresh_beets_bsp/../../nios2_system.sopcinfo
-Info: (fresh_beets.elf) 86 KBytes program size (code + initialized data).
-Info:                   8098 KBytes free for stack + heap.
-Info: Creating fresh_beets.objdump
-nios2-elf-objdump --disassemble --syms --all-header --source fresh_beets.elf >fresh_beets.objdump
-[fresh_beets build complete]
-<<<<<<< HEAD
-15:35:59 **** Incremental Build of configuration Nios II for project fresh_beets ****
-=======
-13:48:05 **** Incremental Build of configuration Nios II for project fresh_beets ****
->>>>>>> f28317081308ffb0dd803890f285de463ab7f5eb
+nios2-elf-gcc -xc -MP -MMD -c -I../heart_beets_bsp//HAL/inc -I../heart_beets_bsp/ -I../heart_beets_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world.o hello_world.c
+Info: Linking heart_beets.elf
+nios2-elf-g++  -T'../heart_beets_bsp//linker.x' -msys-crt0='../heart_beets_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../heart_beets_bsp/   -Wl,-Map=heart_beets.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o heart_beets.elf obj/default/hello_world.o obj/default/pacemaker.o -lm -msys-lib=m
+nios2-elf-insert heart_beets.elf --thread_model hal --cpu_name cpu --qsys true --simulation_enabled false --id 308784078 --sidp 0x0 --timestamp 1502336826 --stderr_dev jtag_uart --stdin_dev jtag_uart --stdout_dev jtag_uart --sopc_system_name nios2_system --quartus_project_dir "D:/303-Assignment-2/Lab___export/Prebuilt_Nios" --sopcinfo D:/303-Assignment-2/Lab___export/Prebuilt_Nios/software/heart_beets_bsp/../../nios2_system.sopcinfo
+Info: (heart_beets.elf) 86 KBytes program size (code + initialized data).
+Info:                   8097 KBytes free for stack + heap.
+Info: Creating heart_beets.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source heart_beets.elf >heart_beets.objdump
+[heart_beets build complete]
+20:33:18 **** Incremental Build of configuration Nios II for project heart_beets ****
 make all 
-Info: Building ../fresh_beets_bsp/
-C:/intelFPGA/16.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../fresh_beets_bsp/
+Info: Building ../heart_beets_bsp/
+C:/intelFPGA/16.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../heart_beets_bsp/
 [BSP build complete]
 Info: Compiling hello_world.c to obj/default/hello_world.o
-nios2-elf-gcc -xc -MP -MMD -c -I../fresh_beets_bsp//HAL/inc -I../fresh_beets_bsp/ -I../fresh_beets_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world.o hello_world.c
-Info: Linking fresh_beets.elf
-nios2-elf-g++  -T'../fresh_beets_bsp//linker.x' -msys-crt0='../fresh_beets_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../fresh_beets_bsp/   -Wl,-Map=fresh_beets.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o fresh_beets.elf obj/default/hello_world.o obj/default/pacemaker.o -lm -msys-lib=m
-nios2-elf-insert fresh_beets.elf --thread_model hal --cpu_name cpu --qsys true --simulation_enabled false --id 308784078 --sidp 0x0 --timestamp 1502336826 --stderr_dev jtag_uart --stdin_dev jtag_uart --stdout_dev jtag_uart --sopc_system_name nios2_system --quartus_project_dir "D:/303-Assignment-2/Lab___export/Prebuilt_Nios" --sopcinfo D:/303-Assignment-2/Lab___export/Prebuilt_Nios/software/fresh_beets_bsp/../../nios2_system.sopcinfo
-Info: (fresh_beets.elf) 86 KBytes program size (code + initialized data).
-Info:                   8098 KBytes free for stack + heap.
-Info: Creating fresh_beets.objdump
-nios2-elf-objdump --disassemble --syms --all-header --source fresh_beets.elf >fresh_beets.objdump
-[fresh_beets build complete]
-<<<<<<< HEAD
-15:48:47 **** Incremental Build of configuration Nios II for project fresh_beets ****
-=======
-13:49:25 **** Incremental Build of configuration Nios II for project fresh_beets ****
+nios2-elf-gcc -xc -MP -MMD -c -I../heart_beets_bsp//HAL/inc -I../heart_beets_bsp/ -I../heart_beets_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world.o hello_world.c
+Info: Linking heart_beets.elf
+nios2-elf-g++  -T'../heart_beets_bsp//linker.x' -msys-crt0='../heart_beets_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../heart_beets_bsp/   -Wl,-Map=heart_beets.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o heart_beets.elf obj/default/hello_world.o obj/default/pacemaker.o -lm -msys-lib=m
+nios2-elf-insert heart_beets.elf --thread_model hal --cpu_name cpu --qsys true --simulation_enabled false --id 308784078 --sidp 0x0 --timestamp 1502336826 --stderr_dev jtag_uart --stdin_dev jtag_uart --stdout_dev jtag_uart --sopc_system_name nios2_system --quartus_project_dir "D:/303-Assignment-2/Lab___export/Prebuilt_Nios" --sopcinfo D:/303-Assignment-2/Lab___export/Prebuilt_Nios/software/heart_beets_bsp/../../nios2_system.sopcinfo
+Info: (heart_beets.elf) 47 KBytes program size (code + initialized data).
+Info:                   8137 KBytes free for stack + heap.
+Info: Creating heart_beets.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source heart_beets.elf >heart_beets.objdump
+[heart_beets build complete]
+20:44:13 **** Incremental Build of configuration Nios II for project heart_beets ****
 make all 
-Info: Building ../fresh_beets_bsp/
-C:/intelFPGA/16.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../fresh_beets_bsp/
+Info: Building ../heart_beets_bsp/
+C:/intelFPGA/16.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../heart_beets_bsp/
 [BSP build complete]
-[fresh_beets build complete]
-13:50:13 **** Incremental Build of configuration Nios II for project fresh_beets ****
->>>>>>> f28317081308ffb0dd803890f285de463ab7f5eb
+[heart_beets build complete]
+20:46:07 **** Incremental Build of configuration Nios II for project heart_beets ****
 make all 
-Info: Building ../fresh_beets_bsp/
-C:/intelFPGA/16.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../fresh_beets_bsp/
+Info: Building ../heart_beets_bsp/
+C:/intelFPGA/16.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../heart_beets_bsp/
 [BSP build complete]
 Info: Compiling hello_world.c to obj/default/hello_world.o
-nios2-elf-gcc -xc -MP -MMD -c -I../fresh_beets_bsp//HAL/inc -I../fresh_beets_bsp/ -I../fresh_beets_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world.o hello_world.c
-Info: Linking fresh_beets.elf
-nios2-elf-g++  -T'../fresh_beets_bsp//linker.x' -msys-crt0='../fresh_beets_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../fresh_beets_bsp/   -Wl,-Map=fresh_beets.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o fresh_beets.elf obj/default/hello_world.o obj/default/pacemaker.o -lm -msys-lib=m
-nios2-elf-insert fresh_beets.elf --thread_model hal --cpu_name cpu --qsys true --simulation_enabled false --id 308784078 --sidp 0x0 --timestamp 1502336826 --stderr_dev jtag_uart --stdin_dev jtag_uart --stdout_dev jtag_uart --sopc_system_name nios2_system --quartus_project_dir "D:/303-Assignment-2/Lab___export/Prebuilt_Nios" --sopcinfo D:/303-Assignment-2/Lab___export/Prebuilt_Nios/software/fresh_beets_bsp/../../nios2_system.sopcinfo
-Info: (fresh_beets.elf) 86 KBytes program size (code + initialized data).
-Info:                   8098 KBytes free for stack + heap.
-Info: Creating fresh_beets.objdump
-nios2-elf-objdump --disassemble --syms --all-header --source fresh_beets.elf >fresh_beets.objdump
-[fresh_beets build complete]
-<<<<<<< HEAD
-=======
-13:50:31 **** Incremental Build of configuration Nios II for project fresh_beets ****
+nios2-elf-gcc -xc -MP -MMD -c -I../heart_beets_bsp//HAL/inc -I../heart_beets_bsp/ -I../heart_beets_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world.o hello_world.c
+Info: Linking heart_beets.elf
+nios2-elf-g++  -T'../heart_beets_bsp//linker.x' -msys-crt0='../heart_beets_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../heart_beets_bsp/   -Wl,-Map=heart_beets.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o heart_beets.elf obj/default/hello_world.o obj/default/pacemaker.o -lm -msys-lib=m
+nios2-elf-insert heart_beets.elf --thread_model hal --cpu_name cpu --qsys true --simulation_enabled false --id 308784078 --sidp 0x0 --timestamp 1502336826 --stderr_dev jtag_uart --stdin_dev jtag_uart --stdout_dev jtag_uart --sopc_system_name nios2_system --quartus_project_dir "D:/303-Assignment-2/Lab___export/Prebuilt_Nios" --sopcinfo D:/303-Assignment-2/Lab___export/Prebuilt_Nios/software/heart_beets_bsp/../../nios2_system.sopcinfo
+Info: (heart_beets.elf) 47 KBytes program size (code + initialized data).
+Info:                   8137 KBytes free for stack + heap.
+Info: Creating heart_beets.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source heart_beets.elf >heart_beets.objdump
+[heart_beets build complete]
+21:29:29 **** Incremental Build of configuration Nios II for project heart_beets ****
 make all 
-Info: Building ../fresh_beets_bsp/
-C:/intelFPGA/16.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../fresh_beets_bsp/
+Info: Building ../heart_beets_bsp/
+C:/intelFPGA/16.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../heart_beets_bsp/
+[BSP build complete]
+Info: Compiling pacemaker.c to obj/default/pacemaker.o
+nios2-elf-gcc -xc -MP -MMD -c -I../heart_beets_bsp//HAL/inc -I../heart_beets_bsp/ -I../heart_beets_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/pacemaker.o pacemaker.c
+Info: Linking heart_beets.elf
+nios2-elf-g++  -T'../heart_beets_bsp//linker.x' -msys-crt0='../heart_beets_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../heart_beets_bsp/   -Wl,-Map=heart_beets.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o heart_beets.elf obj/default/hello_world.o obj/default/pacemaker.o -lm -msys-lib=m
+nios2-elf-insert heart_beets.elf --thread_model hal --cpu_name cpu --qsys true --simulation_enabled false --id 308784078 --sidp 0x0 --timestamp 1502336826 --stderr_dev jtag_uart --stdin_dev jtag_uart --stdout_dev jtag_uart --sopc_system_name nios2_system --quartus_project_dir "D:/303-Assignment-2/Lab___export/Prebuilt_Nios" --sopcinfo D:/303-Assignment-2/Lab___export/Prebuilt_Nios/software/heart_beets_bsp/../../nios2_system.sopcinfo
+Info: (heart_beets.elf) 48 KBytes program size (code + initialized data).
+Info:                   8136 KBytes free for stack + heap.
+Info: Creating heart_beets.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source heart_beets.elf >heart_beets.objdump
+[heart_beets build complete]
+21:33:24 **** Incremental Build of configuration Nios II for project heart_beets ****
+make all 
+Info: Building ../heart_beets_bsp/
+C:/intelFPGA/16.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../heart_beets_bsp/
+[BSP build complete]
+[heart_beets build complete]
+21:57:10 **** Build of configuration Nios II for project heart_beets ****
+make all 
+Info: Building ../heart_beets_bsp/
+C:/intelFPGA/16.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../heart_beets_bsp/
 [BSP build complete]
 Info: Compiling hello_world.c to obj/default/hello_world.o
-nios2-elf-gcc -xc -MP -MMD -c -I../fresh_beets_bsp//HAL/inc -I../fresh_beets_bsp/ -I../fresh_beets_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world.o hello_world.c
-Info: Linking fresh_beets.elf
-nios2-elf-g++  -T'../fresh_beets_bsp//linker.x' -msys-crt0='../fresh_beets_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../fresh_beets_bsp/   -Wl,-Map=fresh_beets.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o fresh_beets.elf obj/default/hello_world.o obj/default/pacemaker.o -lm -msys-lib=m
-nios2-elf-insert fresh_beets.elf --thread_model hal --cpu_name cpu --qsys true --simulation_enabled false --id 308784078 --sidp 0x0 --timestamp 1502336826 --stderr_dev jtag_uart --stdin_dev jtag_uart --stdout_dev jtag_uart --sopc_system_name nios2_system --quartus_project_dir "D:/303-Assignment-2/Lab___export/Prebuilt_Nios" --sopcinfo D:/303-Assignment-2/Lab___export/Prebuilt_Nios/software/fresh_beets_bsp/../../nios2_system.sopcinfo
-Info: (fresh_beets.elf) 86 KBytes program size (code + initialized data).
-Info:                   8098 KBytes free for stack + heap.
-Info: Creating fresh_beets.objdump
-nios2-elf-objdump --disassemble --syms --all-header --source fresh_beets.elf >fresh_beets.objdump
-[fresh_beets build complete]
-13:51:05 **** Incremental Build of configuration Nios II for project fresh_beets ****
+nios2-elf-gcc -xc -MP -MMD -c -I../heart_beets_bsp//HAL/inc -I../heart_beets_bsp/ -I../heart_beets_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world.o hello_world.c
+hello_world.c: In function 'startTimers':
+hello_world.c:221:6: error: 'PVARP_start' undeclared (first use in this function)
+  if (PVARP_start == 1)
+      ^
+hello_world.c:221:6: note: each undeclared identifier is reported only once for each function it appears in
+hello_world.c:226:5: error: 'VRP_start' undeclared (first use in this function)
+  if(VRP_start==1)
+     ^
+hello_world.c:231:5: error: 'AEI_start' undeclared (first use in this function)
+  if(AEI_start==1)
+     ^
+hello_world.c:236:6: error: 'URI_start' undeclared (first use in this function)
+  if (URI_start == 1)
+      ^
+hello_world.c:241:6: error: 'LRI_start' undeclared (first use in this function)
+  if (LRI_start == 1)
+      ^
+make: *** [obj/default/hello_world.o] Error 1
+22:04:37 **** Incremental Build of configuration Nios II for project heart_beets ****
 make all 
-Info: Building ../fresh_beets_bsp/
-C:/intelFPGA/16.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../fresh_beets_bsp/
+Info: Building ../heart_beets_bsp/
+C:/intelFPGA/16.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../heart_beets_bsp/
 [BSP build complete]
-[fresh_beets build complete]
-13:51:16 **** Build of configuration Nios II for project fresh_beets ****
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../heart_beets_bsp//HAL/inc -I../heart_beets_bsp/ -I../heart_beets_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world.o hello_world.c
+Info: Linking heart_beets.elf
+nios2-elf-g++  -T'../heart_beets_bsp//linker.x' -msys-crt0='../heart_beets_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../heart_beets_bsp/   -Wl,-Map=heart_beets.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o heart_beets.elf obj/default/hello_world.o obj/default/pacemaker.o -lm -msys-lib=m
+nios2-elf-insert heart_beets.elf --thread_model hal --cpu_name cpu --qsys true --simulation_enabled false --id 308784078 --sidp 0x0 --timestamp 1502336826 --stderr_dev jtag_uart --stdin_dev jtag_uart --stdout_dev jtag_uart --sopc_system_name nios2_system --quartus_project_dir "D:/303-Assignment-2/Lab___export/Prebuilt_Nios" --sopcinfo D:/303-Assignment-2/Lab___export/Prebuilt_Nios/software/heart_beets_bsp/../../nios2_system.sopcinfo
+Info: (heart_beets.elf) 48 KBytes program size (code + initialized data).
+Info:                   8136 KBytes free for stack + heap.
+Info: Creating heart_beets.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source heart_beets.elf >heart_beets.objdump
+[heart_beets build complete]
+22:04:40 **** Build of configuration Nios II for project heart_beets_bsp ****
 make all 
-Info: Building ../fresh_beets_bsp/
-C:/intelFPGA/16.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../fresh_beets_bsp/
 [BSP build complete]
-[fresh_beets build complete]
-13:51:18 **** Incremental Build of configuration Nios II for project fresh_beets ****
-make all 
-Info: Building ../fresh_beets_bsp/
-C:/intelFPGA/16.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../fresh_beets_bsp/
-[BSP build complete]
-[fresh_beets build complete]
-13:51:40 **** Incremental Build of configuration Nios II for project fresh_beets ****
-make all 
-Info: Building ../fresh_beets_bsp/
-C:/intelFPGA/16.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../fresh_beets_bsp/
-[BSP build complete]
-[fresh_beets build complete]
->>>>>>> f28317081308ffb0dd803890f285de463ab7f5eb

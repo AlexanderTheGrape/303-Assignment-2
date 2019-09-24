@@ -2,10 +2,10 @@
 <sch:Settings xmlns:sch="http://www.altera.com/embeddedsw/bsp/schema">
         <BspType>hal</BspType>
         <BspVersion>default</BspVersion>
-        <BspGeneratedTimeStamp>23/09/2019 7:06:05 PM</BspGeneratedTimeStamp>
-        <BspGeneratedUnixTimeStamp>1569222365714</BspGeneratedUnixTimeStamp>
+        <BspGeneratedTimeStamp>24/09/2019 6:54:27 PM</BspGeneratedTimeStamp>
+        <BspGeneratedUnixTimeStamp>1569308067094</BspGeneratedUnixTimeStamp>
         <BspGeneratedLocation>D:\303-Assignment-2\Lab___export\Prebuilt_Nios\software\fresh_beets_bsp</BspGeneratedLocation>
-        <BspSettingsFile>.\settings.bsp</BspSettingsFile>
+        <BspSettingsFile>settings.bsp</BspSettingsFile>
         <SopcDesignFile>..\..\nios2_system.sopcinfo</SopcDesignFile>
         <JdiFile>default</JdiFile>
         <Cpu>cpu</Cpu>

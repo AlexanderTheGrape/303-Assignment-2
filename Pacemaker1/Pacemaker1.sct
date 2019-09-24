@@ -1,19 +1,22 @@
 scchart Pacemaker1 {
   
 	input signal VSense, ASense, LRITO, VRPTO, URITO, AEITO, PVARPTO, AVITO;
-	output signal VPace, APace, AVI_stop, AVI_start;
+	output signal VPace, APace, AVI_stop, AVI_start, LRI_start, VRP_start, VRP_stop,
+					AEI_start, AEI_stop, PVARP_start, PVARP_stop, 
+					URI_start, LRI_stop;
 	
 	initial state top {
-		signal LRI_start, LRI_ex, LRI_stop;
-		signal VRP_start, VRP_stop, VRP_ex;
-		signal AVI_start, AVI_ex, AVI_stop;
-		signal PVARP_start, PVARP_stop, PVARP_ex;
-		signal AEI_start, AEI_stop, AEI_ex;
-		signal URI_start, URI_stop, URI_ex;
+		signal  LRI_ex;
+		signal VRP_ex;
+		signal AVI_ex;
+		signal URI_ex;
+		signal PVARP_ex;
+		signal AEI_ex;
 		signal FilteredASense, FilteredVSense;
 		
 		region VRP_timer:
-			initial state idle 	--> timer with AVI_stop;
+			initial state idle 	--> timer with AVI_stop
+								--> timer with VRP_start;
 			state timer 		--> idle with VRPTO/VRP_ex;
 								
 		region VRP:
@@ -29,15 +32,18 @@ scchart Pacemaker1 {
 //			connector state connectorState2 --> waitVRP;
 	
 		region LRI_timer:
-			initial state idle	--> timer with AVI_stop;
+			initial state idle	--> timer with AVI_stop
+								-->timer with LRI_start;
 			state timer			--> idle with LRI_stop
 								--> idle with LRITO / LRI_ex;
 			
 		region LRI:
-			initial state init				--> connectorState1 with VSense;
+			initial state init				--> connectorState1 with FilteredVSense/VRP_start
+											--> connectorState1 with VPace/VRP_start;
 			connector state connectorState1 --> waitVRP with / LRI_start;
 			state waitVRP					--> waitLRI with VRP_ex;
-			state waitLRI					--> connectorState2 with VSense
+			state waitLRI					--> connectorState2 with pre(FilteredVSense)
+											--> connectorState2 with pre(VPace)
 											--> connectorState3 with LRI_ex;
 			connector state connectorState2 --> intState with / LRI_stop;
 			connector state connectorState3 --> intState with / VPace;
@@ -61,7 +67,8 @@ scchart Pacemaker1 {
 			connector state connectorState1 --> idle with / AVI_stop;
 											
 		region PVARP_timer:
-			initial state idle	--> timer with AVI_stop;
+			initial state idle	--> timer with AVI_stop
+								--> timer with PVARP_start;
 			state timer 		--> idle with PVARPTO / PVARP_ex;
 			
 		region PVARP:
@@ -70,7 +77,8 @@ scchart Pacemaker1 {
 			state waitPVARP					--> idle with PVARP_ex;
 		
 		region AEI_timer:
-			initial state idle	--> timer with AVI_stop;
+			initial state idle	--> timer with AVI_stop
+								--> timer with AEI_start;
 			state timer 	   	--> idle with AEI_stop
 								--> idle with AEITO / AEI_ex;
 		
@@ -80,7 +88,8 @@ scchart Pacemaker1 {
 								--> idle with AEI_ex / APace;  
 							
 		region URI_timer:
-			initial state idle 	--> timer with AVI_stop;
+			initial state idle 	--> timer with AVI_stop
+								--> timer with URI_start;
 			state timer 		--> idle with URITO / URI_ex;
 			
 		region URI:
