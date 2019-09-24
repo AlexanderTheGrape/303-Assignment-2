@@ -1,8 +1,13 @@
+<<<<<<< HEAD
 15:48:47 **** Incremental Build of configuration Nios II for project fresh_beets ****
+=======
+13:51:40 **** Incremental Build of configuration Nios II for project fresh_beets ****
+>>>>>>> f28317081308ffb0dd803890f285de463ab7f5eb
 make all 
 Info: Building ../fresh_beets_bsp/
 C:/intelFPGA/16.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../fresh_beets_bsp/
 [BSP build complete]
+<<<<<<< HEAD
 Info: Compiling hello_world.c to obj/default/hello_world.o
 nios2-elf-gcc -xc -MP -MMD -c -I../fresh_beets_bsp//HAL/inc -I../fresh_beets_bsp/ -I../fresh_beets_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world.o hello_world.c
 Info: Linking fresh_beets.elf
@@ -15,4 +20,9 @@ nios2-elf-objdump --disassemble --syms --all-header --source fresh_beets.elf >fr
 [fresh_beets build complete]
 
 15:48:49 Build Finished (took 1s.947ms)
+=======
+[fresh_beets build complete]
+
+13:51:42 Build Finished (took 1s.444ms)
+>>>>>>> f28317081308ffb0dd803890f285de463ab7f5eb
 

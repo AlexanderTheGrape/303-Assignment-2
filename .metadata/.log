@@ -6843,6 +6843,7 @@ org.eclipse.swt.SWTException: Widget is disposed
 
 !ENTRY de.cau.cs.kieler.klighd.incremental 1 0 2019-09-24 12:31:16.484
 !MESSAGE Fallback to simple update. Reason: Empty base model.
+<<<<<<< HEAD
 !SESSION 2019-09-24 14:21:21.586 -----------------------------------------------
 eclipse.buildId=unknown
 java.version=1.8.0_201
@@ -6928,3 +6929,5 @@ Binding(ALT+CTRL+H,
 
 !ENTRY de.cau.cs.kieler.klighd.incremental 1 0 2019-09-24 14:21:29.087
 !MESSAGE Fallback to simple update. Reason: Empty base model.
+=======
+>>>>>>> f28317081308ffb0dd803890f285de463ab7f5eb
