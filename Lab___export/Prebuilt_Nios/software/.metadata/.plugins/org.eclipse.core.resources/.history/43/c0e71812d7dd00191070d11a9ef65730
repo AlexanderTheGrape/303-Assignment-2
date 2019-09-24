@@ -1,0 +1,9 @@
+#ifndef SCCHARTS_H_
+#define SCCHARTS_H_
+
+// Functions
+void reset();
+void tick();
+
+// Inputs
+extern char

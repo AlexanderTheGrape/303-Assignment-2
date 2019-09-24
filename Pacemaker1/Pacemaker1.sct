@@ -1,7 +1,7 @@
 scchart Pacemaker1 {
   
-	input signal VSense, LRITO, VRPTO, URITO, AEITO, PVARPTO, AVITO, ASense;
-	output signal VPace, APace;
+	input signal VSense, ASense, LRITO, VRPTO, URITO, AEITO, PVARPTO, AVITO;
+	output signal VPace, APace, AVI_stop, AVI_start;
 	
 	initial state top {
 		signal LRI_start, LRI_ex, LRI_stop;
@@ -18,7 +18,7 @@ scchart Pacemaker1 {
 								
 		region VRP:
 			initial state idle 				--> waitVRP with AVI_stop / VRP_start
-											--> idle with ASense / FilteredVSense;
+											--> idle with VSense / FilteredVSense;
 			state waitVRP					--> idle with VRP_ex;
 		
 //			initial state idle 				--> connectorState1 with VSense
