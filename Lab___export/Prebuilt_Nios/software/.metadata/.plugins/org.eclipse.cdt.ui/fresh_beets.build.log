@@ -1,9 +1,0 @@
-19:13:35 **** Build of configuration Nios II for project fresh_beets ****
-make all 
-Info: Building ../fresh_beets_bsp/
-C:/intelFPGA/16.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../fresh_beets_bsp/
-[BSP build complete]
-[fresh_beets build complete]
-
-19:13:36 Build Finished (took 1s.160ms)
-
