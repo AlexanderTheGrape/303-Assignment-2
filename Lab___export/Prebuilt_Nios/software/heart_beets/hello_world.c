@@ -22,11 +22,10 @@
 #include "sys/alt_irq.h"
 #include <string.h>
 
-
 #include "pacemaker.h"
 //#include "pacemaker.c"
 
-
+//----Timer Value Macros-----
 #define AVI_Value 300
 #define AEI_Value 800
 #define PVARP_Value 50
@@ -41,6 +40,7 @@
 //#define LRI_Value 3000
 //#define URI_Value 2000
 
+//----Declare Timers----
 alt_alarm AVI_timer;
 alt_alarm PVARP_timer;
 alt_alarm VRP_timer;
@@ -51,107 +51,116 @@ alt_alarm URI_timer;
 alt_alarm Atrial_timer;
 alt_alarm Ventricular_timer;
 
-unsigned int AVI_timeout = 0;
-unsigned int PVARP_timeout = 0;
-unsigned int VRP_timeout = 0;
-unsigned int AEI_timeout = 0;
-unsigned int LRI_timeout = 0;
-unsigned int URI_timeout = 0;
+//----Set all timeout flags to 0----
+unsigned int AVITO = 0;
+unsigned int PVARPTO = 0;
+unsigned int VRPTO = 0;
+unsigned int AEITO = 0;
+unsigned int LRITO = 0;
+unsigned int URITO = 0;
 
-unsigned int LEDbits = 0;
+unsigned int LEDbits = 0;  //Turn all LEDs off
 
-unsigned int LED0 = 0;
-unsigned int LED1 = 0;
+unsigned int LED0 = 0; //Atrial event LED turned off
+unsigned int LED1 = 0; //Ventricular event LED turned off
 
 //unsigned int buttonVal = 0;
-unsigned int uiButton = 0;
+unsigned int uiButton = 0; //Set button value to 0
 //void * buttonContext = (void*) &uiButtonValue;
-unsigned int maskedButton0 = 0;
-unsigned int maskedButton1 = 0;
-unsigned int button0_pressed = 0;
-unsigned int button1_pressed = 0;
+unsigned int maskedButton0 = 0; //Set button 0 value to 0
+unsigned int maskedButton1 = 0; //Set button 1 value to 0
+unsigned int button0_pressed = 0; //Set button 0 to unpressed
+unsigned int button1_pressed = 0; //Set button 1 to unpressed
 
+//ISR called when atrial timer ends. Used to hold atrial LED on for
+//a predefined time so it can be seen.
 alt_u32 Atrial_timer_ISR(void* context)
 {
-	LED0 = 0;
-	return 0;
+	LED0 = 0; //Turn atrial LED off
+	return 0; //Don't restart timer
 }
 
+//ISR called when ventricular timer ends. Used to hold ventricular LED on for
+//a predefined time so it can be seen.
 alt_u32 Ventricular_timer_ISR(void* context)
 {
-	LED1 = 0;
-	return 1;
+	LED1 = 0; //Turn ventricular LED off
+	return 0; //Don't restart timer
 }
 
+//ISR called when AVI timer ends. Used to set AVI timeout flag high
 alt_u32 AVI_timer_ISR(void* context)
 {
-	AVITO = 1;
+	AVITO = 1; //Set AVI timeout flag
 	printf("----AVI timed out----\n");
-
 //	alt_alarm_stop(&AVI_timer);
-	return 0;
+	return 0; //Don't restart timer
 }
 
+//ISR called when PVARP timer ends. Used to set PVARP timeout flag high
 alt_u32 PVARP_timer_ISR(void* context)
 {
-	PVARPTO = 1;
+	PVARPTO = 1; //Set PVARP timeout flag
 	printf("PVARP timed out\n");
 //	alt_alarm_stop(&PVARP_timer);
-	return 0;
+	return 0; //Don't restart timer
 }
 
+//ISR called when VRP timer ends. Used to set VRP timeout flag high
 alt_u32 VRP_timer_ISR(void* context)
 {
-	VRPTO = 1;
+	VRPTO = 1; //Set VRP timeout flag
 	printf("VRP timed out\n");
 //	alt_alarm_stop(&VRP_timer);
-	return 0;
+	return 0; //Don't restart timer
 }
 
+//ISR called when AEI timer ends. Used to set AEI timeout flag high
 alt_u32 AEI_timer_ISR(void* context)
 {
-	AEITO = 1;
+	AEITO = 1; //Set AEI timeout flag
 	printf("AEI timed out\n");
-
 //	alt_alarm_stop(&AEI_timer);
-	return 0;
+	return 0; //Don't restart timer
 }
 
+//ISR called when LRI timer ends. Used to set LRI timeout flag high
 alt_u32 LRI_timer_ISR(void* context)
 {
-	LRITO = 1;
+	LRITO = 1; //Set LRI timeout flag
 	printf("LRI timed out\n");
-
 //	alt_alarm_stop(&LRI_timer);
-	return 0;
+	return 0; //Don't restart timer
 }
 
+//ISR called when URI timer ends. Used to set URI timeout flag high
 alt_u32 URI_timer_ISR(void* context)
 {
-	URITO = 1;
+	URITO = 1; //Set URI timeout flag
 	printf("URI timed out\n");
 //	alt_alarm_stop(&URI_timer);
-	return 0;
+	return 0; //Don't restart timer
 }
 
+//This function checks if a button is pushed and sets the appropriate flag
 void pollButtons()
 {
 	// Poll buttons
-	uiButton = IORD_ALTERA_AVALON_PIO_DATA(BUTTONS_BASE);
-	IOWR_ALTERA_AVALON_PIO_EDGE_CAP(BUTTONS_BASE, 0);// clear the edge capture register
-	int maskedButton0 = uiButton & (1 << 0);
-	int maskedButton1 = uiButton & (1 << 1);
+	uiButton = IORD_ALTERA_AVALON_PIO_DATA(BUTTONS_BASE); //Read the buttons register
+	IOWR_ALTERA_AVALON_PIO_EDGE_CAP(BUTTONS_BASE, 0);// Clear the edge capture register
+	int maskedButton0 = uiButton & (1 << 0); //Mask out the bit for button 0 (atrial event button)
+	int maskedButton1 = uiButton & (1 << 1); //Mask out the bit for button 1 (ventricular event button)
 
-	if (maskedButton0 > 0){
-		ASense = 0;
+	if (maskedButton0 > 0){ //Check if button 0 is not pushed
+		ASense = 0; //Reset atrial sense flag
 	} else {
-		ASense = 1;
+		ASense = 1; //Set atrial sense flag
 //		printf("--- ASense! ---\n");
 	}
-	if (maskedButton1 > 0){
-		VSense = 0;
+	if (maskedButton1 > 0){ //Check if button 1 is not pushed
+		VSense = 0; //Reset ventricular sense flag
 	} else {
-		VSense = 1;
+		VSense = 1; //Set ventricular sense flag
 //		printf("--- VSense! ---\n");
 	}
 
@@ -161,35 +170,37 @@ void pollButtons()
 //	printf("VSense is: %d \n", VSense);
 }
 
+//This function is used to blink the LEDs to show sensing
+//and pacing of the heart.
 void heartLEDs()
 {
 
-	unsigned int A_LED = ASense || APace;
-	unsigned int V_LED = VSense || VPace;
+	unsigned int A_LED = ASense || APace; //Set atrial LED if A sensed or paced
+	unsigned int V_LED = VSense || VPace; //Set ventricular LED if V sensed or paced
 
-	if (A_LED == 1)
+	if (A_LED == 1) //Check if A was sensed or paced
 	{
-		LED0 = 1;
-		// Start timer
-		alt_alarm_stop(&Atrial_timer);
-		alt_alarm_start(&Atrial_timer, 100, Atrial_timer_ISR, NULL);
+		LED0 = 1; //Set atrial LED on
+		alt_alarm_stop(&Atrial_timer); //Check timer is stopped before starting
+		alt_alarm_start(&Atrial_timer, 100, Atrial_timer_ISR, NULL); // Start timer
 	}
 
 	if (V_LED == 1)
 	{
-		LED1 = 1;
-		// Start timer
-		alt_alarm_stop(&Ventricular_timer);
-		alt_alarm_start(&Ventricular_timer, 100, Ventricular_timer_ISR, NULL);
+		LED1 = 1; //Set ventricular LED on
+		alt_alarm_stop(&Ventricular_timer); //Check timer is stopped before starting
+		alt_alarm_start(&Ventricular_timer, 100, Ventricular_timer_ISR, NULL); // Start timer
 	}
 
-	LEDbits = 0;
-	LEDbits = LEDbits | (A_LED << 0);
-	LEDbits = LEDbits | (V_LED << 1);
+	LEDbits = 0; //Set all LEDs off
+	//Set atrial and ventricular LEDs to their current state
+	LEDbits = LEDbits | (A_LED << 0); //Should be Led0 not Aled
+	LEDbits = LEDbits | (V_LED << 1); //Should be led1 not aled
 
-	IOWR_ALTERA_AVALON_PIO_DATA(LEDS_GREEN_BASE, LEDbits);
+	IOWR_ALTERA_AVALON_PIO_DATA(LEDS_GREEN_BASE, LEDbits); //Write LED values
 }
 
+//This function is used to start all timers at the time they need starting.
 void startTimers()
 {
 	if (AVI_stop == 1)
