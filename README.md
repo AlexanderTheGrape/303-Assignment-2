@@ -1,5 +1,5 @@
 ## 303-Assignment-2
-#Pacemaker Project
+# Pacemaker Project
 
 Quick controls:
  - Switch 0 
