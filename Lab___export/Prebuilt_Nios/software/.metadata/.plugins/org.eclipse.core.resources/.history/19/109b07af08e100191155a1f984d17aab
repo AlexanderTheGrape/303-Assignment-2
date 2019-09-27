@@ -421,10 +421,10 @@ void UARTwrite(){
 		char V = 'V';
 
 		if(APace == 1){
-			write(uart_fd, &A, 1); // Write A to UART
+			write(uart_fd, &A, 1); // Write to UART
 		}
 		if(VPace == 1){
-			write(uart_fd, &V, 1); // Write V to UART
+			write(uart_fd, &V, 1); // Write to UART
 		}
 	}
 }

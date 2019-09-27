@@ -5493,3 +5493,15 @@ Binding(ALT+CTRL+I,
 
 !ENTRY com.altera.sbtgui.launch 1 0 2019-09-27 20:37:29.341
 !MESSAGE Executing: [C:/intelfpga/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --accept-bad-sysid --sidp=0x0 /cygdrive/d/303-Assignment-2/Lab___export/Prebuilt_Nios/software/heart_beets/heart_beets.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-09-27 21:01:30.098
+!MESSAGE Executing: [C:/intelfpga/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --accept-bad-sysid --sidp=0x0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-09-27 21:01:32.428
+!MESSAGE Executing: [C:/intelfpga/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --accept-bad-sysid --sidp=0x0 /cygdrive/d/303-Assignment-2/Lab___export/Prebuilt_Nios/software/heart_beets/heart_beets.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-09-27 21:25:40.609
+!MESSAGE Executing: [C:/intelfpga/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --accept-bad-sysid --sidp=0x0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-09-27 21:25:43.037
+!MESSAGE Executing: [C:/intelfpga/16.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --accept-bad-sysid --sidp=0x0 /cygdrive/d/303-Assignment-2/Lab___export/Prebuilt_Nios/software/heart_beets/heart_beets.elf]

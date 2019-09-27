@@ -222,7 +222,7 @@ void heartLEDs()
 		alt_alarm_stop(&AtrialPace_timer); //Check timer is stopped before starting
 		alt_alarm_start(&AtrialPace_timer, 100, AtrialPace_timer_ISR, NULL); // Start timer
 	}
-	if (VPace == 1) //Check if V was paced
+	if (VPace == 1)
 	{
 		LED4 = 1; //Set ventricular LED on
 		alt_alarm_stop(&VentricularPace_timer); //Check timer is stopped before starting
@@ -241,10 +241,10 @@ void heartLEDs()
 }
 
 //Flags are used as a buffer before being output to SCCharts.
-// This function sets flags as a buffer, to account for the
-// difference in speed between the C and SCC logic.
 void setFlags()
 {
+	// This function sets flags as a buffer, to account for the
+	// difference in speed between the C and SCC logic.
 	if (AVITOFlag == 1) {
 		AVITO = 1;
 		AVITOFlag = 0;
@@ -369,8 +369,11 @@ void startTimers()
 	URI_start = 0;
 
 	AVI_stop = 0;
+//	PVARP_stop = 0;
+//	VRP_stop = 0;
 	AEI_stop = 0;
 	LRI_stop = 0;
+//	URI_stop = 0;
 }
 
 void initialiseUART()
@@ -421,10 +424,10 @@ void UARTwrite(){
 		char V = 'V';
 
 		if(APace == 1){
-			write(uart_fd, &A, 1); // Write A to UART
+			write(uart_fd, &A, 1); // Write to UART
 		}
 		if(VPace == 1){
-			write(uart_fd, &V, 1); // Write V to UART
+			write(uart_fd, &V, 1); // Write to UART
 		}
 	}
 }
