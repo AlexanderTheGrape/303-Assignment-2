@@ -1,6 +1,22 @@
 # 303-Assignment-2
 Pacemaker Project
 
+Quick controls:
+ - Switch 0 
+    - low = mode 1
+    - high = mode 2
+ - button 0 = ventricular sense 
+ - button 1 = atrial sense
+ Note: From left to right the buttons go A, V
+ 
+ LEDs:
+  - LED 0 = ventricular sense
+  - LED 1 = atrial sense
+  - LED 2 is unused
+  - LED 3 = ventricular sense
+  - LED 4 = atrial sense
+  Note: From left to right the LEDs go A, V, A, V - (Pace then Sense)
+
 How to use:
 
 Download the repository onto the hard drive of the computer, which must be running windows. Extract the folder onto the D: drive.
