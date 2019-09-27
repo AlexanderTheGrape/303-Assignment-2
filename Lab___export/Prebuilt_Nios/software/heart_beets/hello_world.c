@@ -52,12 +52,12 @@ alt_alarm Atrial_timer;
 alt_alarm Ventricular_timer;
 
 //----Set all timeout flags to 0----
-unsigned int AVITO = 0;
-unsigned int PVARPTO = 0;
-unsigned int VRPTO = 0;
-unsigned int AEITO = 0;
-unsigned int LRITO = 0;
-unsigned int URITO = 0;
+int AVITOFlag = 0;
+int PVARPTOFlag = 0;
+int VRPTOFlag = 0;
+int AEITOFlag = 0;
+int LRITOFlag = 0;
+int URITOFlag = 0;
 
 unsigned int LEDbits = 0;  //Turn all LEDs off
 
@@ -71,6 +71,9 @@ unsigned int maskedButton0 = 0; //Set button 0 value to 0
 unsigned int maskedButton1 = 0; //Set button 1 value to 0
 unsigned int button0_pressed = 0; //Set button 0 to unpressed
 unsigned int button1_pressed = 0; //Set button 1 to unpressed
+
+
+
 
 //ISR called when atrial timer ends. Used to hold atrial LED on for
 //a predefined time so it can be seen.
@@ -91,8 +94,8 @@ alt_u32 Ventricular_timer_ISR(void* context)
 //ISR called when AVI timer ends. Used to set AVI timeout flag high
 alt_u32 AVI_timer_ISR(void* context)
 {
-	AVITO = 1; //Set AVI timeout flag
-	printf("----AVI timed out----\n");
+	AVITOFlag = 1; //Set AVI timeout flag
+	printf("AVI timed out\n");
 //	alt_alarm_stop(&AVI_timer);
 	return 0; //Don't restart timer
 }
@@ -100,7 +103,7 @@ alt_u32 AVI_timer_ISR(void* context)
 //ISR called when PVARP timer ends. Used to set PVARP timeout flag high
 alt_u32 PVARP_timer_ISR(void* context)
 {
-	PVARPTO = 1; //Set PVARP timeout flag
+	PVARPTOFlag = 1; //Set PVARP timeout flag
 	printf("PVARP timed out\n");
 //	alt_alarm_stop(&PVARP_timer);
 	return 0; //Don't restart timer
@@ -109,7 +112,7 @@ alt_u32 PVARP_timer_ISR(void* context)
 //ISR called when VRP timer ends. Used to set VRP timeout flag high
 alt_u32 VRP_timer_ISR(void* context)
 {
-	VRPTO = 1; //Set VRP timeout flag
+	VRPTOFlag = 1; //Set VRP timeout flag
 	printf("VRP timed out\n");
 //	alt_alarm_stop(&VRP_timer);
 	return 0; //Don't restart timer
@@ -118,7 +121,7 @@ alt_u32 VRP_timer_ISR(void* context)
 //ISR called when AEI timer ends. Used to set AEI timeout flag high
 alt_u32 AEI_timer_ISR(void* context)
 {
-	AEITO = 1; //Set AEI timeout flag
+	AEITOFlag = 1; //Set AEI timeout flag
 	printf("AEI timed out\n");
 //	alt_alarm_stop(&AEI_timer);
 	return 0; //Don't restart timer
@@ -127,7 +130,7 @@ alt_u32 AEI_timer_ISR(void* context)
 //ISR called when LRI timer ends. Used to set LRI timeout flag high
 alt_u32 LRI_timer_ISR(void* context)
 {
-	LRITO = 1; //Set LRI timeout flag
+	LRITOFlag = 1; //Set LRI timeout flag
 	printf("LRI timed out\n");
 //	alt_alarm_stop(&LRI_timer);
 	return 0; //Don't restart timer
@@ -136,7 +139,7 @@ alt_u32 LRI_timer_ISR(void* context)
 //ISR called when URI timer ends. Used to set URI timeout flag high
 alt_u32 URI_timer_ISR(void* context)
 {
-	URITO = 1; //Set URI timeout flag
+	URITOFlag = 1; //Set URI timeout flag
 	printf("URI timed out\n");
 //	alt_alarm_stop(&URI_timer);
 	return 0; //Don't restart timer
@@ -194,81 +197,170 @@ void heartLEDs()
 
 	LEDbits = 0; //Set all LEDs off
 	//Set atrial and ventricular LEDs to their current state
-	LEDbits = LEDbits | (A_LED << 0); //Should be Led0 not Aled
-	LEDbits = LEDbits | (V_LED << 1); //Should be led1 not aled
+	LEDbits = (LEDbits | (LED0 << 0));
+	LEDbits = (LEDbits | (LED1 << 1));
 
 	IOWR_ALTERA_AVALON_PIO_DATA(LEDS_GREEN_BASE, LEDbits); //Write LED values
+}
+
+void setFlags()
+{
+	if (AVITOFlag == 1) {
+		AVITO = 1;
+		AVITOFlag = 0;
+		printf("----AVI timed out----\n");
+	} else {
+		AVITO = 0;
+	}
+
+	if (PVARPTOFlag == 1) {
+		PVARPTO = 1;
+		PVARPTOFlag = 0;
+			printf("----PVARP timed out----\n");
+	} else {
+		PVARPTO = 0;
+	}
+
+	if (VRPTOFlag == 1) {
+		VRPTO= 1;
+		VRPTOFlag = 0;
+			printf("----VRP timed out----\n");
+	} else {
+		VRPTO = 0;
+	}
+
+	if (AEITOFlag == 1) {
+		AEITO = 1;
+		AEITOFlag = 0;
+			printf("----AEI timed out----\n");
+	} else {
+		AEITO = 0;
+	}
+
+	if (LRITOFlag == 1) {
+		LRITO= 1;
+		LRITOFlag = 0;
+			printf("----LRI timed out----\n");
+	} else {
+		LRITO = 0;
+	}
+
+	if (URITOFlag == 1) {
+		URITO = 1;
+		URITOFlag = 0;
+			printf("----URI timed out----\n");
+	} else {
+		URITO = 0;
+	}
 }
 
 //This function is used to start all timers at the time they need starting.
 void startTimers()
 {
-	if (AVI_stop == 1)
-	{
-		printf("avi stop is met\n");
-
-		alt_alarm_stop(&PVARP_timer);
-		alt_alarm_stop(&VRP_timer);
-		alt_alarm_stop(&AEI_timer);
-		alt_alarm_stop(&LRI_timer);
-		alt_alarm_stop(&URI_timer);
-
-		alt_alarm_start(&PVARP_timer, PVARP_Value, PVARP_timer_ISR, NULL);
-		alt_alarm_start(&VRP_timer, VRP_Value, VRP_timer_ISR, NULL);
-		alt_alarm_start(&AEI_timer, AEI_Value, AEI_timer_ISR, NULL);
-		alt_alarm_start(&LRI_timer, LRI_Value, LRI_timer_ISR, NULL);
-		alt_alarm_start(&URI_timer, URI_Value, URI_timer_ISR, NULL);
-	}
+//	if (AVI_stop == 1)
+//	{
+//		printf("avi stop is met\n");
+//
+//		alt_alarm_stop(&PVARP_timer);
+//		alt_alarm_stop(&VRP_timer);
+//		alt_alarm_stop(&AEI_timer);
+//		alt_alarm_stop(&LRI_timer);
+//		alt_alarm_stop(&URI_timer);
+//
+//		alt_alarm_start(&PVARP_timer, PVARP_Value, PVARP_timer_ISR, NULL);
+//		alt_alarm_start(&VRP_timer, VRP_Value, VRP_timer_ISR, NULL);
+//		alt_alarm_start(&AEI_timer, AEI_Value, AEI_timer_ISR, NULL);
+//		alt_alarm_start(&LRI_timer, LRI_Value, LRI_timer_ISR, NULL);
+//		alt_alarm_start(&URI_timer, URI_Value, URI_timer_ISR, NULL);
+//	}
 	if (AVI_start == 1)
 	{
-		printf("avi start is met\n");
+
 		alt_alarm_stop(&AVI_timer);
 		alt_alarm_start(&AVI_timer, AVI_Value, AVI_timer_ISR, NULL);
+		printf("avi start \n");
 	}
+	else if (AVI_stop == 1)
+	{
+		alt_alarm_stop(&AVI_timer);
+		printf("avi stop\n");
+	}
+
 
 	if (PVARP_start == 1)
 	{
-		printf("pvarp start is met\n");
 		alt_alarm_stop(&PVARP_timer);
 		alt_alarm_start(&PVARP_timer, PVARP_Value, PVARP_timer_ISR, NULL);
+		printf("pvarp start\n");
 	}
+//	else if (PVARP_stop == 1)
+//	{
+//		alt_alarm_stop(&PVARP_timer);
+//	}
+
+
 	if(VRP_start==1)
 	{
-		printf("vrp start is met\n");
 		alt_alarm_stop(&VRP_timer);
 		alt_alarm_start(&VRP_timer, VRP_Value, VRP_timer_ISR, NULL);
+		printf("vrp start\n");
 	}
+//	else if (VRP_stop == 1)
+//	{
+//		alt_alarm_stop(&VRP_timer);
+//	}
+
+
 	if(AEI_start==1)
 	{
-		printf("aei start is met\n");
 		alt_alarm_stop(&AEI_timer);
 		alt_alarm_start(&AEI_timer, AEI_Value, AEI_timer_ISR, NULL);
+		printf("aei start\n");
 	}
+	else if (AEI_stop == 1)
+	{
+		alt_alarm_stop(&AEI_timer);
+		printf("aei stop \n");
+	}
+
+
 	if (URI_start == 1)
 	{
-		printf("uri start is met\n");
 		alt_alarm_stop(&URI_timer);
 		alt_alarm_start(&URI_timer, URI_Value, URI_timer_ISR, NULL);
+		printf("uri start\n");
 	}
+//	else if (URI_stop == 1)
+//	{
+//		alt_alarm_stop(&URI_timer);
+//	}
+
+
 	if (LRI_start == 1)
 	{
-		printf("lri start is met\n");
 		alt_alarm_stop(&LRI_timer);
 		alt_alarm_start(&LRI_timer, LRI_Value, LRI_timer_ISR, NULL);
+		printf("lri start\n");
 	}
+	else if (LRI_stop == 1)
+	{
+		alt_alarm_stop(&LRI_timer);
+		printf("lri stop\n");
+	}
+
 
 	if (VPace == 1)
 	{
 		printf("**********V paced**");
-		AVITO = 0;
+//		AVITO = 0;
 	}
 
-//	AVITO = 0;
-	PVARPTO = 0;
-	VRPTO = 0;
-	AEITO = 0;
-	LRITO = 0;
-	URITO = 0;
+//	AVITOFlag = 0;
+//	PVARPTOFlag = 0;
+//	VRPTOFlag = 0;
+//	AEITOFlag = 0;
+//	LRITOFlag = 0;
+//	URITOFlag = 0;
 
 	AVI_start = 0;
 	PVARP_start = 0;
@@ -276,6 +368,13 @@ void startTimers()
 	AEI_start = 0;
 	LRI_start = 0;
 	URI_start = 0;
+
+	AVI_stop = 0;
+//	PVARP_stop = 0;
+//	VRP_stop = 0;
+	AEI_stop = 0;
+	LRI_stop = 0;
+//	URI_stop = 0;
 }
 
 int main()
@@ -294,20 +393,20 @@ int main()
 //	alt_alarm_start(&LRI_timer, LRI_Value, LRI_timer_ISR, NULL);
 //	alt_alarm_start(&URI_timer, URI_Value, URI_timer_ISR, NULL);
 
-//	AVI_stop = 1;
-	tick();
-	ASense = 1;
-	LRI_start = 1;
-	URI_start = 1;
-	tick();
-	startTimers();
-//	alt_alarm_start(&LRI_timer, LRI_Value, LRI_timer_ISR, NULL);
-//	alt_alarm_start(&URI_timer, URI_Value, URI_timer_ISR, NULL);
-	LRI_start = 0;
-	URI_start = 0;
-	ASense = 0;
-	printf("AVI start is %i \r\n", AVI_start);
-	startTimers();
+////	AVI_stop = 1;
+//	tick();
+//	ASense = 1;
+//	LRI_start = 1;
+//	URI_start = 1;
+//	tick();
+//	startTimers();
+////	alt_alarm_start(&LRI_timer, LRI_Value, LRI_timer_ISR, NULL);
+////	alt_alarm_start(&URI_timer, URI_Value, URI_timer_ISR, NULL);
+//	LRI_start = 0;
+//	URI_start = 0;
+//	ASense = 0;
+//	printf("AVI start is %i \r\n", AVI_start);
+//	startTimers();
 
 //	APace = 1;
 //	heartLEDs();
@@ -316,15 +415,22 @@ int main()
 
 	while(1) // Main loop
 	{
+		pollButtons();
+		setFlags();
 		tick();
 		startTimers();
-		pollButtons();
 		heartLEDs();
+
+
+//		printf("URI_start is: %i \n", URI_start);
+//		printf("AEI_start is: %i \n", AEI_start);
 
 		count = count + 1;
 		if (count % 2000 == 0){
-			printf("another 2000 iterations have passed\n");
-			printf("AVITO is: %i \n", AVITO);
+			//printf("another 2000 iterations have passed\n");
+//			printf("AVITO is: %i \n", AVITO);
+			//printf("URI_start is: %i \n", URI_start);
+//			printf("URI_start is: %i \n", URI_start);
 		}
 //		printf("LRI_start: %c", LRI_start);
 //		printf("AVI_start = %i \r\n", AVI_start);
@@ -338,3 +444,81 @@ int main()
 
   return 0;
 }
+
+//
+//void startTimers()
+//{
+//	if (AVI_stop == 1)
+//	{
+//		printf("avi stop is met\n");
+//
+//		alt_alarm_stop(&PVARP_timer);
+//		alt_alarm_stop(&VRP_timer);
+//		alt_alarm_stop(&AEI_timer);
+//		alt_alarm_stop(&LRI_timer);
+//		alt_alarm_stop(&URI_timer);
+//
+//		alt_alarm_start(&PVARP_timer, PVARP_Value, PVARP_timer_ISR, NULL);
+//		alt_alarm_start(&VRP_timer, VRP_Value, VRP_timer_ISR, NULL);
+//		alt_alarm_start(&AEI_timer, AEI_Value, AEI_timer_ISR, NULL);
+//		alt_alarm_start(&LRI_timer, LRI_Value, LRI_timer_ISR, NULL);
+//		alt_alarm_start(&URI_timer, URI_Value, URI_timer_ISR, NULL);
+//	}
+//	if (AVI_start == 1)
+//	{
+//		printf("avi start is met\n");
+//		alt_alarm_stop(&AVI_timer);
+//		alt_alarm_start(&AVI_timer, AVI_Value, AVI_timer_ISR, NULL);
+//	}
+//
+//	if (PVARP_start == 1)
+//	{
+//		printf("pvarp start is met\n");
+//		alt_alarm_stop(&PVARP_timer);
+//		alt_alarm_start(&PVARP_timer, PVARP_Value, PVARP_timer_ISR, NULL);
+//	}
+//	if(VRP_start==1)
+//	{
+//		printf("vrp start is met\n");
+//		alt_alarm_stop(&VRP_timer);
+//		alt_alarm_start(&VRP_timer, VRP_Value, VRP_timer_ISR, NULL);
+//	}
+//	if(AEI_start==1)
+//	{
+//		printf("aei start is met\n");
+//		alt_alarm_stop(&AEI_timer);
+//		alt_alarm_start(&AEI_timer, AEI_Value, AEI_timer_ISR, NULL);
+//	}
+//	if (URI_start == 1)
+//	{
+//		printf("uri start is met\n");
+//		alt_alarm_stop(&URI_timer);
+//		alt_alarm_start(&URI_timer, URI_Value, URI_timer_ISR, NULL);
+//	}
+//	if (LRI_start == 1)
+//	{
+//		printf("lri start is met\n");
+//		alt_alarm_stop(&LRI_timer);
+//		alt_alarm_start(&LRI_timer, LRI_Value, LRI_timer_ISR, NULL);
+//	}
+//
+//	if (VPace == 1)
+//	{
+//		printf("**********V paced**");
+//		AVITO = 0;
+//	}
+//
+////	AVITO = 0;
+//	PVARPTO = 0;
+//	VRPTO = 0;
+//	AEITO = 0;
+//	LRITO = 0;
+//	URITO = 0;
+//
+//	AVI_start = 0;
+//	PVARP_start = 0;
+//	VRP_start = 0;
+//	AEI_start = 0;
+//	LRI_start = 0;
+//	URI_start = 0;
+//}

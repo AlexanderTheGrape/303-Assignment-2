@@ -35,6 +35,7 @@ extern char AEI_start;
 extern char AEI_stop;
 
 extern char URI_start;
+extern char URI_stop;
 
 extern char AVI_stop;
 extern char AVI_start;

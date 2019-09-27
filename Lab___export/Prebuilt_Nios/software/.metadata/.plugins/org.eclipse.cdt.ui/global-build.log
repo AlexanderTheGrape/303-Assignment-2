@@ -732,3 +732,776 @@ Info: Building ../heart_beets_bsp/
 C:/intelFPGA/16.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../heart_beets_bsp/
 [BSP build complete]
 [heart_beets build complete]
+12:46:39 **** Build of configuration Nios II for project heart_beets ****
+make all 
+Info: Building ../heart_beets_bsp/
+C:/intelFPGA/16.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../heart_beets_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../heart_beets_bsp//HAL/inc -I../heart_beets_bsp/ -I../heart_beets_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world.o hello_world.c
+hello_world.c:55:14: error: conflicting types for 'AVITO'
+ unsigned int AVITO = 0;
+              ^
+In file included from hello_world.c:25:0:
+pacemaker.h:26:13: note: previous declaration of 'AVITO' was here
+ extern char AVITO;
+             ^
+hello_world.c:56:14: error: conflicting types for 'PVARPTO'
+ unsigned int PVARPTO = 0;
+              ^
+In file included from hello_world.c:25:0:
+pacemaker.h:25:13: note: previous declaration of 'PVARPTO' was here
+ extern char PVARPTO;
+             ^
+hello_world.c:57:14: error: conflicting types for 'VRPTO'
+ unsigned int VRPTO = 0;
+              ^
+In file included from hello_world.c:25:0:
+pacemaker.h:22:13: note: previous declaration of 'VRPTO' was here
+ extern char VRPTO;
+             ^
+hello_world.c:58:14: error: conflicting types for 'AEITO'
+ unsigned int AEITO = 0;
+              ^
+In file included from hello_world.c:25:0:
+pacemaker.h:24:13: note: previous declaration of 'AEITO' was here
+ extern char AEITO;
+             ^
+hello_world.c:59:14: error: conflicting types for 'LRITO'
+ unsigned int LRITO = 0;
+              ^
+In file included from hello_world.c:25:0:
+pacemaker.h:21:13: note: previous declaration of 'LRITO' was here
+ extern char LRITO;
+             ^
+hello_world.c:60:14: error: conflicting types for 'URITO'
+ unsigned int URITO = 0;
+              ^
+In file included from hello_world.c:25:0:
+pacemaker.h:23:13: note: previous declaration of 'URITO' was here
+ extern char URITO;
+             ^
+make: *** [obj/default/hello_world.o] Error 1
+12:47:28 **** Incremental Build of configuration Nios II for project heart_beets ****
+make all 
+Info: Building ../heart_beets_bsp/
+C:/intelFPGA/16.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../heart_beets_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../heart_beets_bsp//HAL/inc -I../heart_beets_bsp/ -I../heart_beets_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world.o hello_world.c
+Info: Linking heart_beets.elf
+nios2-elf-g++  -T'../heart_beets_bsp//linker.x' -msys-crt0='../heart_beets_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../heart_beets_bsp/   -Wl,-Map=heart_beets.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o heart_beets.elf obj/default/hello_world.o obj/default/pacemaker.o -lm -msys-lib=m
+nios2-elf-insert heart_beets.elf --thread_model hal --cpu_name cpu --qsys true --simulation_enabled false --id 308784078 --sidp 0x0 --timestamp 1502336826 --stderr_dev jtag_uart --stdin_dev jtag_uart --stdout_dev jtag_uart --sopc_system_name nios2_system --quartus_project_dir "D:/303-Assignment-2/Lab___export/Prebuilt_Nios" --sopcinfo D:/303-Assignment-2/Lab___export/Prebuilt_Nios/software/heart_beets_bsp/../../nios2_system.sopcinfo
+Info: (heart_beets.elf) 88 KBytes program size (code + initialized data).
+Info:                   8095 KBytes free for stack + heap.
+Info: Creating heart_beets.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source heart_beets.elf >heart_beets.objdump
+[heart_beets build complete]
+12:47:48 **** Build of configuration Nios II for project heart_beets ****
+make all 
+Info: Building ../heart_beets_bsp/
+C:/intelFPGA/16.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../heart_beets_bsp/
+[BSP build complete]
+[heart_beets build complete]
+12:48:05 **** Incremental Build of configuration Nios II for project heart_beets ****
+make all 
+Info: Building ../heart_beets_bsp/
+C:/intelFPGA/16.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../heart_beets_bsp/
+[BSP build complete]
+[heart_beets build complete]
+13:04:26 **** Incremental Build of configuration Nios II for project heart_beets ****
+make all 
+Info: Building ../heart_beets_bsp/
+C:/intelFPGA/16.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../heart_beets_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../heart_beets_bsp//HAL/inc -I../heart_beets_bsp/ -I../heart_beets_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world.o hello_world.c
+hello_world.c:55:1: warning: data definition has no type or storage class
+ AVITO = 0;
+ ^
+hello_world.c:55:1: warning: type defaults to 'int' in declaration of 'AVITO' [-Wimplicit-int]
+hello_world.c:55:1: error: conflicting types for 'AVITO'
+In file included from hello_world.c:25:0:
+pacemaker.h:26:13: note: previous declaration of 'AVITO' was here
+ extern char AVITO;
+             ^
+hello_world.c:56:1: warning: data definition has no type or storage class
+ PVARPTO = 0;
+ ^
+hello_world.c:56:1: warning: type defaults to 'int' in declaration of 'PVARPTO' [-Wimplicit-int]
+hello_world.c:56:1: error: conflicting types for 'PVARPTO'
+In file included from hello_world.c:25:0:
+pacemaker.h:25:13: note: previous declaration of 'PVARPTO' was here
+ extern char PVARPTO;
+             ^
+hello_world.c:57:1: warning: data definition has no type or storage class
+ VRPTO = 0;
+ ^
+hello_world.c:57:1: warning: type defaults to 'int' in declaration of 'VRPTO' [-Wimplicit-int]
+hello_world.c:57:1: error: conflicting types for 'VRPTO'
+In file included from hello_world.c:25:0:
+pacemaker.h:22:13: note: previous declaration of 'VRPTO' was here
+ extern char VRPTO;
+             ^
+hello_world.c:58:1: warning: data definition has no type or storage class
+ AEITO = 0;
+ ^
+hello_world.c:58:1: warning: type defaults to 'int' in declaration of 'AEITO' [-Wimplicit-int]
+hello_world.c:58:1: error: conflicting types for 'AEITO'
+In file included from hello_world.c:25:0:
+pacemaker.h:24:13: note: previous declaration of 'AEITO' was here
+ extern char AEITO;
+             ^
+hello_world.c:59:1: warning: data definition has no type or storage class
+ LRITO = 0;
+ ^
+hello_world.c:59:1: warning: type defaults to 'int' in declaration of 'LRITO' [-Wimplicit-int]
+hello_world.c:59:1: error: conflicting types for 'LRITO'
+In file included from hello_world.c:25:0:
+pacemaker.h:21:13: note: previous declaration of 'LRITO' was here
+ extern char LRITO;
+             ^
+hello_world.c:60:1: warning: data definition has no type or storage class
+ URITO = 0;
+ ^
+hello_world.c:60:1: warning: type defaults to 'int' in declaration of 'URITO' [-Wimplicit-int]
+hello_world.c:60:1: error: conflicting types for 'URITO'
+In file included from hello_world.c:25:0:
+pacemaker.h:23:13: note: previous declaration of 'URITO' was here
+ extern char URITO;
+             ^
+make: *** [obj/default/hello_world.o] Error 1
+13:04:53 **** Incremental Build of configuration Nios II for project heart_beets ****
+make all 
+Info: Building ../heart_beets_bsp/
+C:/intelFPGA/16.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../heart_beets_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../heart_beets_bsp//HAL/inc -I../heart_beets_bsp/ -I../heart_beets_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world.o hello_world.c
+Info: Linking heart_beets.elf
+nios2-elf-g++  -T'../heart_beets_bsp//linker.x' -msys-crt0='../heart_beets_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../heart_beets_bsp/   -Wl,-Map=heart_beets.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o heart_beets.elf obj/default/hello_world.o obj/default/pacemaker.o -lm -msys-lib=m
+obj/default/hello_world.o: In function `startTimers':
+D:\303-Assignment-2\Lab___export\Prebuilt_Nios\software\heart_beets/hello_world.c:276: undefined reference to `URI_stop'
+D:\303-Assignment-2\Lab___export\Prebuilt_Nios\software\heart_beets/hello_world.c:319: undefined reference to `URI_stop'
+collect2.exe: error: ld returned 1 exit status
+make: *** [heart_beets.elf] Error 1
+13:06:29 **** Incremental Build of configuration Nios II for project heart_beets ****
+make all 
+Info: Building ../heart_beets_bsp/
+C:/intelFPGA/16.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../heart_beets_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../heart_beets_bsp//HAL/inc -I../heart_beets_bsp/ -I../heart_beets_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world.o hello_world.c
+Info: Linking heart_beets.elf
+nios2-elf-g++  -T'../heart_beets_bsp//linker.x' -msys-crt0='../heart_beets_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../heart_beets_bsp/   -Wl,-Map=heart_beets.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o heart_beets.elf obj/default/hello_world.o obj/default/pacemaker.o -lm -msys-lib=m
+obj/default/hello_world.o: In function `startTimers':
+D:\303-Assignment-2\Lab___export\Prebuilt_Nios\software\heart_beets/hello_world.c:319: undefined reference to `URI_stop'
+collect2.exe: error: ld returned 1 exit status
+make: *** [heart_beets.elf] Error 1
+13:07:45 **** Incremental Build of configuration Nios II for project heart_beets ****
+make all 
+Info: Building ../heart_beets_bsp/
+C:/intelFPGA/16.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../heart_beets_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../heart_beets_bsp//HAL/inc -I../heart_beets_bsp/ -I../heart_beets_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world.o hello_world.c
+Info: Linking heart_beets.elf
+nios2-elf-g++  -T'../heart_beets_bsp//linker.x' -msys-crt0='../heart_beets_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../heart_beets_bsp/   -Wl,-Map=heart_beets.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o heart_beets.elf obj/default/hello_world.o obj/default/pacemaker.o -lm -msys-lib=m
+nios2-elf-insert heart_beets.elf --thread_model hal --cpu_name cpu --qsys true --simulation_enabled false --id 308784078 --sidp 0x0 --timestamp 1502336826 --stderr_dev jtag_uart --stdin_dev jtag_uart --stdout_dev jtag_uart --sopc_system_name nios2_system --quartus_project_dir "D:/303-Assignment-2/Lab___export/Prebuilt_Nios" --sopcinfo D:/303-Assignment-2/Lab___export/Prebuilt_Nios/software/heart_beets_bsp/../../nios2_system.sopcinfo
+Info: (heart_beets.elf) 88 KBytes program size (code + initialized data).
+Info:                   8096 KBytes free for stack + heap.
+Info: Creating heart_beets.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source heart_beets.elf >heart_beets.objdump
+[heart_beets build complete]
+13:12:49 **** Incremental Build of configuration Nios II for project heart_beets ****
+make all 
+Info: Building ../heart_beets_bsp/
+C:/intelFPGA/16.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../heart_beets_bsp/
+[BSP build complete]
+[heart_beets build complete]
+13:23:05 **** Incremental Build of configuration Nios II for project heart_beets ****
+make all 
+Info: Building ../heart_beets_bsp/
+C:/intelFPGA/16.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../heart_beets_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../heart_beets_bsp//HAL/inc -I../heart_beets_bsp/ -I../heart_beets_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world.o hello_world.c
+Info: Linking heart_beets.elf
+nios2-elf-g++  -T'../heart_beets_bsp//linker.x' -msys-crt0='../heart_beets_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../heart_beets_bsp/   -Wl,-Map=heart_beets.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o heart_beets.elf obj/default/hello_world.o obj/default/pacemaker.o -lm -msys-lib=m
+nios2-elf-insert heart_beets.elf --thread_model hal --cpu_name cpu --qsys true --simulation_enabled false --id 308784078 --sidp 0x0 --timestamp 1502336826 --stderr_dev jtag_uart --stdin_dev jtag_uart --stdout_dev jtag_uart --sopc_system_name nios2_system --quartus_project_dir "D:/303-Assignment-2/Lab___export/Prebuilt_Nios" --sopcinfo D:/303-Assignment-2/Lab___export/Prebuilt_Nios/software/heart_beets_bsp/../../nios2_system.sopcinfo
+Info: (heart_beets.elf) 88 KBytes program size (code + initialized data).
+Info:                   8096 KBytes free for stack + heap.
+Info: Creating heart_beets.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source heart_beets.elf >heart_beets.objdump
+[heart_beets build complete]
+15:34:21 **** Build of configuration Nios II for project heart_beets ****
+make all 
+Info: Building ../heart_beets_bsp/
+C:/intelFPGA/16.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../heart_beets_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../heart_beets_bsp//HAL/inc -I../heart_beets_bsp/ -I../heart_beets_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world.o hello_world.c
+Info: Linking heart_beets.elf
+nios2-elf-g++  -T'../heart_beets_bsp//linker.x' -msys-crt0='../heart_beets_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../heart_beets_bsp/   -Wl,-Map=heart_beets.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o heart_beets.elf obj/default/hello_world.o obj/default/pacemaker.o -lm -msys-lib=m
+nios2-elf-insert heart_beets.elf --thread_model hal --cpu_name cpu --qsys true --simulation_enabled false --id 308784078 --sidp 0x0 --timestamp 1502336826 --stderr_dev jtag_uart --stdin_dev jtag_uart --stdout_dev jtag_uart --sopc_system_name nios2_system --quartus_project_dir "D:/303-Assignment-2/Lab___export/Prebuilt_Nios" --sopcinfo D:/303-Assignment-2/Lab___export/Prebuilt_Nios/software/heart_beets_bsp/../../nios2_system.sopcinfo
+Info: (heart_beets.elf) 88 KBytes program size (code + initialized data).
+Info:                   8096 KBytes free for stack + heap.
+Info: Creating heart_beets.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source heart_beets.elf >heart_beets.objdump
+[heart_beets build complete]
+15:34:30 **** Incremental Build of configuration Nios II for project heart_beets ****
+make all 
+Info: Building ../heart_beets_bsp/
+C:/intelFPGA/16.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../heart_beets_bsp/
+[BSP build complete]
+[heart_beets build complete]
+15:45:28 **** Build of configuration Nios II for project heart_beets ****
+make all 
+Info: Building ../heart_beets_bsp/
+C:/intelFPGA/16.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../heart_beets_bsp/
+[BSP build complete]
+[heart_beets build complete]
+15:45:30 **** Incremental Build of configuration Nios II for project heart_beets ****
+make all 
+Info: Building ../heart_beets_bsp/
+C:/intelFPGA/16.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../heart_beets_bsp/
+[BSP build complete]
+[heart_beets build complete]
+15:47:50 **** Build of configuration Nios II for project heart_beets ****
+make all 
+Info: Building ../heart_beets_bsp/
+C:/intelFPGA/16.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../heart_beets_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../heart_beets_bsp//HAL/inc -I../heart_beets_bsp/ -I../heart_beets_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world.o hello_world.c
+Info: Linking heart_beets.elf
+nios2-elf-g++  -T'../heart_beets_bsp//linker.x' -msys-crt0='../heart_beets_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../heart_beets_bsp/   -Wl,-Map=heart_beets.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o heart_beets.elf obj/default/hello_world.o obj/default/pacemaker.o -lm -msys-lib=m
+nios2-elf-insert heart_beets.elf --thread_model hal --cpu_name cpu --qsys true --simulation_enabled false --id 308784078 --sidp 0x0 --timestamp 1502336826 --stderr_dev jtag_uart --stdin_dev jtag_uart --stdout_dev jtag_uart --sopc_system_name nios2_system --quartus_project_dir "D:/303-Assignment-2/Lab___export/Prebuilt_Nios" --sopcinfo D:/303-Assignment-2/Lab___export/Prebuilt_Nios/software/heart_beets_bsp/../../nios2_system.sopcinfo
+Info: (heart_beets.elf) 88 KBytes program size (code + initialized data).
+Info:                   8096 KBytes free for stack + heap.
+Info: Creating heart_beets.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source heart_beets.elf >heart_beets.objdump
+[heart_beets build complete]
+15:47:54 **** Incremental Build of configuration Nios II for project heart_beets ****
+make all 
+Info: Building ../heart_beets_bsp/
+C:/intelFPGA/16.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../heart_beets_bsp/
+[BSP build complete]
+[heart_beets build complete]
+15:53:55 **** Incremental Build of configuration Nios II for project heart_beets ****
+make all 
+Info: Building ../heart_beets_bsp/
+C:/intelFPGA/16.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../heart_beets_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../heart_beets_bsp//HAL/inc -I../heart_beets_bsp/ -I../heart_beets_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world.o hello_world.c
+Info: Linking heart_beets.elf
+nios2-elf-g++  -T'../heart_beets_bsp//linker.x' -msys-crt0='../heart_beets_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../heart_beets_bsp/   -Wl,-Map=heart_beets.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o heart_beets.elf obj/default/hello_world.o obj/default/pacemaker.o -lm -msys-lib=m
+nios2-elf-insert heart_beets.elf --thread_model hal --cpu_name cpu --qsys true --simulation_enabled false --id 308784078 --sidp 0x0 --timestamp 1502336826 --stderr_dev jtag_uart --stdin_dev jtag_uart --stdout_dev jtag_uart --sopc_system_name nios2_system --quartus_project_dir "D:/303-Assignment-2/Lab___export/Prebuilt_Nios" --sopcinfo D:/303-Assignment-2/Lab___export/Prebuilt_Nios/software/heart_beets_bsp/../../nios2_system.sopcinfo
+Info: (heart_beets.elf) 88 KBytes program size (code + initialized data).
+Info:                   8096 KBytes free for stack + heap.
+Info: Creating heart_beets.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source heart_beets.elf >heart_beets.objdump
+[heart_beets build complete]
+15:57:33 **** Incremental Build of configuration Nios II for project heart_beets ****
+make all 
+Info: Building ../heart_beets_bsp/
+C:/intelFPGA/16.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../heart_beets_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../heart_beets_bsp//HAL/inc -I../heart_beets_bsp/ -I../heart_beets_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world.o hello_world.c
+Info: Linking heart_beets.elf
+nios2-elf-g++  -T'../heart_beets_bsp//linker.x' -msys-crt0='../heart_beets_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../heart_beets_bsp/   -Wl,-Map=heart_beets.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o heart_beets.elf obj/default/hello_world.o obj/default/pacemaker.o -lm -msys-lib=m
+nios2-elf-insert heart_beets.elf --thread_model hal --cpu_name cpu --qsys true --simulation_enabled false --id 308784078 --sidp 0x0 --timestamp 1502336826 --stderr_dev jtag_uart --stdin_dev jtag_uart --stdout_dev jtag_uart --sopc_system_name nios2_system --quartus_project_dir "D:/303-Assignment-2/Lab___export/Prebuilt_Nios" --sopcinfo D:/303-Assignment-2/Lab___export/Prebuilt_Nios/software/heart_beets_bsp/../../nios2_system.sopcinfo
+Info: (heart_beets.elf) 88 KBytes program size (code + initialized data).
+Info:                   8096 KBytes free for stack + heap.
+Info: Creating heart_beets.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source heart_beets.elf >heart_beets.objdump
+[heart_beets build complete]
+15:58:13 **** Build of configuration Nios II for project heart_beets ****
+make all 
+Info: Building ../heart_beets_bsp/
+C:/intelFPGA/16.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../heart_beets_bsp/
+[BSP build complete]
+[heart_beets build complete]
+15:58:14 **** Incremental Build of configuration Nios II for project heart_beets ****
+make all 
+Info: Building ../heart_beets_bsp/
+C:/intelFPGA/16.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../heart_beets_bsp/
+[BSP build complete]
+[heart_beets build complete]
+15:59:26 **** Build of configuration Nios II for project heart_beets ****
+make all 
+Info: Building ../heart_beets_bsp/
+C:/intelFPGA/16.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../heart_beets_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../heart_beets_bsp//HAL/inc -I../heart_beets_bsp/ -I../heart_beets_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world.o hello_world.c
+Info: Linking heart_beets.elf
+nios2-elf-g++  -T'../heart_beets_bsp//linker.x' -msys-crt0='../heart_beets_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../heart_beets_bsp/   -Wl,-Map=heart_beets.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o heart_beets.elf obj/default/hello_world.o obj/default/pacemaker.o -lm -msys-lib=m
+nios2-elf-insert heart_beets.elf --thread_model hal --cpu_name cpu --qsys true --simulation_enabled false --id 308784078 --sidp 0x0 --timestamp 1502336826 --stderr_dev jtag_uart --stdin_dev jtag_uart --stdout_dev jtag_uart --sopc_system_name nios2_system --quartus_project_dir "D:/303-Assignment-2/Lab___export/Prebuilt_Nios" --sopcinfo D:/303-Assignment-2/Lab___export/Prebuilt_Nios/software/heart_beets_bsp/../../nios2_system.sopcinfo
+Info: (heart_beets.elf) 88 KBytes program size (code + initialized data).
+Info:                   8096 KBytes free for stack + heap.
+Info: Creating heart_beets.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source heart_beets.elf >heart_beets.objdump
+[heart_beets build complete]
+15:59:30 **** Incremental Build of configuration Nios II for project heart_beets ****
+make all 
+Info: Building ../heart_beets_bsp/
+C:/intelFPGA/16.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../heart_beets_bsp/
+[BSP build complete]
+[heart_beets build complete]
+16:07:42 **** Incremental Build of configuration Nios II for project heart_beets ****
+make all 
+Info: Building ../heart_beets_bsp/
+C:/intelFPGA/16.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../heart_beets_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../heart_beets_bsp//HAL/inc -I../heart_beets_bsp/ -I../heart_beets_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world.o hello_world.c
+hello_world.c: In function 'read_uart':
+hello_world.c:234:16: warning: passing argument 1 of 'read' makes integer from pointer without a cast [-Wint-conversion]
+  length = read(uart_file, uart_buffer, sizeof(uart_buffer) - 1);
+                ^
+In file included from c:\intelfpga\16.1\nios2eds\bin\gnu\h-x86_64-mingw32\nios2-elf\include\stdio.h:29:0,
+                 from hello_world.c:18:
+c:\intelfpga\16.1\nios2eds\bin\gnu\h-x86_64-mingw32\nios2-elf\include\sys\unistd.h:149:25: note: expected 'int' but argument is of type 'FILE * {aka struct __sFILE *}'
+ _READ_WRITE_RETURN_TYPE _EXFUN(read, (int __fd, void *__buf, size_t __nbyte ));
+                         ^
+hello_world.c: In function 'send_uart':
+hello_world.c:257:9: warning: passing argument 1 of 'write' makes integer from pointer without a cast [-Wint-conversion]
+   write(uart_file, &a, 1);
+         ^
+In file included from c:\intelfpga\16.1\nios2eds\bin\gnu\h-x86_64-mingw32\nios2-elf\include\stdio.h:29:0,
+                 from hello_world.c:18:
+c:\intelfpga\16.1\nios2eds\bin\gnu\h-x86_64-mingw32\nios2-elf\include\sys\unistd.h:197:25: note: expected 'int' but argument is of type 'FILE * {aka struct __sFILE *}'
+ _READ_WRITE_RETURN_TYPE _EXFUN(write, (int __fd, const void *__buf, size_t __nbyte ));
+                         ^
+hello_world.c:262:9: warning: passing argument 1 of 'write' makes integer from pointer without a cast [-Wint-conversion]
+   write(uart_file, &v, 1);
+         ^
+In file included from c:\intelfpga\16.1\nios2eds\bin\gnu\h-x86_64-mingw32\nios2-elf\include\stdio.h:29:0,
+                 from hello_world.c:18:
+c:\intelfpga\16.1\nios2eds\bin\gnu\h-x86_64-mingw32\nios2-elf\include\sys\unistd.h:197:25: note: expected 'int' but argument is of type 'FILE * {aka struct __sFILE *}'
+ _READ_WRITE_RETURN_TYPE _EXFUN(write, (int __fd, const void *__buf, size_t __nbyte ));
+                         ^
+hello_world.c: In function 'init_buttons_pio':
+hello_world.c:276:2: warning: implicit declaration of function 'alt_irq_register' [-Wimplicit-function-declaration]
+  alt_irq_register(BUTTONS_IRQ, context, buttons_isr);
+  ^
+hello_world.c: In function 'main':
+hello_world.c:312:12: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+  uart_file = open(UART_NAME, O_NONBLOCK | O_RDWR);
+            ^
+Info: Linking heart_beets.elf
+nios2-elf-g++  -T'../heart_beets_bsp//linker.x' -msys-crt0='../heart_beets_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../heart_beets_bsp/   -Wl,-Map=heart_beets.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o heart_beets.elf obj/default/hello_world.o obj/default/pacemaker.o -lm -msys-lib=m
+nios2-elf-insert heart_beets.elf --thread_model hal --cpu_name cpu --qsys true --simulation_enabled false --id 308784078 --sidp 0x0 --timestamp 1502336826 --stderr_dev jtag_uart --stdin_dev jtag_uart --stdout_dev jtag_uart --sopc_system_name nios2_system --quartus_project_dir "D:/303-Assignment-2/Lab___export/Prebuilt_Nios" --sopcinfo D:/303-Assignment-2/Lab___export/Prebuilt_Nios/software/heart_beets_bsp/../../nios2_system.sopcinfo
+Info: (heart_beets.elf) 90 KBytes program size (code + initialized data).
+Info:                   8094 KBytes free for stack + heap.
+Info: Creating heart_beets.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source heart_beets.elf >heart_beets.objdump
+[heart_beets build complete]
+16:17:53 **** Incremental Build of configuration Nios II for project heart_beets ****
+make all 
+Info: Building ../heart_beets_bsp/
+C:/intelFPGA/16.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../heart_beets_bsp/
+[BSP build complete]
+[heart_beets build complete]
+16:18:01 **** Build of configuration Nios II for project heart_beets ****
+make all 
+Info: Building ../heart_beets_bsp/
+C:/intelFPGA/16.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../heart_beets_bsp/
+[BSP build complete]
+[heart_beets build complete]
+16:18:03 **** Incremental Build of configuration Nios II for project heart_beets ****
+make all 
+Info: Building ../heart_beets_bsp/
+C:/intelFPGA/16.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../heart_beets_bsp/
+[BSP build complete]
+[heart_beets build complete]
+16:18:16 **** Incremental Build of configuration Nios II for project heart_beets ****
+make all 
+Info: Building ../heart_beets_bsp/
+C:/intelFPGA/16.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../heart_beets_bsp/
+[BSP build complete]
+[heart_beets build complete]
+16:33:40 **** Incremental Build of configuration Nios II for project heart_beets ****
+make all 
+Info: Building ../heart_beets_bsp/
+C:/intelFPGA/16.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../heart_beets_bsp/
+[BSP build complete]
+Info: Compiling pacemaker.c to obj/default/pacemaker.o
+nios2-elf-gcc -xc -MP -MMD -c -I../heart_beets_bsp//HAL/inc -I../heart_beets_bsp/ -I../heart_beets_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/pacemaker.o pacemaker.c
+Info: Linking heart_beets.elf
+nios2-elf-g++  -T'../heart_beets_bsp//linker.x' -msys-crt0='../heart_beets_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../heart_beets_bsp/   -Wl,-Map=heart_beets.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o heart_beets.elf obj/default/hello_world.o obj/default/pacemaker.o -lm -msys-lib=m
+nios2-elf-insert heart_beets.elf --thread_model hal --cpu_name cpu --qsys true --simulation_enabled false --id 308784078 --sidp 0x0 --timestamp 1502336826 --stderr_dev jtag_uart --stdin_dev jtag_uart --stdout_dev jtag_uart --sopc_system_name nios2_system --quartus_project_dir "D:/303-Assignment-2/Lab___export/Prebuilt_Nios" --sopcinfo D:/303-Assignment-2/Lab___export/Prebuilt_Nios/software/heart_beets_bsp/../../nios2_system.sopcinfo
+Info: (heart_beets.elf) 89 KBytes program size (code + initialized data).
+Info:                   8095 KBytes free for stack + heap.
+Info: Creating heart_beets.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source heart_beets.elf >heart_beets.objdump
+[heart_beets build complete]
+16:38:54 **** Incremental Build of configuration Nios II for project heart_beets ****
+make all 
+Info: Building ../heart_beets_bsp/
+C:/intelFPGA/16.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../heart_beets_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../heart_beets_bsp//HAL/inc -I../heart_beets_bsp/ -I../heart_beets_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world.o hello_world.c
+Info: Linking heart_beets.elf
+nios2-elf-g++  -T'../heart_beets_bsp//linker.x' -msys-crt0='../heart_beets_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../heart_beets_bsp/   -Wl,-Map=heart_beets.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o heart_beets.elf obj/default/hello_world.o obj/default/pacemaker.o -lm -msys-lib=m
+nios2-elf-insert heart_beets.elf --thread_model hal --cpu_name cpu --qsys true --simulation_enabled false --id 308784078 --sidp 0x0 --timestamp 1502336826 --stderr_dev jtag_uart --stdin_dev jtag_uart --stdout_dev jtag_uart --sopc_system_name nios2_system --quartus_project_dir "D:/303-Assignment-2/Lab___export/Prebuilt_Nios" --sopcinfo D:/303-Assignment-2/Lab___export/Prebuilt_Nios/software/heart_beets_bsp/../../nios2_system.sopcinfo
+Info: (heart_beets.elf) 88 KBytes program size (code + initialized data).
+Info:                   8096 KBytes free for stack + heap.
+Info: Creating heart_beets.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source heart_beets.elf >heart_beets.objdump
+[heart_beets build complete]
+16:38:59 **** Incremental Build of configuration Nios II for project heart_beets ****
+make all 
+Info: Building ../heart_beets_bsp/
+C:/intelFPGA/16.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../heart_beets_bsp/
+[BSP build complete]
+[heart_beets build complete]
+16:39:15 **** Incremental Build of configuration Nios II for project heart_beets ****
+make all 
+Info: Building ../heart_beets_bsp/
+C:/intelFPGA/16.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../heart_beets_bsp/
+[BSP build complete]
+[heart_beets build complete]
+16:39:16 **** Build of configuration Nios II for project heart_beets_bsp ****
+make all 
+[BSP build complete]
+16:39:19 **** Incremental Build of configuration Nios II for project heart_beets ****
+make all 
+Info: Building ../heart_beets_bsp/
+C:/intelFPGA/16.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../heart_beets_bsp/
+[BSP build complete]
+[heart_beets build complete]
+16:41:41 **** Incremental Build of configuration Nios II for project heart_beets ****
+make all 
+Info: Building ../heart_beets_bsp/
+C:/intelFPGA/16.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../heart_beets_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../heart_beets_bsp//HAL/inc -I../heart_beets_bsp/ -I../heart_beets_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world.o hello_world.c
+Info: Linking heart_beets.elf
+nios2-elf-g++  -T'../heart_beets_bsp//linker.x' -msys-crt0='../heart_beets_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../heart_beets_bsp/   -Wl,-Map=heart_beets.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o heart_beets.elf obj/default/hello_world.o obj/default/pacemaker.o -lm -msys-lib=m
+nios2-elf-insert heart_beets.elf --thread_model hal --cpu_name cpu --qsys true --simulation_enabled false --id 308784078 --sidp 0x0 --timestamp 1502336826 --stderr_dev jtag_uart --stdin_dev jtag_uart --stdout_dev jtag_uart --sopc_system_name nios2_system --quartus_project_dir "D:/303-Assignment-2/Lab___export/Prebuilt_Nios" --sopcinfo D:/303-Assignment-2/Lab___export/Prebuilt_Nios/software/heart_beets_bsp/../../nios2_system.sopcinfo
+Info: (heart_beets.elf) 88 KBytes program size (code + initialized data).
+Info:                   8096 KBytes free for stack + heap.
+Info: Creating heart_beets.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source heart_beets.elf >heart_beets.objdump
+[heart_beets build complete]
+16:45:50 **** Incremental Build of configuration Nios II for project heart_beets ****
+make all 
+Info: Building ../heart_beets_bsp/
+C:/intelFPGA/16.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../heart_beets_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../heart_beets_bsp//HAL/inc -I../heart_beets_bsp/ -I../heart_beets_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world.o hello_world.c
+Info: Linking heart_beets.elf
+nios2-elf-g++  -T'../heart_beets_bsp//linker.x' -msys-crt0='../heart_beets_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../heart_beets_bsp/   -Wl,-Map=heart_beets.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o heart_beets.elf obj/default/hello_world.o obj/default/pacemaker.o -lm -msys-lib=m
+nios2-elf-insert heart_beets.elf --thread_model hal --cpu_name cpu --qsys true --simulation_enabled false --id 308784078 --sidp 0x0 --timestamp 1502336826 --stderr_dev jtag_uart --stdin_dev jtag_uart --stdout_dev jtag_uart --sopc_system_name nios2_system --quartus_project_dir "D:/303-Assignment-2/Lab___export/Prebuilt_Nios" --sopcinfo D:/303-Assignment-2/Lab___export/Prebuilt_Nios/software/heart_beets_bsp/../../nios2_system.sopcinfo
+Info: (heart_beets.elf) 88 KBytes program size (code + initialized data).
+Info:                   8096 KBytes free for stack + heap.
+Info: Creating heart_beets.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source heart_beets.elf >heart_beets.objdump
+[heart_beets build complete]
+16:49:17 **** Incremental Build of configuration Nios II for project heart_beets ****
+make all 
+Info: Building ../heart_beets_bsp/
+C:/intelFPGA/16.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../heart_beets_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../heart_beets_bsp//HAL/inc -I../heart_beets_bsp/ -I../heart_beets_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world.o hello_world.c
+Info: Linking heart_beets.elf
+nios2-elf-g++  -T'../heart_beets_bsp//linker.x' -msys-crt0='../heart_beets_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../heart_beets_bsp/   -Wl,-Map=heart_beets.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o heart_beets.elf obj/default/hello_world.o obj/default/pacemaker.o -lm -msys-lib=m
+nios2-elf-insert heart_beets.elf --thread_model hal --cpu_name cpu --qsys true --simulation_enabled false --id 308784078 --sidp 0x0 --timestamp 1502336826 --stderr_dev jtag_uart --stdin_dev jtag_uart --stdout_dev jtag_uart --sopc_system_name nios2_system --quartus_project_dir "D:/303-Assignment-2/Lab___export/Prebuilt_Nios" --sopcinfo D:/303-Assignment-2/Lab___export/Prebuilt_Nios/software/heart_beets_bsp/../../nios2_system.sopcinfo
+Info: (heart_beets.elf) 88 KBytes program size (code + initialized data).
+Info:                   8096 KBytes free for stack + heap.
+Info: Creating heart_beets.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source heart_beets.elf >heart_beets.objdump
+[heart_beets build complete]
+16:50:01 **** Incremental Build of configuration Nios II for project heart_beets ****
+make all 
+Info: Building ../heart_beets_bsp/
+C:/intelFPGA/16.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../heart_beets_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../heart_beets_bsp//HAL/inc -I../heart_beets_bsp/ -I../heart_beets_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world.o hello_world.c
+Info: Linking heart_beets.elf
+nios2-elf-g++  -T'../heart_beets_bsp//linker.x' -msys-crt0='../heart_beets_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../heart_beets_bsp/   -Wl,-Map=heart_beets.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o heart_beets.elf obj/default/hello_world.o obj/default/pacemaker.o -lm -msys-lib=m
+nios2-elf-insert heart_beets.elf --thread_model hal --cpu_name cpu --qsys true --simulation_enabled false --id 308784078 --sidp 0x0 --timestamp 1502336826 --stderr_dev jtag_uart --stdin_dev jtag_uart --stdout_dev jtag_uart --sopc_system_name nios2_system --quartus_project_dir "D:/303-Assignment-2/Lab___export/Prebuilt_Nios" --sopcinfo D:/303-Assignment-2/Lab___export/Prebuilt_Nios/software/heart_beets_bsp/../../nios2_system.sopcinfo
+Info: (heart_beets.elf) 88 KBytes program size (code + initialized data).
+Info:                   8096 KBytes free for stack + heap.
+Info: Creating heart_beets.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source heart_beets.elf >heart_beets.objdump
+[heart_beets build complete]
+16:51:03 **** Incremental Build of configuration Nios II for project heart_beets ****
+make all 
+Info: Building ../heart_beets_bsp/
+C:/intelFPGA/16.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../heart_beets_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../heart_beets_bsp//HAL/inc -I../heart_beets_bsp/ -I../heart_beets_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world.o hello_world.c
+Info: Linking heart_beets.elf
+nios2-elf-g++  -T'../heart_beets_bsp//linker.x' -msys-crt0='../heart_beets_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../heart_beets_bsp/   -Wl,-Map=heart_beets.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o heart_beets.elf obj/default/hello_world.o obj/default/pacemaker.o -lm -msys-lib=m
+nios2-elf-insert heart_beets.elf --thread_model hal --cpu_name cpu --qsys true --simulation_enabled false --id 308784078 --sidp 0x0 --timestamp 1502336826 --stderr_dev jtag_uart --stdin_dev jtag_uart --stdout_dev jtag_uart --sopc_system_name nios2_system --quartus_project_dir "D:/303-Assignment-2/Lab___export/Prebuilt_Nios" --sopcinfo D:/303-Assignment-2/Lab___export/Prebuilt_Nios/software/heart_beets_bsp/../../nios2_system.sopcinfo
+Info: (heart_beets.elf) 88 KBytes program size (code + initialized data).
+Info:                   8096 KBytes free for stack + heap.
+Info: Creating heart_beets.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source heart_beets.elf >heart_beets.objdump
+[heart_beets build complete]
+16:51:57 **** Incremental Build of configuration Nios II for project heart_beets ****
+make all 
+Info: Building ../heart_beets_bsp/
+C:/intelFPGA/16.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../heart_beets_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../heart_beets_bsp//HAL/inc -I../heart_beets_bsp/ -I../heart_beets_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world.o hello_world.c
+Info: Linking heart_beets.elf
+nios2-elf-g++  -T'../heart_beets_bsp//linker.x' -msys-crt0='../heart_beets_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../heart_beets_bsp/   -Wl,-Map=heart_beets.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o heart_beets.elf obj/default/hello_world.o obj/default/pacemaker.o -lm -msys-lib=m
+nios2-elf-insert heart_beets.elf --thread_model hal --cpu_name cpu --qsys true --simulation_enabled false --id 308784078 --sidp 0x0 --timestamp 1502336826 --stderr_dev jtag_uart --stdin_dev jtag_uart --stdout_dev jtag_uart --sopc_system_name nios2_system --quartus_project_dir "D:/303-Assignment-2/Lab___export/Prebuilt_Nios" --sopcinfo D:/303-Assignment-2/Lab___export/Prebuilt_Nios/software/heart_beets_bsp/../../nios2_system.sopcinfo
+Info: (heart_beets.elf) 88 KBytes program size (code + initialized data).
+Info:                   8096 KBytes free for stack + heap.
+Info: Creating heart_beets.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source heart_beets.elf >heart_beets.objdump
+[heart_beets build complete]
+16:52:58 **** Incremental Build of configuration Nios II for project heart_beets ****
+make all 
+Info: Building ../heart_beets_bsp/
+C:/intelFPGA/16.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../heart_beets_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../heart_beets_bsp//HAL/inc -I../heart_beets_bsp/ -I../heart_beets_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world.o hello_world.c
+Info: Linking heart_beets.elf
+nios2-elf-g++  -T'../heart_beets_bsp//linker.x' -msys-crt0='../heart_beets_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../heart_beets_bsp/   -Wl,-Map=heart_beets.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o heart_beets.elf obj/default/hello_world.o obj/default/pacemaker.o -lm -msys-lib=m
+nios2-elf-insert heart_beets.elf --thread_model hal --cpu_name cpu --qsys true --simulation_enabled false --id 308784078 --sidp 0x0 --timestamp 1502336826 --stderr_dev jtag_uart --stdin_dev jtag_uart --stdout_dev jtag_uart --sopc_system_name nios2_system --quartus_project_dir "D:/303-Assignment-2/Lab___export/Prebuilt_Nios" --sopcinfo D:/303-Assignment-2/Lab___export/Prebuilt_Nios/software/heart_beets_bsp/../../nios2_system.sopcinfo
+Info: (heart_beets.elf) 88 KBytes program size (code + initialized data).
+Info:                   8096 KBytes free for stack + heap.
+Info: Creating heart_beets.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source heart_beets.elf >heart_beets.objdump
+[heart_beets build complete]
+16:53:25 **** Incremental Build of configuration Nios II for project heart_beets ****
+make all 
+Info: Building ../heart_beets_bsp/
+C:/intelFPGA/16.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../heart_beets_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../heart_beets_bsp//HAL/inc -I../heart_beets_bsp/ -I../heart_beets_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world.o hello_world.c
+Info: Linking heart_beets.elf
+nios2-elf-g++  -T'../heart_beets_bsp//linker.x' -msys-crt0='../heart_beets_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../heart_beets_bsp/   -Wl,-Map=heart_beets.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o heart_beets.elf obj/default/hello_world.o obj/default/pacemaker.o -lm -msys-lib=m
+nios2-elf-insert heart_beets.elf --thread_model hal --cpu_name cpu --qsys true --simulation_enabled false --id 308784078 --sidp 0x0 --timestamp 1502336826 --stderr_dev jtag_uart --stdin_dev jtag_uart --stdout_dev jtag_uart --sopc_system_name nios2_system --quartus_project_dir "D:/303-Assignment-2/Lab___export/Prebuilt_Nios" --sopcinfo D:/303-Assignment-2/Lab___export/Prebuilt_Nios/software/heart_beets_bsp/../../nios2_system.sopcinfo
+Info: (heart_beets.elf) 88 KBytes program size (code + initialized data).
+Info:                   8096 KBytes free for stack + heap.
+Info: Creating heart_beets.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source heart_beets.elf >heart_beets.objdump
+[heart_beets build complete]
+16:53:58 **** Incremental Build of configuration Nios II for project heart_beets ****
+make all 
+Info: Building ../heart_beets_bsp/
+C:/intelFPGA/16.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../heart_beets_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../heart_beets_bsp//HAL/inc -I../heart_beets_bsp/ -I../heart_beets_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world.o hello_world.c
+Info: Linking heart_beets.elf
+nios2-elf-g++  -T'../heart_beets_bsp//linker.x' -msys-crt0='../heart_beets_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../heart_beets_bsp/   -Wl,-Map=heart_beets.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o heart_beets.elf obj/default/hello_world.o obj/default/pacemaker.o -lm -msys-lib=m
+nios2-elf-insert heart_beets.elf --thread_model hal --cpu_name cpu --qsys true --simulation_enabled false --id 308784078 --sidp 0x0 --timestamp 1502336826 --stderr_dev jtag_uart --stdin_dev jtag_uart --stdout_dev jtag_uart --sopc_system_name nios2_system --quartus_project_dir "D:/303-Assignment-2/Lab___export/Prebuilt_Nios" --sopcinfo D:/303-Assignment-2/Lab___export/Prebuilt_Nios/software/heart_beets_bsp/../../nios2_system.sopcinfo
+Info: (heart_beets.elf) 88 KBytes program size (code + initialized data).
+Info:                   8096 KBytes free for stack + heap.
+Info: Creating heart_beets.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source heart_beets.elf >heart_beets.objdump
+[heart_beets build complete]
+16:55:03 **** Incremental Build of configuration Nios II for project heart_beets ****
+make all 
+Info: Building ../heart_beets_bsp/
+C:/intelFPGA/16.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../heart_beets_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../heart_beets_bsp//HAL/inc -I../heart_beets_bsp/ -I../heart_beets_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world.o hello_world.c
+Info: Linking heart_beets.elf
+nios2-elf-g++  -T'../heart_beets_bsp//linker.x' -msys-crt0='../heart_beets_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../heart_beets_bsp/   -Wl,-Map=heart_beets.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o heart_beets.elf obj/default/hello_world.o obj/default/pacemaker.o -lm -msys-lib=m
+nios2-elf-insert heart_beets.elf --thread_model hal --cpu_name cpu --qsys true --simulation_enabled false --id 308784078 --sidp 0x0 --timestamp 1502336826 --stderr_dev jtag_uart --stdin_dev jtag_uart --stdout_dev jtag_uart --sopc_system_name nios2_system --quartus_project_dir "D:/303-Assignment-2/Lab___export/Prebuilt_Nios" --sopcinfo D:/303-Assignment-2/Lab___export/Prebuilt_Nios/software/heart_beets_bsp/../../nios2_system.sopcinfo
+Info: (heart_beets.elf) 88 KBytes program size (code + initialized data).
+Info:                   8096 KBytes free for stack + heap.
+Info: Creating heart_beets.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source heart_beets.elf >heart_beets.objdump
+[heart_beets build complete]
+16:55:49 **** Incremental Build of configuration Nios II for project heart_beets ****
+make all 
+Info: Building ../heart_beets_bsp/
+C:/intelFPGA/16.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../heart_beets_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../heart_beets_bsp//HAL/inc -I../heart_beets_bsp/ -I../heart_beets_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world.o hello_world.c
+Info: Linking heart_beets.elf
+nios2-elf-g++  -T'../heart_beets_bsp//linker.x' -msys-crt0='../heart_beets_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../heart_beets_bsp/   -Wl,-Map=heart_beets.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o heart_beets.elf obj/default/hello_world.o obj/default/pacemaker.o -lm -msys-lib=m
+nios2-elf-insert heart_beets.elf --thread_model hal --cpu_name cpu --qsys true --simulation_enabled false --id 308784078 --sidp 0x0 --timestamp 1502336826 --stderr_dev jtag_uart --stdin_dev jtag_uart --stdout_dev jtag_uart --sopc_system_name nios2_system --quartus_project_dir "D:/303-Assignment-2/Lab___export/Prebuilt_Nios" --sopcinfo D:/303-Assignment-2/Lab___export/Prebuilt_Nios/software/heart_beets_bsp/../../nios2_system.sopcinfo
+Info: (heart_beets.elf) 88 KBytes program size (code + initialized data).
+Info:                   8096 KBytes free for stack + heap.
+Info: Creating heart_beets.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source heart_beets.elf >heart_beets.objdump
+[heart_beets build complete]
+16:57:10 **** Incremental Build of configuration Nios II for project heart_beets ****
+make all 
+Info: Building ../heart_beets_bsp/
+C:/intelFPGA/16.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../heart_beets_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../heart_beets_bsp//HAL/inc -I../heart_beets_bsp/ -I../heart_beets_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world.o hello_world.c
+Info: Linking heart_beets.elf
+nios2-elf-g++  -T'../heart_beets_bsp//linker.x' -msys-crt0='../heart_beets_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../heart_beets_bsp/   -Wl,-Map=heart_beets.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o heart_beets.elf obj/default/hello_world.o obj/default/pacemaker.o -lm -msys-lib=m
+nios2-elf-insert heart_beets.elf --thread_model hal --cpu_name cpu --qsys true --simulation_enabled false --id 308784078 --sidp 0x0 --timestamp 1502336826 --stderr_dev jtag_uart --stdin_dev jtag_uart --stdout_dev jtag_uart --sopc_system_name nios2_system --quartus_project_dir "D:/303-Assignment-2/Lab___export/Prebuilt_Nios" --sopcinfo D:/303-Assignment-2/Lab___export/Prebuilt_Nios/software/heart_beets_bsp/../../nios2_system.sopcinfo
+Info: (heart_beets.elf) 88 KBytes program size (code + initialized data).
+Info:                   8096 KBytes free for stack + heap.
+Info: Creating heart_beets.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source heart_beets.elf >heart_beets.objdump
+[heart_beets build complete]
+16:58:22 **** Incremental Build of configuration Nios II for project heart_beets ****
+make all 
+Info: Building ../heart_beets_bsp/
+C:/intelFPGA/16.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../heart_beets_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../heart_beets_bsp//HAL/inc -I../heart_beets_bsp/ -I../heart_beets_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world.o hello_world.c
+Info: Linking heart_beets.elf
+nios2-elf-g++  -T'../heart_beets_bsp//linker.x' -msys-crt0='../heart_beets_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../heart_beets_bsp/   -Wl,-Map=heart_beets.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o heart_beets.elf obj/default/hello_world.o obj/default/pacemaker.o -lm -msys-lib=m
+nios2-elf-insert heart_beets.elf --thread_model hal --cpu_name cpu --qsys true --simulation_enabled false --id 308784078 --sidp 0x0 --timestamp 1502336826 --stderr_dev jtag_uart --stdin_dev jtag_uart --stdout_dev jtag_uart --sopc_system_name nios2_system --quartus_project_dir "D:/303-Assignment-2/Lab___export/Prebuilt_Nios" --sopcinfo D:/303-Assignment-2/Lab___export/Prebuilt_Nios/software/heart_beets_bsp/../../nios2_system.sopcinfo
+Info: (heart_beets.elf) 88 KBytes program size (code + initialized data).
+Info:                   8096 KBytes free for stack + heap.
+Info: Creating heart_beets.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source heart_beets.elf >heart_beets.objdump
+[heart_beets build complete]
+16:58:45 **** Incremental Build of configuration Nios II for project heart_beets ****
+make all 
+Info: Building ../heart_beets_bsp/
+C:/intelFPGA/16.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../heart_beets_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../heart_beets_bsp//HAL/inc -I../heart_beets_bsp/ -I../heart_beets_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world.o hello_world.c
+Info: Linking heart_beets.elf
+nios2-elf-g++  -T'../heart_beets_bsp//linker.x' -msys-crt0='../heart_beets_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../heart_beets_bsp/   -Wl,-Map=heart_beets.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o heart_beets.elf obj/default/hello_world.o obj/default/pacemaker.o -lm -msys-lib=m
+nios2-elf-insert heart_beets.elf --thread_model hal --cpu_name cpu --qsys true --simulation_enabled false --id 308784078 --sidp 0x0 --timestamp 1502336826 --stderr_dev jtag_uart --stdin_dev jtag_uart --stdout_dev jtag_uart --sopc_system_name nios2_system --quartus_project_dir "D:/303-Assignment-2/Lab___export/Prebuilt_Nios" --sopcinfo D:/303-Assignment-2/Lab___export/Prebuilt_Nios/software/heart_beets_bsp/../../nios2_system.sopcinfo
+Info: (heart_beets.elf) 88 KBytes program size (code + initialized data).
+Info:                   8096 KBytes free for stack + heap.
+Info: Creating heart_beets.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source heart_beets.elf >heart_beets.objdump
+[heart_beets build complete]
+16:58:59 **** Incremental Build of configuration Nios II for project heart_beets ****
+make all 
+Info: Building ../heart_beets_bsp/
+C:/intelFPGA/16.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../heart_beets_bsp/
+[BSP build complete]
+[heart_beets build complete]
+16:59:41 **** Incremental Build of configuration Nios II for project heart_beets ****
+make all 
+Info: Building ../heart_beets_bsp/
+C:/intelFPGA/16.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../heart_beets_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../heart_beets_bsp//HAL/inc -I../heart_beets_bsp/ -I../heart_beets_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world.o hello_world.c
+Info: Linking heart_beets.elf
+nios2-elf-g++  -T'../heart_beets_bsp//linker.x' -msys-crt0='../heart_beets_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../heart_beets_bsp/   -Wl,-Map=heart_beets.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o heart_beets.elf obj/default/hello_world.o obj/default/pacemaker.o -lm -msys-lib=m
+nios2-elf-insert heart_beets.elf --thread_model hal --cpu_name cpu --qsys true --simulation_enabled false --id 308784078 --sidp 0x0 --timestamp 1502336826 --stderr_dev jtag_uart --stdin_dev jtag_uart --stdout_dev jtag_uart --sopc_system_name nios2_system --quartus_project_dir "D:/303-Assignment-2/Lab___export/Prebuilt_Nios" --sopcinfo D:/303-Assignment-2/Lab___export/Prebuilt_Nios/software/heart_beets_bsp/../../nios2_system.sopcinfo
+Info: (heart_beets.elf) 88 KBytes program size (code + initialized data).
+Info:                   8096 KBytes free for stack + heap.
+Info: Creating heart_beets.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source heart_beets.elf >heart_beets.objdump
+[heart_beets build complete]
+17:15:58 **** Incremental Build of configuration Nios II for project heart_beets ****
+make all 
+Info: Building ../heart_beets_bsp/
+C:/intelFPGA/16.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../heart_beets_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../heart_beets_bsp//HAL/inc -I../heart_beets_bsp/ -I../heart_beets_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world.o hello_world.c
+Info: Linking heart_beets.elf
+nios2-elf-g++  -T'../heart_beets_bsp//linker.x' -msys-crt0='../heart_beets_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../heart_beets_bsp/   -Wl,-Map=heart_beets.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o heart_beets.elf obj/default/hello_world.o obj/default/pacemaker.o -lm -msys-lib=m
+nios2-elf-insert heart_beets.elf --thread_model hal --cpu_name cpu --qsys true --simulation_enabled false --id 308784078 --sidp 0x0 --timestamp 1502336826 --stderr_dev jtag_uart --stdin_dev jtag_uart --stdout_dev jtag_uart --sopc_system_name nios2_system --quartus_project_dir "D:/303-Assignment-2/Lab___export/Prebuilt_Nios" --sopcinfo D:/303-Assignment-2/Lab___export/Prebuilt_Nios/software/heart_beets_bsp/../../nios2_system.sopcinfo
+Info: (heart_beets.elf) 88 KBytes program size (code + initialized data).
+Info:                   8096 KBytes free for stack + heap.
+Info: Creating heart_beets.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source heart_beets.elf >heart_beets.objdump
+[heart_beets build complete]
+17:17:08 **** Incremental Build of configuration Nios II for project heart_beets ****
+make all 
+Info: Building ../heart_beets_bsp/
+C:/intelFPGA/16.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../heart_beets_bsp/
+[BSP build complete]
+[heart_beets build complete]
+17:17:35 **** Incremental Build of configuration Nios II for project heart_beets ****
+make all 
+Info: Building ../heart_beets_bsp/
+C:/intelFPGA/16.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../heart_beets_bsp/
+[BSP build complete]
+[heart_beets build complete]
+17:21:33 **** Incremental Build of configuration Nios II for project heart_beets ****
+make all 
+Info: Building ../heart_beets_bsp/
+C:/intelFPGA/16.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../heart_beets_bsp/
+[BSP build complete]
+[heart_beets build complete]
+17:22:47 **** Incremental Build of configuration Nios II for project heart_beets ****
+make all 
+Info: Building ../heart_beets_bsp/
+C:/intelFPGA/16.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../heart_beets_bsp/
+[BSP build complete]
+[heart_beets build complete]
+17:26:16 **** Incremental Build of configuration Nios II for project heart_beets ****
+make all 
+Info: Building ../heart_beets_bsp/
+C:/intelFPGA/16.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../heart_beets_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../heart_beets_bsp//HAL/inc -I../heart_beets_bsp/ -I../heart_beets_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world.o hello_world.c
+Info: Linking heart_beets.elf
+nios2-elf-g++  -T'../heart_beets_bsp//linker.x' -msys-crt0='../heart_beets_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../heart_beets_bsp/   -Wl,-Map=heart_beets.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o heart_beets.elf obj/default/hello_world.o obj/default/pacemaker.o -lm -msys-lib=m
+nios2-elf-insert heart_beets.elf --thread_model hal --cpu_name cpu --qsys true --simulation_enabled false --id 308784078 --sidp 0x0 --timestamp 1502336826 --stderr_dev jtag_uart --stdin_dev jtag_uart --stdout_dev jtag_uart --sopc_system_name nios2_system --quartus_project_dir "D:/303-Assignment-2/Lab___export/Prebuilt_Nios" --sopcinfo D:/303-Assignment-2/Lab___export/Prebuilt_Nios/software/heart_beets_bsp/../../nios2_system.sopcinfo
+Info: (heart_beets.elf) 88 KBytes program size (code + initialized data).
+Info:                   8096 KBytes free for stack + heap.
+Info: Creating heart_beets.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source heart_beets.elf >heart_beets.objdump
+[heart_beets build complete]
+17:27:10 **** Incremental Build of configuration Nios II for project heart_beets ****
+make all 
+Info: Building ../heart_beets_bsp/
+C:/intelFPGA/16.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../heart_beets_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../heart_beets_bsp//HAL/inc -I../heart_beets_bsp/ -I../heart_beets_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world.o hello_world.c
+Info: Linking heart_beets.elf
+nios2-elf-g++  -T'../heart_beets_bsp//linker.x' -msys-crt0='../heart_beets_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../heart_beets_bsp/   -Wl,-Map=heart_beets.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o heart_beets.elf obj/default/hello_world.o obj/default/pacemaker.o -lm -msys-lib=m
+nios2-elf-insert heart_beets.elf --thread_model hal --cpu_name cpu --qsys true --simulation_enabled false --id 308784078 --sidp 0x0 --timestamp 1502336826 --stderr_dev jtag_uart --stdin_dev jtag_uart --stdout_dev jtag_uart --sopc_system_name nios2_system --quartus_project_dir "D:/303-Assignment-2/Lab___export/Prebuilt_Nios" --sopcinfo D:/303-Assignment-2/Lab___export/Prebuilt_Nios/software/heart_beets_bsp/../../nios2_system.sopcinfo
+Info: (heart_beets.elf) 88 KBytes program size (code + initialized data).
+Info:                   8096 KBytes free for stack + heap.
+Info: Creating heart_beets.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source heart_beets.elf >heart_beets.objdump
+[heart_beets build complete]
+17:28:37 **** Incremental Build of configuration Nios II for project heart_beets ****
+make all 
+Info: Building ../heart_beets_bsp/
+C:/intelFPGA/16.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../heart_beets_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../heart_beets_bsp//HAL/inc -I../heart_beets_bsp/ -I../heart_beets_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world.o hello_world.c
+Info: Linking heart_beets.elf
+nios2-elf-g++  -T'../heart_beets_bsp//linker.x' -msys-crt0='../heart_beets_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../heart_beets_bsp/   -Wl,-Map=heart_beets.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o heart_beets.elf obj/default/hello_world.o obj/default/pacemaker.o -lm -msys-lib=m
+nios2-elf-insert heart_beets.elf --thread_model hal --cpu_name cpu --qsys true --simulation_enabled false --id 308784078 --sidp 0x0 --timestamp 1502336826 --stderr_dev jtag_uart --stdin_dev jtag_uart --stdout_dev jtag_uart --sopc_system_name nios2_system --quartus_project_dir "D:/303-Assignment-2/Lab___export/Prebuilt_Nios" --sopcinfo D:/303-Assignment-2/Lab___export/Prebuilt_Nios/software/heart_beets_bsp/../../nios2_system.sopcinfo
+Info: (heart_beets.elf) 88 KBytes program size (code + initialized data).
+Info:                   8096 KBytes free for stack + heap.
+Info: Creating heart_beets.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source heart_beets.elf >heart_beets.objdump
+[heart_beets build complete]
+17:31:08 **** Incremental Build of configuration Nios II for project heart_beets ****
+make all 
+Info: Building ../heart_beets_bsp/
+C:/intelFPGA/16.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../heart_beets_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../heart_beets_bsp//HAL/inc -I../heart_beets_bsp/ -I../heart_beets_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world.o hello_world.c
+Info: Linking heart_beets.elf
+nios2-elf-g++  -T'../heart_beets_bsp//linker.x' -msys-crt0='../heart_beets_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../heart_beets_bsp/   -Wl,-Map=heart_beets.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o heart_beets.elf obj/default/hello_world.o obj/default/pacemaker.o -lm -msys-lib=m
+nios2-elf-insert heart_beets.elf --thread_model hal --cpu_name cpu --qsys true --simulation_enabled false --id 308784078 --sidp 0x0 --timestamp 1502336826 --stderr_dev jtag_uart --stdin_dev jtag_uart --stdout_dev jtag_uart --sopc_system_name nios2_system --quartus_project_dir "D:/303-Assignment-2/Lab___export/Prebuilt_Nios" --sopcinfo D:/303-Assignment-2/Lab___export/Prebuilt_Nios/software/heart_beets_bsp/../../nios2_system.sopcinfo
+Info: (heart_beets.elf) 88 KBytes program size (code + initialized data).
+Info:                   8096 KBytes free for stack + heap.
+Info: Creating heart_beets.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source heart_beets.elf >heart_beets.objdump
+[heart_beets build complete]

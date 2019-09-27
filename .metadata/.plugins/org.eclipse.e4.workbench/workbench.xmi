@@ -3,7 +3,7 @@
   <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;workbench>&#xD;&#xA;&lt;mruList>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;de.cau.cs.kieler.sccharts.text.sct.Sct&quot; name=&quot;Pacemaker1.sct&quot; tooltip=&quot;Pacemaker1/Pacemaker1.sct&quot;>&#xD;&#xA;&lt;persistable path=&quot;/Pacemaker1/Pacemaker1.sct&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;/mruList>&#xD;&#xA;&lt;/workbench>"/>
   <tags>activeSchemeId:org.eclipse.ui.defaultAcceleratorConfiguration</tags>
   <tags>ModelMigrationProcessor.001</tags>
-  <children xsi:type="basic:TrimmedWindow" xmi:id="_gh3ZUd6yEem2BcfOz4lOrw" elementId="IDEWindow" contributorURI="platform:/plugin/org.eclipse.ui.workbench" selectedElement="_gh3ZUt6yEem2BcfOz4lOrw" x="182" y="182" width="1024" height="768">
+  <children xsi:type="basic:TrimmedWindow" xmi:id="_gh3ZUd6yEem2BcfOz4lOrw" elementId="IDEWindow" contributorURI="platform:/plugin/org.eclipse.ui.workbench" selectedElement="_gh3ZUt6yEem2BcfOz4lOrw" x="0" y="0" width="1024" height="768">
     <persistedState key="coolBarVisible" value="true"/>
     <persistedState key="perspectiveBarVisible" value="true"/>
     <persistedState key="isRestored" value="true"/>
@@ -14,7 +14,7 @@
     <tags>shellMaximized</tags>
     <children xsi:type="basic:PartSashContainer" xmi:id="_gh3ZUt6yEem2BcfOz4lOrw" selectedElement="_gh3ZU96yEem2BcfOz4lOrw" horizontal="true">
       <children xsi:type="advanced:PerspectiveStack" xmi:id="_gh3ZU96yEem2BcfOz4lOrw" elementId="org.eclipse.ui.ide.perspectivestack" containerData="7500" selectedElement="_gh3ZVN6yEem2BcfOz4lOrw">
-        <children xsi:type="advanced:Perspective" xmi:id="_gh3ZVN6yEem2BcfOz4lOrw" elementId="de.cau.cs.kieler.Modeling" selectedElement="_gh3ZVd6yEem2BcfOz4lOrw" label="SCCharts Modeling" iconURI="platform:/plugin/de.cau.cs.kieler.core.perspectives/icons/foerde-logo-16.gif">
+        <children xsi:type="advanced:Perspective" xmi:id="_gh3ZVN6yEem2BcfOz4lOrw" elementId="de.cau.cs.kieler.Modeling" selectedElement="_2V46MOC-Eem_opDXjCrFtw" label="SCCharts Modeling" iconURI="platform:/plugin/de.cau.cs.kieler.core.perspectives/icons/foerde-logo-16.gif">
           <persistedState key="persp.hiddenItems" value="persp.hideToolbarSC:org.eclipse.debug.ui.commands.RunToLine,persp.hideToolbarSC:org.eclipse.jdt.ui.actions.OpenProjectWizard,persp.hideToolbarSC:print,persp.hideToolbarSC:org.eclipse.ui.edit.text.toggleShowSelectedElementOnly,"/>
           <tags>persp.actionSet:org.eclipse.ui.cheatsheets.actionSet</tags>
           <tags>persp.actionSet:org.eclipse.search.searchActionSet</tags>
@@ -32,28 +32,28 @@
           <tags>persp.newWizSC:org.eclipse.ui.wizards.new.folder</tags>
           <tags>persp.newWizSC:de.cau.cs.kieler.sccharts.prom.projectwizard</tags>
           <tags>persp.newWizSC:de.cau.cs.kieler.sccharts.prom.filewizard</tags>
-          <children xsi:type="basic:PartSashContainer" xmi:id="_gh3ZVd6yEem2BcfOz4lOrw" selectedElement="_gh3ZVt6yEem2BcfOz4lOrw">
-            <children xsi:type="basic:PartSashContainer" xmi:id="_gh3ZVt6yEem2BcfOz4lOrw" containerData="6515" selectedElement="_gh3ZW96yEem2BcfOz4lOrw" horizontal="true">
-              <children xsi:type="basic:PartSashContainer" xmi:id="_gh3ZV96yEem2BcfOz4lOrw" containerData="6045" selectedElement="_gh3ZWd6yEem2BcfOz4lOrw" horizontal="true">
-                <children xsi:type="advanced:Placeholder" xmi:id="_gh3ZWN6yEem2BcfOz4lOrw" elementId="org.eclipse.ui.editorss" containerData="7091" ref="_gh3aQN6yEem2BcfOz4lOrw"/>
-                <children xsi:type="basic:PartStack" xmi:id="_gh3ZWd6yEem2BcfOz4lOrw" elementId="PartStack@750f8631" containerData="2909" selectedElement="_gh3ZWt6yEem2BcfOz4lOrw">
-                  <children xsi:type="advanced:Placeholder" xmi:id="_gh3ZWt6yEem2BcfOz4lOrw" elementId="de.cau.cs.kieler.sim.signals.ui.view" ref="_gh3a4d6yEem2BcfOz4lOrw"/>
+          <children xsi:type="basic:PartSashContainer" xmi:id="_2V46MOC-Eem_opDXjCrFtw" selectedElement="_2V46MeC-Eem_opDXjCrFtw">
+            <children xsi:type="basic:PartSashContainer" xmi:id="_2V46MeC-Eem_opDXjCrFtw" containerData="7911" selectedElement="_CwieMODZEemkVJyXZFXEUw" horizontal="true">
+              <children xsi:type="advanced:Placeholder" xmi:id="_2V46MuC-Eem_opDXjCrFtw" elementId="org.eclipse.ui.editorss" containerData="4723" ref="_gh3aQN6yEem2BcfOz4lOrw"/>
+              <children xsi:type="basic:PartSashContainer" xmi:id="_CwieMODZEemkVJyXZFXEUw" containerData="5277" selectedElement="_2V46M-C-Eem_opDXjCrFtw" horizontal="true">
+                <children xsi:type="basic:PartStack" xmi:id="_2V46M-C-Eem_opDXjCrFtw" elementId="topRight" containerData="7927" selectedElement="_2V46NOC-Eem_opDXjCrFtw">
+                  <tags>active</tags>
+                  <children xsi:type="advanced:Placeholder" xmi:id="_2V46NOC-Eem_opDXjCrFtw" elementId="de.cau.cs.kieler.klighd.ui.view.diagram" ref="_gh3aXt6yEem2BcfOz4lOrw"/>
+                </children>
+                <children xsi:type="basic:PartStack" xmi:id="_CwieMeDZEemkVJyXZFXEUw" elementId="PartStack@e655f9" containerData="2073" selectedElement="_CRWn0ODZEemkVJyXZFXEUw">
+                  <children xsi:type="advanced:Placeholder" xmi:id="_CRWn0ODZEemkVJyXZFXEUw" elementId="de.cau.cs.kieler.sim.signals.ui.view" ref="_gh3a4d6yEem2BcfOz4lOrw"/>
                 </children>
               </children>
-              <children xsi:type="basic:PartStack" xmi:id="_gh3ZW96yEem2BcfOz4lOrw" elementId="topRight" containerData="5005" selectedElement="_gh3ZXN6yEem2BcfOz4lOrw">
-                <tags>active</tags>
-                <children xsi:type="advanced:Placeholder" xmi:id="_gh3ZXN6yEem2BcfOz4lOrw" elementId="de.cau.cs.kieler.klighd.ui.view.diagram" ref="_gh3aXt6yEem2BcfOz4lOrw"/>
-              </children>
             </children>
-            <children xsi:type="basic:PartSashContainer" xmi:id="_gh3ZXd6yEem2BcfOz4lOrw" containerData="3485" selectedElement="_gh3ZYN6yEem2BcfOz4lOrw" horizontal="true">
-              <children xsi:type="basic:PartStack" xmi:id="_gh3ZXt6yEem2BcfOz4lOrw" elementId="bottomLeft" containerData="2000" selectedElement="_gh3ZX96yEem2BcfOz4lOrw">
-                <children xsi:type="advanced:Placeholder" xmi:id="_gh3ZX96yEem2BcfOz4lOrw" elementId="org.eclipse.ui.navigator.ProjectExplorer" ref="_gh3ar96yEem2BcfOz4lOrw"/>
+            <children xsi:type="basic:PartSashContainer" xmi:id="_2V46NeC-Eem_opDXjCrFtw" containerData="2089" selectedElement="_2V46OOC-Eem_opDXjCrFtw" horizontal="true">
+              <children xsi:type="basic:PartStack" xmi:id="_2V46NuC-Eem_opDXjCrFtw" elementId="bottomLeft" containerData="2000" selectedElement="_2V46N-C-Eem_opDXjCrFtw">
+                <children xsi:type="advanced:Placeholder" xmi:id="_2V46N-C-Eem_opDXjCrFtw" elementId="org.eclipse.ui.navigator.ProjectExplorer" ref="_gh3ar96yEem2BcfOz4lOrw"/>
               </children>
-              <children xsi:type="basic:PartStack" xmi:id="_gh3ZYN6yEem2BcfOz4lOrw" elementId="bottomRight" containerData="8000" selectedElement="_gh3ZY96yEem2BcfOz4lOrw">
+              <children xsi:type="basic:PartStack" xmi:id="_2V46OOC-Eem_opDXjCrFtw" elementId="bottomRight" containerData="8000" selectedElement="_2V46OeC-Eem_opDXjCrFtw">
                 <tags>KIELER Simulation</tags>
-                <children xsi:type="advanced:Placeholder" xmi:id="_gh3ZYd6yEem2BcfOz4lOrw" elementId="de.cau.cs.kieler.kico.selection" ref="_gh3aUd6yEem2BcfOz4lOrw"/>
-                <children xsi:type="advanced:Placeholder" xmi:id="_gh3ZYt6yEem2BcfOz4lOrw" elementId="org.eclipse.ui.console.ConsoleView" ref="_gh3ayN6yEem2BcfOz4lOrw"/>
-                <children xsi:type="advanced:Placeholder" xmi:id="_gh3ZY96yEem2BcfOz4lOrw" elementId="de.cau.cs.kieler.sim.table.view" ref="_gh3a1d6yEem2BcfOz4lOrw"/>
+                <children xsi:type="advanced:Placeholder" xmi:id="_2V46OeC-Eem_opDXjCrFtw" elementId="de.cau.cs.kieler.kico.selection" ref="_gh3aUd6yEem2BcfOz4lOrw"/>
+                <children xsi:type="advanced:Placeholder" xmi:id="_2V46OuC-Eem_opDXjCrFtw" elementId="org.eclipse.ui.console.ConsoleView" ref="_gh3ayN6yEem2BcfOz4lOrw"/>
+                <children xsi:type="advanced:Placeholder" xmi:id="_CMG7cODZEemkVJyXZFXEUw" elementId="de.cau.cs.kieler.sim.table.view" ref="_gh3a1d6yEem2BcfOz4lOrw"/>
               </children>
             </children>
           </children>
@@ -84,11 +84,11 @@
       <tags>categoryTag:Help</tags>
     </sharedElements>
     <sharedElements xsi:type="advanced:Area" xmi:id="_gh3aQN6yEem2BcfOz4lOrw" elementId="org.eclipse.ui.editorss" selectedElement="_gh3aQd6yEem2BcfOz4lOrw">
-      <children xsi:type="basic:PartStack" xmi:id="_gh3aQd6yEem2BcfOz4lOrw" elementId="org.eclipse.e4.primaryDataStack" selectedElement="_gh3aQt6yEem2BcfOz4lOrw">
+      <children xsi:type="basic:PartStack" xmi:id="_gh3aQd6yEem2BcfOz4lOrw" elementId="PartStack@ebd06a9" selectedElement="_gh3aQt6yEem2BcfOz4lOrw">
         <tags>org.eclipse.e4.primaryDataStack</tags>
         <tags>EditorStack</tags>
         <children xsi:type="basic:Part" xmi:id="_gh3aQt6yEem2BcfOz4lOrw" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="Pacemaker1.sct" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;de.cau.cs.kieler.sccharts.text.sct.Sct&quot; name=&quot;Pacemaker1.sct&quot; partName=&quot;Pacemaker1.sct&quot; title=&quot;Pacemaker1.sct&quot; tooltip=&quot;Pacemaker1/Pacemaker1.sct&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/Pacemaker1/Pacemaker1.sct&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;3093&quot; selectionTopPixel=&quot;870&quot;/>&#xD;&#xA;&lt;/editor>"/>
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;de.cau.cs.kieler.sccharts.text.sct.Sct&quot; name=&quot;Pacemaker1.sct&quot; partName=&quot;Pacemaker1.sct&quot; title=&quot;Pacemaker1.sct&quot; tooltip=&quot;Pacemaker1/Pacemaker1.sct&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/Pacemaker1/Pacemaker1.sct&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;1479&quot; selectionTopPixel=&quot;120&quot;/>&#xD;&#xA;&lt;/editor>"/>
           <tags>Editor</tags>
           <tags>de.cau.cs.kieler.sccharts.text.sct.Sct</tags>
           <tags>removeOnHide</tags>
@@ -153,12 +153,12 @@
         <tags>menuContribution:popup</tags>
         <tags>popup:de.cau.cs.kieler.kico.selection</tags>
       </menus>
-      <toolbar xmi:id="_gh3aV96yEem2BcfOz4lOrw" elementId="de.cau.cs.kieler.kico.selection" visible="false"/>
+      <toolbar xmi:id="_gh3aV96yEem2BcfOz4lOrw" elementId="de.cau.cs.kieler.kico.selection"/>
     </sharedElements>
     <sharedElements xsi:type="basic:Part" xmi:id="_gh3aXt6yEem2BcfOz4lOrw" elementId="de.cau.cs.kieler.klighd.ui.view.diagram" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="Diagram" iconURI="platform:/plugin/de.cau.cs.kieler.klighd.ui.view/icons/full/etool16/diagrams_view.gif" tooltip="" closeable="true">
       <persistedState key="originalCompatibilityViewClass" value="de.cau.cs.kieler.klighd.ui.view.DiagramView"/>
       <persistedState key="originalCompatibilityViewBundle" value="de.cau.cs.kieler.klighd.ui.view"/>
-      <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;view isLinkedWithActiveEditor=&quot;true&quot; synchronizeSelection=&quot;true&quot;>&#xD;&#xA;&lt;recentSynthesisOptions>&#xD;&#xA;&lt;de.cau.cs.kieler.sccharts.klighd.synthesis.SCChartsSynthesis/>&#xD;&#xA;&lt;de.cau.cs.kieler.scg.klighd.diagramSynthesis opt-1749755660=&quot;false&quot; opt-571893812=&quot;false&quot; opt1659562133=&quot;false&quot; opt336820971=&quot;false&quot; opt703440138=&quot;false&quot;/>&#xD;&#xA;&lt;/recentSynthesisOptions>&#xD;&#xA;&lt;synthesisSelection de.cau.cs.kieler.kico.klighd.internal.model.CodePlaceHolder=&quot;de.cau.cs.kieler.kico.klighd.internal.model.CodePlaceHolderSynthesis&quot; de.cau.cs.kieler.klighd.ui.view.model.ErrorModel=&quot;de.cau.cs.kieler.klighd.ui.view.syntheses.ErrorModelSynthesis&quot; de.cau.cs.kieler.sccharts.impl.StateImpl=&quot;de.cau.cs.kieler.sccharts.klighd.synthesis.SCChartsSynthesis&quot; de.cau.cs.kieler.scg.impl.SCGraphImpl=&quot;de.cau.cs.kieler.scg.klighd.diagramSynthesis&quot;/>&#xD;&#xA;&lt;controllers>&#xD;&#xA;&lt;de.cau.cs.kieler.kico.klighd.KiCoModelUpdateController compileToggleAction=&quot;false&quot; debugModeToggleAction=&quot;false&quot; diagramPlaceholderToggleAction=&quot;false&quot; sideBySideToggleAction=&quot;false&quot; tracingChainToggleAction=&quot;false&quot; tracingToggleAction=&quot;false&quot;/>&#xD;&#xA;&lt;/controllers>&#xD;&#xA;&lt;/view>"/>
+      <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;view isLinkedWithActiveEditor=&quot;true&quot; synchronizeSelection=&quot;true&quot;>&#xD;&#xA;&lt;recentSynthesisOptions>&#xD;&#xA;&lt;de.cau.cs.kieler.klighd.ui.view.syntheses.MessageModelSynthesis/>&#xD;&#xA;&lt;de.cau.cs.kieler.scg.klighd.diagramSynthesis opt-1749755660=&quot;false&quot; opt-571893812=&quot;false&quot; opt1659562133=&quot;false&quot; opt336820971=&quot;false&quot; opt703440138=&quot;false&quot;/>&#xD;&#xA;&lt;de.cau.cs.kieler.klighd.ui.view.syntheses.ErrorModelSynthesis/>&#xD;&#xA;&lt;de.cau.cs.kieler.sccharts.klighd.synthesis.SCChartsSynthesis/>&#xD;&#xA;&lt;de.cau.cs.kieler.kico.klighd.internal.model.CodePlaceHolderSynthesis/>&#xD;&#xA;&lt;/recentSynthesisOptions>&#xD;&#xA;&lt;synthesisSelection de.cau.cs.kieler.kico.klighd.internal.model.CodePlaceHolder=&quot;de.cau.cs.kieler.kico.klighd.internal.model.CodePlaceHolderSynthesis&quot; de.cau.cs.kieler.klighd.ui.view.model.ErrorModel=&quot;de.cau.cs.kieler.klighd.ui.view.syntheses.ErrorModelSynthesis&quot; de.cau.cs.kieler.sccharts.impl.StateImpl=&quot;de.cau.cs.kieler.sccharts.klighd.synthesis.SCChartsSynthesis&quot; de.cau.cs.kieler.scg.impl.SCGraphImpl=&quot;de.cau.cs.kieler.scg.klighd.diagramSynthesis&quot;/>&#xD;&#xA;&lt;controllers>&#xD;&#xA;&lt;de.cau.cs.kieler.kico.klighd.KiCoModelUpdateController compileToggleAction=&quot;false&quot; debugModeToggleAction=&quot;false&quot; diagramPlaceholderToggleAction=&quot;false&quot; sideBySideToggleAction=&quot;false&quot; tracingChainToggleAction=&quot;false&quot; tracingToggleAction=&quot;false&quot;/>&#xD;&#xA;&lt;/controllers>&#xD;&#xA;&lt;/view>"/>
       <tags>View</tags>
       <tags>categoryTag:KIELER Lightweight Diagrams</tags>
       <tags>active</tags>
@@ -483,7 +483,7 @@
         <tags>menuContribution:popup</tags>
         <tags>popup:de.cau.cs.kieler.sim.table.view</tags>
       </menus>
-      <toolbar xmi:id="_gh3a2N6yEem2BcfOz4lOrw" elementId="de.cau.cs.kieler.sim.table.view"/>
+      <toolbar xmi:id="_gh3a2N6yEem2BcfOz4lOrw" elementId="de.cau.cs.kieler.sim.table.view" visible="false"/>
     </sharedElements>
     <sharedElements xsi:type="basic:Part" xmi:id="_gh3a4d6yEem2BcfOz4lOrw" elementId="de.cau.cs.kieler.sim.signals.ui.view" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="Synchronous Signals" iconURI="platform:/plugin/de.cau.cs.kieler.sim.signals.ui/icons/signalsViewIcon.png" tooltip="" closeable="true">
       <persistedState key="originalCompatibilityViewBundle" value="de.cau.cs.kieler.sim.signals.ui"/>
@@ -504,7 +504,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_gh3a8d6yEem2BcfOz4lOrw" elementId="org.eclipse.ui.workbench.file">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_zAXNkN61EembWuTktPxSeA" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" command="_gh3gat6yEem2BcfOz4lOrw"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_rSPnx-DYEemkVJyXZFXEUw" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" command="_gh3gat6yEem2BcfOz4lOrw"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_gh3a_t6yEem2BcfOz4lOrw" elementId="additions" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -528,10 +528,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_gh3bPt6yEem2BcfOz4lOrw" elementId="org.eclipse.ui.workbench.navigate">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_zAZCwN61EembWuTktPxSeA" elementId="org.eclipse.ui.window.pinEditor" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_gh3gAd6yEem2BcfOz4lOrw"/>
-      </children>
-      <children xsi:type="menu:ToolBar" xmi:id="_gh3bS96yEem2BcfOz4lOrw" elementId="org.eclipse.ui.DefaultTextEditor" visible="false">
-        <tags>Draggable</tags>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_rSPn0eDYEemkVJyXZFXEUw" elementId="org.eclipse.ui.window.pinEditor" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_gh3gAd6yEem2BcfOz4lOrw"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_gh3bTN6yEem2BcfOz4lOrw" elementId="group.editor" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -565,8 +562,26 @@
         <tags>Draggable</tags>
       </children>
     </trimBars>
-    <trimBars xmi:id="_gh3bXN6yEem2BcfOz4lOrw" elementId="org.eclipse.ui.trim.vertical1" contributorURI="platform:/plugin/org.eclipse.ui.workbench" side="Left"/>
-    <trimBars xmi:id="_gh3bXd6yEem2BcfOz4lOrw" elementId="org.eclipse.ui.trim.vertical2" contributorURI="platform:/plugin/org.eclipse.ui.workbench" side="Right"/>
+    <trimBars xmi:id="_gh3bXN6yEem2BcfOz4lOrw" elementId="org.eclipse.ui.trim.vertical1" contributorURI="platform:/plugin/org.eclipse.ui.workbench" toBeRendered="false" side="Left">
+      <children xsi:type="menu:ToolControl" xmi:id="_K3P34ODfEemkVJyXZFXEUw" elementId="bottomLeft(IDEWindow).(de.cau.cs.kieler.Modeling)" toBeRendered="false" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.addons.swt/org.eclipse.e4.ui.workbench.addons.minmax.TrimStack">
+        <tags>TrimStack</tags>
+        <tags>Draggable</tags>
+      </children>
+      <children xsi:type="menu:ToolControl" xmi:id="_K3V-gODfEemkVJyXZFXEUw" elementId="org.eclipse.ui.editorss(IDEWindow).(de.cau.cs.kieler.Modeling)" toBeRendered="false" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.addons.swt/org.eclipse.e4.ui.workbench.addons.minmax.TrimStack">
+        <tags>TrimStack</tags>
+        <tags>Draggable</tags>
+      </children>
+    </trimBars>
+    <trimBars xmi:id="_gh3bXd6yEem2BcfOz4lOrw" elementId="org.eclipse.ui.trim.vertical2" contributorURI="platform:/plugin/org.eclipse.ui.workbench" toBeRendered="false" side="Right">
+      <children xsi:type="menu:ToolControl" xmi:id="_K2xWwODfEemkVJyXZFXEUw" elementId="topRight(IDEWindow).(de.cau.cs.kieler.Modeling)" toBeRendered="false" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.addons.swt/org.eclipse.e4.ui.workbench.addons.minmax.TrimStack">
+        <tags>TrimStack</tags>
+        <tags>Draggable</tags>
+      </children>
+      <children xsi:type="menu:ToolControl" xmi:id="_K3JxQODfEemkVJyXZFXEUw" elementId="PartStack@e655f9(IDEWindow).(de.cau.cs.kieler.Modeling)" toBeRendered="false" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.addons.swt/org.eclipse.e4.ui.workbench.addons.minmax.TrimStack">
+        <tags>TrimStack</tags>
+        <tags>Draggable</tags>
+      </children>
+    </trimBars>
   </children>
   <bindingTables xmi:id="_gh3bXt6yEem2BcfOz4lOrw" contributorURI="platform:/plugin/org.eclipse.ui.workbench" bindingContext="_gh3cxd6yEem2BcfOz4lOrw">
     <bindings xmi:id="_gh3bX96yEem2BcfOz4lOrw" keySequence="CTRL+A" command="_gh3g196yEem2BcfOz4lOrw"/>

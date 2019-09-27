@@ -1,6 +1,6 @@
-11:48:07 **** Incremental Build of configuration Nios II for project heart_beets_bsp ****
+16:39:16 **** Build of configuration Nios II for project heart_beets_bsp ****
 make all 
 [BSP build complete]
 
-11:48:07 Build Finished (took 911ms)
+16:39:17 Build Finished (took 930ms)
 
