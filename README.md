@@ -1,5 +1,5 @@
-## 303-Assignment-2
-# Pacemaker Project
+# 303-Assignment-2
+## Pacemaker Project
 
 Quick controls:
  - Switch 0 
@@ -18,7 +18,7 @@ Quick controls:
   
   Note: From left to right the LEDs go A, V, A, V - (Pace then Sense)
 
-# How to use:
+## How to use:
 
 Download the repository onto the hard drive of the computer, which must be running windows. Extract the folder onto the D: drive.
 Open up the Quartus program, and upon the prompt to choose a project, locate the cs303_assignment2.qpf file in the D:\303-Assignment-2\Lab___export\Prebuilt_Nios directory.
