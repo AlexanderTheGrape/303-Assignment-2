@@ -28,5 +28,5 @@ Next, open up the Nios II Software Built Tool for Eclipse, found in the tools dr
 
 Once Eclipse opens, right-click the "heart_beets" project in project explorer, hover over “Run As”, and click “3 Nios II Hardware”. Once loaded, scroll to the left and click “refresh”, you should then be able to program the Nios II processor. 
 
-On the board, set the switch 0 to low (0) for mode 1, and set it to high (1) for mode 2.
+On the board, set the switch 0 to low (0) for mode 1, and set it to high (1) for mode 2. Note that button 0 or 1 needs to be pressed to start mode 1.
 Press button 0 to simulate a natural ventricular beat, and press button 1 to simulate a natural atrial beat.
