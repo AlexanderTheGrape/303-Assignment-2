@@ -23,7 +23,9 @@
 #include <string.h>
 
 #include "pacemaker.h"
-//#include "pacemaker.c"
+
+#include <unistd.h>
+#include <fcntl.h>
 
 //----Timer Value Macros-----
 #define AVI_Value 300
@@ -49,7 +51,9 @@ alt_alarm LRI_timer;
 alt_alarm URI_timer;
 
 alt_alarm Atrial_timer;
+alt_alarm AtrialPace_timer;
 alt_alarm Ventricular_timer;
+alt_alarm VentricularPace_timer;
 
 //----Set all timeout flags to 0----
 int AVITOFlag = 0;
@@ -64,6 +68,9 @@ unsigned int LEDbits = 0;  //Turn all LEDs off
 unsigned int LED0 = 0; //Atrial event LED turned off
 unsigned int LED1 = 0; //Ventricular event LED turned off
 
+unsigned int LED3 = 0; //Atrial event LED turned off
+unsigned int LED4 = 0; //Ventricular event LED turned off
+
 //unsigned int buttonVal = 0;
 unsigned int uiButton = 0; //Set button value to 0
 //void * buttonContext = (void*) &uiButtonValue;
@@ -72,7 +79,15 @@ unsigned int maskedButton1 = 0; //Set button 1 value to 0
 unsigned int button0_pressed = 0; //Set button 0 to unpressed
 unsigned int button1_pressed = 0; //Set button 1 to unpressed
 
+unsigned int switch_bits = 0;
+unsigned int mode = 0;
+unsigned int switch0 = 0;
 
+
+
+// Initialise UART
+int uart_fd;
+FILE* uart_fp;
 
 
 //ISR called when atrial timer ends. Used to hold atrial LED on for
@@ -88,6 +103,22 @@ alt_u32 Atrial_timer_ISR(void* context)
 alt_u32 Ventricular_timer_ISR(void* context)
 {
 	LED1 = 0; //Turn ventricular LED off
+	return 0; //Don't restart timer
+}
+
+//ISR called when atrial timer ends. Used to hold atrial LED on for
+//a predefined time so it can be seen.
+alt_u32 AtrialPace_timer_ISR(void* context)
+{
+	LED3 = 0; //Turn atrial LED off
+	return 0; //Don't restart timer
+}
+
+//ISR called when ventricular timer ends. Used to hold ventricular LED on for
+//a predefined time so it can be seen.
+alt_u32 VentricularPace_timer_ISR(void* context)
+{
+	LED4 = 0; //Turn ventricular LED off
 	return 0; //Don't restart timer
 }
 
@@ -145,64 +176,87 @@ alt_u32 URI_timer_ISR(void* context)
 	return 0; //Don't restart timer
 }
 
+
+void checkSwitches()
+{
+	switch_bits = IORD_ALTERA_AVALON_PIO_DATA(SWITCHES_BASE); // clear the edge capture register
+	switch0 = ((1 << 0)&(switch_bits)); // Mask switch 0
+	if (switch0 == 0) // Mode 1 if switch set to 0
+	{
+		mode = 1;
+	} else // Mode 1 if switch set to 0
+	{
+		mode = 2;
+	}
+}
+
 //This function checks if a button is pushed and sets the appropriate flag
 void pollButtons()
 {
-	// Poll buttons
-	uiButton = IORD_ALTERA_AVALON_PIO_DATA(BUTTONS_BASE); //Read the buttons register
-	IOWR_ALTERA_AVALON_PIO_EDGE_CAP(BUTTONS_BASE, 0);// Clear the edge capture register
-	int maskedButton0 = uiButton & (1 << 0); //Mask out the bit for button 0 (atrial event button)
-	int maskedButton1 = uiButton & (1 << 1); //Mask out the bit for button 1 (ventricular event button)
+	if (mode == 1){ // Buttons disabled in mode 2
+		// Poll buttons
+		uiButton = IORD_ALTERA_AVALON_PIO_DATA(BUTTONS_BASE); //Read the buttons register
+		IOWR_ALTERA_AVALON_PIO_EDGE_CAP(BUTTONS_BASE, 0);// Clear the edge capture register
+		int maskedButton0 = uiButton & (1 << 0); //Mask out the bit for button 0 (ventricular event button)
+		int maskedButton1 = uiButton & (1 << 1); //Mask out the bit for button 1 (atrial event button)
 
-	if (maskedButton0 > 0){ //Check if button 0 is not pushed
-		ASense = 0; //Reset atrial sense flag
-	} else {
-		ASense = 1; //Set atrial sense flag
-//		printf("--- ASense! ---\n");
+		if (maskedButton1 > 0){ //Check if button 0 is not pushed
+			ASense = 0; //Reset atrial sense flag
+		} else {
+			ASense = 1; //Set atrial sense flag
+	//		printf("--- ASense! ---\n");
+		}
+		if (maskedButton0 > 0){ //Check if button 1 is not pushed
+			VSense = 0; //Reset ventricular sense flag
+		} else {
+			VSense = 1; //Set ventricular sense flag
+	//		printf("--- VSense! ---\n");
+		}
 	}
-	if (maskedButton1 > 0){ //Check if button 1 is not pushed
-		VSense = 0; //Reset ventricular sense flag
-	} else {
-		VSense = 1; //Set ventricular sense flag
-//		printf("--- VSense! ---\n");
-	}
-
-//	printf("button0 is: %d \n", maskedButton0);
-//	printf("button1 is: %d \n", maskedButton1);
-//	printf("ASense is: %d \n", ASense);
-//	printf("VSense is: %d \n", VSense);
 }
-
 //This function is used to blink the LEDs to show sensing
 //and pacing of the heart.
 void heartLEDs()
 {
-
-	unsigned int A_LED = ASense || APace; //Set atrial LED if A sensed or paced
-	unsigned int V_LED = VSense || VPace; //Set ventricular LED if V sensed or paced
-
-	if (A_LED == 1) //Check if A was sensed or paced
+	if (ASense == 1) //Check if A was sensed or paced
 	{
 		LED0 = 1; //Set atrial LED on
 		alt_alarm_stop(&Atrial_timer); //Check timer is stopped before starting
 		alt_alarm_start(&Atrial_timer, 100, Atrial_timer_ISR, NULL); // Start timer
 	}
 
-	if (V_LED == 1)
+	if (VSense == 1)
 	{
 		LED1 = 1; //Set ventricular LED on
 		alt_alarm_stop(&Ventricular_timer); //Check timer is stopped before starting
 		alt_alarm_start(&Ventricular_timer, 100, Ventricular_timer_ISR, NULL); // Start timer
 	}
 
+	if (APace == 1)
+	{
+		LED3 = 1; //Set ventricular LED on
+		alt_alarm_stop(&AtrialPace_timer); //Check timer is stopped before starting
+		alt_alarm_start(&AtrialPace_timer, 100, AtrialPace_timer_ISR, NULL); // Start timer
+	}
+	if (VPace == 1)
+	{
+		LED4 = 1; //Set ventricular LED on
+		alt_alarm_stop(&VentricularPace_timer); //Check timer is stopped before starting
+		alt_alarm_start(&VentricularPace_timer, 100, VentricularPace_timer_ISR, NULL); // Start timer
+	}
+
+
 	LEDbits = 0; //Set all LEDs off
 	//Set atrial and ventricular LEDs to their current state
-	LEDbits = (LEDbits | (LED0 << 0));
-	LEDbits = (LEDbits | (LED1 << 1));
+	LEDbits = (LEDbits | (LED0 << 1)); // LED 1 represents atrial senses
+	LEDbits = (LEDbits | (LED1 << 0)); // LED 0 represents ventricular senses
+	LEDbits = (LEDbits | (LED3 << 4)); // LED 4 represents atrial senses
+	LEDbits = (LEDbits | (LED4 << 3)); // LED 3 represents ventricular senses
 
 	IOWR_ALTERA_AVALON_PIO_DATA(LEDS_GREEN_BASE, LEDbits); //Write LED values
 }
 
+//Flags are used as a buffer before being output to SCCharts.
 void setFlags()
 {
 	if (AVITOFlag == 1) {
@@ -257,27 +311,11 @@ void setFlags()
 //This function is used to start all timers at the time they need starting.
 void startTimers()
 {
-//	if (AVI_stop == 1)
-//	{
-//		printf("avi stop is met\n");
-//
-//		alt_alarm_stop(&PVARP_timer);
-//		alt_alarm_stop(&VRP_timer);
-//		alt_alarm_stop(&AEI_timer);
-//		alt_alarm_stop(&LRI_timer);
-//		alt_alarm_stop(&URI_timer);
-//
-//		alt_alarm_start(&PVARP_timer, PVARP_Value, PVARP_timer_ISR, NULL);
-//		alt_alarm_start(&VRP_timer, VRP_Value, VRP_timer_ISR, NULL);
-//		alt_alarm_start(&AEI_timer, AEI_Value, AEI_timer_ISR, NULL);
-//		alt_alarm_start(&LRI_timer, LRI_Value, LRI_timer_ISR, NULL);
-//		alt_alarm_start(&URI_timer, URI_Value, URI_timer_ISR, NULL);
-//	}
-	if (AVI_start == 1)
-	{
 
-		alt_alarm_stop(&AVI_timer);
-		alt_alarm_start(&AVI_timer, AVI_Value, AVI_timer_ISR, NULL);
+	if (AVI_start == 1) // Start the relevant timer if SCChart provides the start signal
+	{
+		alt_alarm_stop(&AVI_timer); // Stop the timer, if it hasn't started yet it's ok
+		alt_alarm_start(&AVI_timer, AVI_Value, AVI_timer_ISR, NULL); // start timer
 		printf("avi start \n");
 	}
 	else if (AVI_stop == 1)
@@ -286,18 +324,12 @@ void startTimers()
 		printf("avi stop\n");
 	}
 
-
 	if (PVARP_start == 1)
 	{
 		alt_alarm_stop(&PVARP_timer);
 		alt_alarm_start(&PVARP_timer, PVARP_Value, PVARP_timer_ISR, NULL);
 		printf("pvarp start\n");
 	}
-//	else if (PVARP_stop == 1)
-//	{
-//		alt_alarm_stop(&PVARP_timer);
-//	}
-
 
 	if(VRP_start==1)
 	{
@@ -305,11 +337,6 @@ void startTimers()
 		alt_alarm_start(&VRP_timer, VRP_Value, VRP_timer_ISR, NULL);
 		printf("vrp start\n");
 	}
-//	else if (VRP_stop == 1)
-//	{
-//		alt_alarm_stop(&VRP_timer);
-//	}
-
 
 	if(AEI_start==1)
 	{
@@ -322,7 +349,6 @@ void startTimers()
 		alt_alarm_stop(&AEI_timer);
 		printf("aei stop \n");
 	}
-
 
 	if (URI_start == 1)
 	{
@@ -352,15 +378,7 @@ void startTimers()
 	if (VPace == 1)
 	{
 		printf("**********V paced**");
-//		AVITO = 0;
 	}
-
-//	AVITOFlag = 0;
-//	PVARPTOFlag = 0;
-//	VRPTOFlag = 0;
-//	AEITOFlag = 0;
-//	LRITOFlag = 0;
-//	URITOFlag = 0;
 
 	AVI_start = 0;
 	PVARP_start = 0;
@@ -377,41 +395,102 @@ void startTimers()
 //	URI_stop = 0;
 }
 
+void initialiseUART()
+{
+	//set the file pointer for the uart peripheral
+	uart_fd = open(UART_NAME, O_RDWR | O_NONBLOCK);
+	uart_fp = fopen(UART_NAME,"r+");
+	if(!uart_fp)
+	{
+		printf("Failed to open UART");
+	} else {
+		printf("Open UART success");
+	}
+}
+
+void UARTreceive(){
+	if (mode == 2){
+		char uartString[255];
+		int uart_rxcount = read(uart_fd, &uartString, sizeof(uartString));
+
+		if(uart_rxcount > 0)
+		{
+			if(uartString[0] == 'A') //ASense
+			{
+				ASense = 1;
+			}
+			else
+			{
+				ASense = 0;
+			}
+
+			if(uartString[0] == 'V') //VSense
+			{
+				VSense = 1;
+			}
+			else
+			{
+				VSense = 0;
+			}
+		}
+	}
+}
+
+void UARTwrite(){
+	if (mode == 2)
+	{
+//		fp = open(UART_NAME, "r+");
+		char uartString[255];
+		char A = 'A';
+		char V = 'V';
+
+		if(APace == 1){
+			printf("Apaced");
+//			uartString[0] = 'A';
+			write(uart_fd, &A, 1);
+		}
+		if(VPace == 1){
+//			uartString[0] = 'V';
+			write(uart_fd, &V, 1);
+		}
+//		write(uart_fd, &uartString, sizeof(uartString));
+		// int write(int fd, const void *ptr, size_t len)
+
+
+
+
+
+
+
+
+
+
+//
+//		FILE* fp;
+//
+////					void print_stuff(char* msg){
+//		//char* message = "I am printing!\n";
+////						FILE* fp;
+//
+//		fp = fopen(UART_NAME, "r+"); //Open file for reading and writing
+//		if(fp != NULL)
+//		{
+//			printf("I should be printinggggg\n");
+//			fwrite(msg, strlen(msg), 1, fp);
+//		}
+//
+//		fclose(fp);
+	}
+}
+
+
+
 int main()
 {
 	// Reset the scc
 	reset();
 
-//	// Start the AVI timer
-//	AVI_timeout = 0;
-//	alt_alarm_start(&AVI_timer, AVI_Value, AVI_timer_ISR, NULL);
-
-	// Start all the timers but AVI
-//	alt_alarm_start(&PVARP_timer, PVARP_Value, PVARP_timer_ISR, NULL);
-//	alt_alarm_start(&VRP_timer, VRP_Value, VRP_timer_ISR, NULL);
-//	alt_alarm_start(&AEI_timer, AEI_Value, AEI_timer_ISR, NULL);
-//	alt_alarm_start(&LRI_timer, LRI_Value, LRI_timer_ISR, NULL);
-//	alt_alarm_start(&URI_timer, URI_Value, URI_timer_ISR, NULL);
-
-////	AVI_stop = 1;
-//	tick();
-//	ASense = 1;
-//	LRI_start = 1;
-//	URI_start = 1;
-//	tick();
-//	startTimers();
-////	alt_alarm_start(&LRI_timer, LRI_Value, LRI_timer_ISR, NULL);
-////	alt_alarm_start(&URI_timer, URI_Value, URI_timer_ISR, NULL);
-//	LRI_start = 0;
-//	URI_start = 0;
-//	ASense = 0;
-//	printf("AVI start is %i \r\n", AVI_start);
-//	startTimers();
-
-//	APace = 1;
-//	heartLEDs();
-
-	int count = 0;
+	initialiseUART();
 
 	while(1) // Main loop
 	{
@@ -420,105 +499,10 @@ int main()
 		tick();
 		startTimers();
 		heartLEDs();
-
-
-//		printf("URI_start is: %i \n", URI_start);
-//		printf("AEI_start is: %i \n", AEI_start);
-
-		count = count + 1;
-		if (count % 2000 == 0){
-			//printf("another 2000 iterations have passed\n");
-//			printf("AVITO is: %i \n", AVITO);
-			//printf("URI_start is: %i \n", URI_start);
-//			printf("URI_start is: %i \n", URI_start);
-		}
-//		printf("LRI_start: %c", LRI_start);
-//		printf("AVI_start = %i \r\n", AVI_start);
+		checkSwitches();
+		UARTwrite();
+		UARTreceive();
 	}
-
-//	void* Timercontext = 0;
-
-//	alt_alarm_start(&URI_timer, URI_Value, URI_timer_ISR, Timercontext);
-
-//  printf("Hello from Nios II!\n");
 
   return 0;
 }
-
-//
-//void startTimers()
-//{
-//	if (AVI_stop == 1)
-//	{
-//		printf("avi stop is met\n");
-//
-//		alt_alarm_stop(&PVARP_timer);
-//		alt_alarm_stop(&VRP_timer);
-//		alt_alarm_stop(&AEI_timer);
-//		alt_alarm_stop(&LRI_timer);
-//		alt_alarm_stop(&URI_timer);
-//
-//		alt_alarm_start(&PVARP_timer, PVARP_Value, PVARP_timer_ISR, NULL);
-//		alt_alarm_start(&VRP_timer, VRP_Value, VRP_timer_ISR, NULL);
-//		alt_alarm_start(&AEI_timer, AEI_Value, AEI_timer_ISR, NULL);
-//		alt_alarm_start(&LRI_timer, LRI_Value, LRI_timer_ISR, NULL);
-//		alt_alarm_start(&URI_timer, URI_Value, URI_timer_ISR, NULL);
-//	}
-//	if (AVI_start == 1)
-//	{
-//		printf("avi start is met\n");
-//		alt_alarm_stop(&AVI_timer);
-//		alt_alarm_start(&AVI_timer, AVI_Value, AVI_timer_ISR, NULL);
-//	}
-//
-//	if (PVARP_start == 1)
-//	{
-//		printf("pvarp start is met\n");
-//		alt_alarm_stop(&PVARP_timer);
-//		alt_alarm_start(&PVARP_timer, PVARP_Value, PVARP_timer_ISR, NULL);
-//	}
-//	if(VRP_start==1)
-//	{
-//		printf("vrp start is met\n");
-//		alt_alarm_stop(&VRP_timer);
-//		alt_alarm_start(&VRP_timer, VRP_Value, VRP_timer_ISR, NULL);
-//	}
-//	if(AEI_start==1)
-//	{
-//		printf("aei start is met\n");
-//		alt_alarm_stop(&AEI_timer);
-//		alt_alarm_start(&AEI_timer, AEI_Value, AEI_timer_ISR, NULL);
-//	}
-//	if (URI_start == 1)
-//	{
-//		printf("uri start is met\n");
-//		alt_alarm_stop(&URI_timer);
-//		alt_alarm_start(&URI_timer, URI_Value, URI_timer_ISR, NULL);
-//	}
-//	if (LRI_start == 1)
-//	{
-//		printf("lri start is met\n");
-//		alt_alarm_stop(&LRI_timer);
-//		alt_alarm_start(&LRI_timer, LRI_Value, LRI_timer_ISR, NULL);
-//	}
-//
-//	if (VPace == 1)
-//	{
-//		printf("**********V paced**");
-//		AVITO = 0;
-//	}
-//
-////	AVITO = 0;
-//	PVARPTO = 0;
-//	VRPTO = 0;
-//	AEITO = 0;
-//	LRITO = 0;
-//	URITO = 0;
-//
-//	AVI_start = 0;
-//	PVARP_start = 0;
-//	VRP_start = 0;
-//	AEI_start = 0;
-//	LRI_start = 0;
-//	URI_start = 0;
-//}
